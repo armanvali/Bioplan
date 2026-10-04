@@ -105,7 +105,7 @@ def search_users(q: str, admin: Scoped("users.read"), db: DB) -> dict[str, Any]:
 @router.get("/users/{user_id}", tags=["admin:users"])
 def user_record(user_id: str, admin: Scoped("users.read"), db: DB) -> dict[str, Any]:
     ua = UsersAdmin(db, admin)
-    return {**ua.record(user_id), "entitlements": ua.entitlements(user_id), "plans": ua.plans(user_id)}
+    return {**ua.record(user_id), "entitlements": ua.entitlements(user_id), "plans": ua.plans(user_id), "purchases": ua.purchases(user_id)}
 
 
 @router.post("/users/{user_id}/reveal", tags=["admin:users"])

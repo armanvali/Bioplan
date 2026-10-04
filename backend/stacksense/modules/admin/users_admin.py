@@ -174,6 +174,11 @@ class UsersAdmin:
         return [{"id": e.id, "feature": e.feature_key, "source": e.source, "source_id": e.source_id, "granted_at": e.granted_at.isoformat(),
                  "expires_at": e.expires_at.isoformat() if e.expires_at else None, "revoked_at": e.revoked_at.isoformat() if e.revoked_at else None} for e in rows]
 
+    def purchases(self, user_id: str) -> list[dict[str, Any]]:
+        rows = self.db.scalars(select(Purchase).where(Purchase.user_id == user_id).order_by(Purchase.created_at.desc())).all()
+        return [{"id": p.id, "plan_key": p.plan_key, "amount": p.amount, "currency": p.currency, "status": p.status,
+                 "created_at": p.created_at.isoformat(), "refunded_at": p.refunded_at.isoformat() if p.refunded_at else None} for p in rows]
+
     def refund(self, purchase_id: str, reason: str) -> dict[str, Any]:
         import json
 

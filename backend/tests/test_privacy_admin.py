@@ -114,7 +114,7 @@ def test_staff_reveal_is_logged_and_visible_to_the_user(client, maya):
     uid = client.get("/v1/me", headers=auth).json()["id"]
     sup = admin_login(client, "support@stacksense.dev")
     rec = client.get(f"/admin/v1/users/{uid}", headers=sup).json()
-    assert rec["health_profile"]["masked"] is True
+    assert rec["health_profile"]["masked"] is True and rec["purchases"] == []
     assert client.post(f"/admin/v1/users/{uid}/reveal", json={"reason": "x"}, headers=sup).status_code in (400, 422)
     full = client.post(f"/admin/v1/users/{uid}/reveal", json={"reason": "Ticket #4412: wrong dose shown"}, headers=sup).json()
     assert full["logged"] is True and "vegetarian" in full["health_profile"]["stable_facts"]["B3_diet"].lower()
