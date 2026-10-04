@@ -1,6 +1,7 @@
 # StackSense prototype
 
 A clickable prototype of **StackSense**, built from *StackSense — Prototype UI & Flow Spec* (Oct 3, 2026).
+It is kept as the UX reference for the production app (`web/`, backed by `backend/`); see the root `README.md`.
 It walks Maya, the demo persona, through an intake that rewrites itself after every answer. The intake ends in three outputs:
 
 1. a **Health Impact Map** (radar and stacked bars across 8 body areas)
@@ -11,16 +12,17 @@ Every answer is pre-filled with Maya's, so you can tap **Continue** through her 
 
 ## Run it
 
-No build step and no dependencies. Open `index.html` in a browser, or serve the folder:
+No build step and no dependencies. Open `prototype/index.html` in a browser, or serve the folder:
 
 ```sh
-python3 -m http.server 8000   # then open http://localhost:8000
+cd prototype
+python3 -m http.server 8080   # then open http://localhost:8080
 ```
 
 To get one self-contained HTML file you can send or host anywhere:
 
 ```sh
-python3 tools/bundle.py        # writes dist/stacksense-prototype.html
+python3 tools/bundle.py        # run inside prototype/; writes prototype/dist/stacksense-prototype.html
 ```
 
 ## Using the viewer

@@ -184,11 +184,13 @@ class EngineAdmin:
         if notes:
             r.notes = ((r.notes or "") + f"\n[review] {notes}").strip()
         if approve and r.kind == "rules":
-            # Stamp the clinical sign-off onto every row this release carries.
+            # Stamp the clinical sign-off onto every row this release carries. Copy first: JSON
+            # columns aren't mutation-tracked, so an in-place edit would never be written.
+            data = copy.deepcopy(r.data)
             for t in KnowledgeData.TABLES:
-                for row in r.data.get(t, []):
+                for row in data.get(t, []):
                     row["reviewed_by"], row["reviewed_at"] = self.actor.id, r.reviewed_at.date().isoformat()
-            r.data = copy.deepcopy(r.data)
+            r.data = data
         self._audit("release.approve" if approve else "release.reject", r.id, None, {"notes": notes})
         return r
 

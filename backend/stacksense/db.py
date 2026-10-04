@@ -81,7 +81,7 @@ def make_engine(url: str) -> Engine:
 def init_engine(url: str) -> Engine:
     global _engine, _SessionLocal
     _engine = make_engine(url)
-    _SessionLocal = sessionmaker(bind=_engine, autoflush=False, expire_on_commit=False)
+    _SessionLocal = sessionmaker(bind=_engine, autoflush=True, expire_on_commit=False)
     return _engine
 
 

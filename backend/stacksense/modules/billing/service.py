@@ -346,7 +346,7 @@ class BillingService:
                 NotifyService(self.db).enqueue(sub.user_id, "email", "trial_ending", {"date": sub.trial_end.date().isoformat()}, scheduled_for=sub.trial_end - timedelta(days=2), dedupe_key=f"trial:{sub.stripe_subscription_id}:{sub.trial_end.date()}")
         else:
             self.ent.set_expiry(sub.stripe_subscription_id, sub.current_period_end if deleted and sub.current_period_end and sub.current_period_end > utcnow() else utcnow())
-        return {"subscription": sub.stripe_subscription_id, "status": sub.status}
+        return {"subscription": sub.stripe_subscription_id, "subscription_status": sub.status}
 
     def _refunded(self, obj: dict[str, Any]) -> dict[str, Any]:
         purchase = self.db.scalar(select(Purchase).where(Purchase.stripe_payment_intent == obj.get("payment_intent")))
