@@ -1,0 +1,10 @@
+[
+  { "id": "sleep", "name": "Sleep", "short": "Sleep", "color": "#5560C9", "icon": "moon", "source": "product" },
+  { "id": "energy", "name": "Energy", "short": "Energy", "color": "#B98A12", "icon": "bolt", "source": "product" },
+  { "id": "joints_recovery", "name": "Joints & recovery", "short": "Joints", "color": "#1F9AA6", "icon": "joint", "source": "product" },
+  { "id": "mood_stress", "name": "Mood & stress", "short": "Mood", "color": "#9259BF", "icon": "smile", "source": "product" },
+  { "id": "performance", "name": "Performance", "short": "Perform.", "color": "#E07A1F", "icon": "run", "source": "product" },
+  { "id": "skin_hair", "name": "Skin & hair", "short": "Skin & hair", "color": "#C24E8C", "icon": "drop", "source": "product" },
+  { "id": "immunity", "name": "Immunity", "short": "Immunity", "color": "#6FA23A", "icon": "shield", "source": "product" },
+  { "id": "heart_metabolic", "name": "Heart & metabolic", "short": "Heart", "color": "#A8323A", "icon": "heart", "source": "product" }
+]

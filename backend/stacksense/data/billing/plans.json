@@ -1,0 +1,47 @@
+{
+  "feature_keys": [
+    { "key": "impact_full", "label": "Full Health Impact Map + contributors" },
+    { "key": "impact_history", "label": "Reported vs projected over time" },
+    { "key": "exact_doses", "label": "Exact doses and timing" },
+    { "key": "product_alternatives", "label": "All product alternatives + why this product" },
+    { "key": "price_alerts", "label": "Price-drop alerts" },
+    { "key": "calendar_90d", "label": "90-day calendar + .ics export" },
+    { "key": "calendar_ongoing", "label": "Ongoing calendar" },
+    { "key": "reminders", "label": "Push and refill reminders" },
+    { "key": "doctor_note", "label": "Doctor note PDF" },
+    { "key": "checkins", "label": "Check-ins" },
+    { "key": "lab_replan", "label": "Lab upload and automatic re-plan" },
+    { "key": "rerun_intake", "label": "Re-run intake with saved profile" }
+  ],
+  "always_free": [
+    "intake", "review", "stack_names", "why_you_short", "exclusions", "interactions", "locked_items", "stop_cards", "safety_banners", "best_match_product"
+  ],
+  "plans": [
+    {
+      "key": "free", "name": "Free", "kind": "free", "features": [],
+      "limits": { "calendar_days": 7, "impact_areas": 3, "rerun_intake": 0 },
+      "prices": []
+    },
+    {
+      "key": "full_report", "name": "Full Report", "kind": "one_time",
+      "features": ["impact_full", "exact_doses", "product_alternatives", "calendar_90d", "doctor_note", "rerun_intake"],
+      "limits": { "calendar_days": 90, "impact_areas": 8, "rerun_intake": 1, "rerun_window_days": 90 },
+      "prices": [
+        { "id": "price_full_report_cad", "currency": "CAD", "region": "CA", "amount": 999, "interval": null, "stripe_price_id": null },
+        { "id": "price_full_report_usd", "currency": "USD", "region": "US", "amount": 799, "interval": null, "stripe_price_id": null }
+      ]
+    },
+    {
+      "key": "plus", "name": "Plus", "kind": "subscription",
+      "features": ["impact_full", "impact_history", "exact_doses", "product_alternatives", "price_alerts", "calendar_90d", "calendar_ongoing", "reminders", "doctor_note", "checkins", "lab_replan", "rerun_intake"],
+      "limits": { "calendar_days": 3650, "impact_areas": 8, "rerun_intake": -1 },
+      "trial_days": 7,
+      "prices": [
+        { "id": "price_plus_month_cad", "currency": "CAD", "region": "CA", "amount": 599, "interval": "month", "stripe_price_id": null },
+        { "id": "price_plus_year_cad", "currency": "CAD", "region": "CA", "amount": 4900, "interval": "year", "stripe_price_id": null },
+        { "id": "price_plus_month_usd", "currency": "USD", "region": "US", "amount": 499, "interval": "month", "stripe_price_id": null },
+        { "id": "price_plus_year_usd", "currency": "USD", "region": "US", "amount": 3900, "interval": "year", "stripe_price_id": null }
+      ]
+    }
+  ]
+}

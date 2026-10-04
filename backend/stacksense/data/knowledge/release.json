@@ -1,0 +1,24 @@
+{
+  "version": "rules-2026.10.0",
+  "title": "Launch knowledge base (demo content)",
+  "notes": "Seed release built from the StackSense prototype spec. Every row needs pharmacist or RD sign-off before a public launch (section 4.2); this seed is demo content only.",
+  "review": {
+    "reviewed_by": "pending-clinical-review",
+    "reviewed_at": null
+  },
+  "params": {
+    "signal_active_threshold": 0.6,
+    "signal_resolved_low": 0.2,
+    "signal_resolved_high": 0.8,
+    "max_items": 8,
+    "default_pill_limit": 8,
+    "default_budget": 120,
+    "grade_weights": { "A": 1.0, "B": 0.75, "C": 0.5, "D": 0.25 },
+    "goal_rank_weights": [1.0, 0.8, 0.6],
+    "unranked_goal_weight": 0.0,
+    "goal_candidate_min_grade": "C",
+    "low_confidence_unsure_count": 4,
+    "low_confidence_max_items": 3,
+    "doses_per_month": { "daily": 30.4, "alternate": 15.2, "weekdays": null, "cycle": 30.4 }
+  }
+}

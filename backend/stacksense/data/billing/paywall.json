@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "status": "published",
+  "gates": {
+    "impact_full": { "section": "impact", "free_preview": "top_3_areas" },
+    "exact_doses": { "section": "doses", "free_preview": "range" },
+    "product_alternatives": { "section": "products", "free_preview": "best_match" },
+    "calendar_90d": { "section": "calendar", "free_preview": "7_days" },
+    "doctor_note": { "section": "doctor_note", "free_preview": "none" },
+    "checkins": { "section": "checkins", "free_preview": "none" },
+    "lab_replan": { "section": "labs", "free_preview": "none" }
+  },
+  "triggers": [
+    { "id": "tap_blurred_area", "event": "impact.blurred_area_tapped", "enabled": true },
+    { "id": "see_exact_doses", "event": "doses.unlock_tapped", "enabled": true },
+    { "id": "open_full_calendar", "event": "calendar.full_tapped", "enabled": true },
+    { "id": "download_doctor_note", "event": "doctor_note.tapped", "enabled": true },
+    { "id": "results_dwell", "event": "results.dwell", "after_seconds": 60, "enabled": true, "soft": true }
+  ],
+  "copy": {
+    "headline": "See your whole plan",
+    "subhead": "Exact doses, the full Health Impact Map and a 90-day calendar built around your day.",
+    "trust_line": "Safety information is always free.",
+    "disclosure": "We may earn a commission when you buy through product links. It never changes what we recommend.",
+    "not_now": "Not now",
+    "offer_order": ["full_report", "plus"]
+  },
+  "experiments": []
+}

@@ -1,0 +1,11 @@
+[
+  { "id": "sleep", "label": "Sleep better", "area": "sleep", "icon": "moon", "word": "sleep", "source": "product" },
+  { "id": "energy", "label": "More energy", "area": "energy", "icon": "bolt", "word": "energy", "source": "product" },
+  { "id": "joints", "label": "Joints & recovery", "area": "joints_recovery", "icon": "joint", "word": "joints & recovery", "source": "product" },
+  { "id": "mood", "label": "Calmer mood", "area": "mood_stress", "icon": "smile", "word": "mood", "source": "product" },
+  { "id": "focus", "label": "Sharper focus", "area": "mood_stress", "icon": "focus", "word": "focus", "source": "product" },
+  { "id": "performance", "label": "Train harder", "area": "performance", "icon": "run", "word": "training", "source": "product" },
+  { "id": "skin", "label": "Skin & hair", "area": "skin_hair", "icon": "drop", "word": "skin & hair", "source": "product" },
+  { "id": "immunity", "label": "Fewer colds", "area": "immunity", "icon": "shield", "word": "immunity", "source": "product" },
+  { "id": "heart", "label": "Heart health", "area": "heart_metabolic", "icon": "heart", "word": "heart health", "source": "product" }
+]

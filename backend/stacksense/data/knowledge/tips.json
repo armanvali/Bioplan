@@ -1,0 +1,34 @@
+[
+  {
+    "id": "tip_caffeine",
+    "area": "sleep",
+    "when": "signals.caffeine_late >= 0.6 AND facts.caffeine_minutes > derived.caffeine_cutoff",
+    "title": "Move your last coffee before {derived.caffeine_cutoff|time12}",
+    "text": "Caffeine needs about 8 hours to wear off. Your last one is at {facts.caffeine_minutes|time12} and you go to bed at {facts.routine.bed|time24}.",
+    "source": "Drake et al., J Clin Sleep Med 2013"
+  },
+  {
+    "id": "tip_phone",
+    "area": "sleep",
+    "when": "answers.A3_lying_down.picks contains 'phone'",
+    "title": "Phone away at wind-down",
+    "text": "Your wind-down reminder doubles as a phone-down cue 90 minutes before bed.",
+    "source": "editorial"
+  },
+  {
+    "id": "tip_iron_food",
+    "area": "energy",
+    "when": "signals.low_iron_risk >= 0.6 AND facts.diet in ['vegetarian', 'vegan']",
+    "title": "Pair plant iron with vitamin C",
+    "text": "Lentils, tofu and leafy greens absorb better with citrus, peppers or berries in the same meal. Keep tea and coffee an hour away.",
+    "source": "NIH ODS Iron"
+  },
+  {
+    "id": "tip_daylight",
+    "area": "immunity",
+    "when": "signals.vitamin_d_risk >= 0.6",
+    "title": "A 15-minute midday walk",
+    "text": "Even in winter, daylight helps your body clock and mood, though it won't replace vitamin D from October to March.",
+    "source": "editorial"
+  }
+]

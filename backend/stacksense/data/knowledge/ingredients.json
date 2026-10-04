@@ -1,0 +1,271 @@
+[
+  {
+    "id": "vitamin_d3_k2", "name": "Vitamin D3 + K2", "short": "D3 + K2", "sub": "MK-7", "color": "#3B7BD0",
+    "nutrient": "vitamin_d", "group": "vitamin_d", "forms": ["capsule", "softgel", "drops"], "animal_derived": false,
+    "side_effect_risk": 1, "ref_cost_per_dose": 0.27, "general_benefit": "season.low_uvb",
+    "delivery": [{ "form": "capsule", "pills": 1 }, { "form": "drops", "pills": 0 }],
+    "info": {
+      "does": "Vitamin D supports bones, muscles and immune function. Above about 40° N your skin makes very little from October to April. K2 (MK-7) helps direct calcium into bone.",
+      "research": "Strong evidence that supplements correct low vitamin D status. Benefits for energy and mood show up mainly in people who start low.",
+      "how": "With a meal that has some fat (eggs, yogurt, nut butter).",
+      "side": "Rare at standard doses. Don't add another vitamin D product without checking the total.",
+      "interacts": "K2 can change how warfarin works."
+    },
+    "source": "NIH ODS Vitamin D fact sheet; Health Canada monograph: Vitamin D"
+  },
+  {
+    "id": "vitamin_d3", "name": "Vitamin D3", "short": "D3", "sub": "cholecalciferol", "color": "#3B7BD0",
+    "nutrient": "vitamin_d", "group": "vitamin_d", "forms": ["softgel", "drops", "tablet"], "animal_derived": false,
+    "side_effect_risk": 1, "ref_cost_per_dose": 0.12, "general_benefit": "season.low_uvb",
+    "delivery": [{ "form": "softgel", "pills": 1 }, { "form": "drops", "pills": 0 }],
+    "info": {
+      "does": "Vitamin D supports bones, muscles and immune function, and most people make little of it in winter.",
+      "research": "Strong evidence that supplements correct low vitamin D status.",
+      "how": "With a meal that has some fat.",
+      "side": "Rare at standard doses.",
+      "interacts": "Few interactions at standard doses."
+    },
+    "source": "NIH ODS Vitamin D fact sheet"
+  },
+  {
+    "id": "omega3_algae", "name": "Algae omega-3", "short": "Omega-3", "sub": "EPA + DHA", "color": "#D96B2B",
+    "nutrient": "omega3", "group": "omega3", "forms": ["softgel"], "animal_derived": false,
+    "side_effect_risk": 1, "ref_cost_per_dose": 0.66, "general_benefit": "true",
+    "delivery": [{ "form": "softgel", "pills": 2 }],
+    "info": {
+      "does": "EPA and DHA support heart, brain and joint health. Algae is where fish get theirs, so it suits vegetarians.",
+      "research": "Moderate: modest drops in exercise soreness and joint stiffness, small mood benefits, and reliable effects on triglycerides.",
+      "how": "With a meal to avoid aftertaste.",
+      "side": "Mild stomach upset in some people.",
+      "interacts": "High doses can add to blood thinners."
+    },
+    "source": "NIH ODS Omega-3 Fatty Acids fact sheet"
+  },
+  {
+    "id": "omega3_fish", "name": "Fish oil omega-3", "short": "Omega-3", "sub": "EPA + DHA", "color": "#D96B2B",
+    "nutrient": "omega3", "group": "omega3", "forms": ["softgel", "liquid"], "animal_derived": true,
+    "side_effect_risk": 1, "ref_cost_per_dose": 0.40, "general_benefit": "true",
+    "delivery": [{ "form": "softgel", "pills": 2 }, { "form": "liquid", "pills": 0 }],
+    "info": {
+      "does": "EPA and DHA support heart, brain and joint health.",
+      "research": "Moderate to strong depending on the outcome; reliable effects on triglycerides.",
+      "how": "With a meal to avoid fishy aftertaste.",
+      "side": "Mild stomach upset or aftertaste.",
+      "interacts": "High doses can add to blood thinners."
+    },
+    "source": "NIH ODS Omega-3 Fatty Acids fact sheet"
+  },
+  {
+    "id": "creatine_monohydrate", "name": "Creatine monohydrate", "short": "Creatine", "sub": "", "color": "#22A08A",
+    "nutrient": "creatine", "group": null, "forms": ["powder", "capsule"], "animal_derived": false,
+    "side_effect_risk": 2, "ref_cost_per_dose": 0.55, "general_benefit": "goals contains 'performance'",
+    "delivery": [{ "form": "powder", "pills": 0, "scoops": 1 }, { "form": "capsule", "pills": 5 }],
+    "info": {
+      "does": "Tops up creatine stores in muscle and brain. Vegetarians start lower, so they tend to respond more.",
+      "research": "Strong for strength and repeated-effort performance. Emerging evidence for thinking and focus after short sleep.",
+      "how": "In any drink, any time of day. Taking it every day matters more than timing.",
+      "side": "About 0.5–1 kg of water weight in muscle in the first weeks.",
+      "interacts": "Check with a doctor first if you have kidney disease."
+    },
+    "source": "ISSN position stand: creatine supplementation (Kreider et al., 2017)"
+  },
+  {
+    "id": "vitamin_b12", "name": "Vitamin B12", "short": "B12", "sub": "methylcobalamin", "color": "#3E4F8C",
+    "nutrient": "vitamin_b12", "group": null, "forms": ["capsule", "lozenge"], "animal_derived": false,
+    "side_effect_risk": 1, "ref_cost_per_dose": 0.22, "general_benefit": "false",
+    "delivery": [{ "form": "capsule", "pills": 1 }, { "form": "lozenge", "pills": 0 }],
+    "info": {
+      "does": "B12 is needed for red blood cells and nerves. Plant-based diets supply little of it, and stores run down slowly over years.",
+      "research": "Strong: people who eat little or no meat often have low B12, and supplements reliably raise it.",
+      "how": "Your body absorbs a small share of each dose, so three days a week is enough at 1,000 mcg.",
+      "side": "Very rare. Your body clears what it doesn't use.",
+      "interacts": "Metformin and acid reducers lower B12."
+    },
+    "source": "NIH ODS Vitamin B12 fact sheet"
+  },
+  {
+    "id": "magnesium_bisglycinate", "name": "Magnesium bisglycinate", "short": "Magnesium", "sub": "", "color": "#D45A86",
+    "nutrient": "magnesium", "group": null, "forms": ["powder", "capsule", "tablet"], "animal_derived": false,
+    "side_effect_risk": 1, "ref_cost_per_dose": 0.36, "general_benefit": "true",
+    "delivery": [{ "form": "powder", "pills": 0, "scoops": 1 }, { "form": "tablet", "pills": 2 }],
+    "info": {
+      "does": "Magnesium helps muscles relax and calms the nervous system. Hard training and some medicines can lower your levels.",
+      "research": "Moderate: small improvements in falling asleep, mainly in people who get too little. The glycinate form is gentle on the stomach.",
+      "how": "In warm water 60–90 minutes before bed.",
+      "side": "Loose stools at higher doses. Glycinate is the gentlest form.",
+      "interacts": "Keep 4 hours away from thyroid medicine and 2 hours from iron and some antibiotics."
+    },
+    "source": "NIH ODS Magnesium fact sheet"
+  },
+  {
+    "id": "ashwagandha_ksm66", "name": "Ashwagandha", "short": "Ashwagandha", "sub": "KSM-66 extract", "color": "#4C8C2E",
+    "nutrient": null, "group": null, "forms": ["capsule"], "animal_derived": false,
+    "side_effect_risk": 2, "ref_cost_per_dose": 0.30, "general_benefit": "false",
+    "delivery": [{ "form": "capsule", "pills": 1 }],
+    "info": {
+      "does": "A root extract that may lower stress hormones and how stressed you feel.",
+      "research": "Moderate: several randomised trials of KSM-66 show lower stress scores and faster sleep onset over 8 weeks.",
+      "how": "With dinner. 8 weeks on, then 2 weeks off.",
+      "side": "Drowsiness or stomach upset. Rare liver injury reports: stop and see a doctor if you notice yellowing skin or dark urine.",
+      "interacts": "Thyroid medicine, sedatives and immune suppressants. Not for pregnancy."
+    },
+    "source": "Health Canada NHP monograph: Ashwagandha; Chandrasekhar et al., 2012"
+  },
+  {
+    "id": "curcumin_enhanced", "name": "Curcumin", "short": "Curcumin", "sub": "enhanced-absorption form", "color": "#8257C9",
+    "nutrient": null, "group": null, "forms": ["capsule"], "animal_derived": false,
+    "side_effect_risk": 3, "ref_cost_per_dose": 0.38, "general_benefit": "false",
+    "delivery": [{ "form": "capsule", "pills": 1 }],
+    "info": {
+      "does": "The active compound in turmeric. It may ease soreness and inflammation after hard training.",
+      "research": "Moderate: small trials show less muscle soreness and knee discomfort. Plain turmeric is poorly absorbed, so an enhanced form is used.",
+      "how": "With food.",
+      "side": "Stomach upset. Rare liver reports with high-absorption forms.",
+      "interacts": "Blood thinners and gallstones."
+    },
+    "source": "NIH NCCIH Turmeric; Health Canada NHP monograph: Turmeric"
+  },
+  {
+    "id": "iron_bisglycinate", "name": "Iron bisglycinate", "short": "Iron", "sub": "", "color": "#7A5C3E",
+    "nutrient": "iron", "group": null, "forms": ["capsule"], "animal_derived": false,
+    "requires_lab": { "analyte": "ferritin", "max_age_days": 365, "reason": "Too much iron is harmful, and only a blood test can tell whether you need it." },
+    "side_effect_risk": 3, "ref_cost_per_dose": 0.15, "general_benefit": "false",
+    "delivery": [{ "form": "capsule", "pills": 1 }],
+    "info": {
+      "does": "Rebuilds iron stores when a blood test shows they are low.",
+      "research": "Strong when ferritin is low. Every other day is absorbed as well as daily and is easier on the stomach.",
+      "how": "With vitamin C food, 2 hours away from coffee, tea and dairy.",
+      "side": "Constipation or stomach upset. Bisglycinate is the gentlest form.",
+      "interacts": "Separate from magnesium, zinc and calcium by 2 hours and from thyroid medicine by 4 hours."
+    },
+    "source": "NIH ODS Iron fact sheet; Stoffel et al., 2017 (alternate-day dosing)"
+  },
+  {
+    "id": "melatonin", "name": "Melatonin", "short": "Melatonin", "sub": "", "color": "#5C6BC0",
+    "nutrient": null, "group": null, "forms": ["tablet"], "animal_derived": false,
+    "side_effect_risk": 2, "ref_cost_per_dose": 0.08, "general_benefit": "false",
+    "delivery": [{ "form": "tablet", "pills": 1 }],
+    "info": {
+      "does": "A hormone that signals night-time to your body clock.",
+      "research": "Moderate for shifting a late body clock and jet lag; weak for general insomnia.",
+      "how": "A low dose 30–60 minutes before bed.",
+      "side": "Morning grogginess, headache.",
+      "interacts": "Sedatives and blood thinners."
+    },
+    "source": "NIH NCCIH Melatonin; Health Canada NHP monograph: Melatonin"
+  },
+  {
+    "id": "st_johns_wort", "name": "St John's wort", "short": "St John's wort", "sub": "", "color": "#C9A227",
+    "nutrient": null, "group": null, "forms": ["capsule"], "animal_derived": false,
+    "side_effect_risk": 3, "ref_cost_per_dose": 0.20, "general_benefit": "false",
+    "delivery": [{ "form": "capsule", "pills": 1 }],
+    "info": {
+      "does": "A herb sometimes used for low mood.",
+      "research": "Moderate for mild low mood, but it interacts with many medicines.",
+      "how": "With breakfast.",
+      "side": "Sun sensitivity, stomach upset.",
+      "interacts": "Birth control, antidepressants, blood thinners and many other medicines."
+    },
+    "source": "NIH NCCIH St. John's Wort"
+  },
+  {
+    "id": "collagen_peptides", "name": "Collagen peptides", "short": "Collagen", "sub": "", "color": "#B07A5A",
+    "nutrient": null, "group": null, "forms": ["powder"], "animal_derived": true,
+    "side_effect_risk": 1, "ref_cost_per_dose": 0.90, "general_benefit": "false",
+    "delivery": [{ "form": "powder", "pills": 0, "scoops": 1 }],
+    "info": {
+      "does": "Protein from animal connective tissue, used for joints and skin.",
+      "research": "Emerging: small trials on joint comfort in athletes and skin elasticity.",
+      "how": "Stir into any drink.",
+      "side": "Rare.",
+      "interacts": "None known."
+    },
+    "source": "Systematic review: Khatri et al., 2021"
+  },
+  {
+    "id": "l_theanine", "name": "L-theanine", "short": "L-theanine", "sub": "", "color": "#2E8B8B",
+    "nutrient": null, "group": null, "forms": ["capsule"], "animal_derived": false,
+    "side_effect_risk": 1, "ref_cost_per_dose": 0.25, "general_benefit": "false",
+    "delivery": [{ "form": "capsule", "pills": 1 }],
+    "info": {
+      "does": "An amino acid from tea that may take the edge off a busy mind.",
+      "research": "Emerging: small trials on relaxation and sleep quality.",
+      "how": "In the evening.",
+      "side": "Rare.",
+      "interacts": "May add to sedatives."
+    },
+    "source": "Health Canada NHP monograph: L-Theanine"
+  },
+  {
+    "id": "glycine", "name": "Glycine", "short": "Glycine", "sub": "", "color": "#6D8BA8",
+    "nutrient": null, "group": null, "forms": ["powder"], "animal_derived": false,
+    "side_effect_risk": 1, "ref_cost_per_dose": 0.15, "general_benefit": "false",
+    "delivery": [{ "form": "powder", "pills": 0, "scoops": 1 }],
+    "info": {
+      "does": "An amino acid that may help you feel more rested after sleep.",
+      "research": "Emerging: small trials on subjective sleep quality.",
+      "how": "In water before bed.",
+      "side": "Rare.",
+      "interacts": "None common."
+    },
+    "source": "Bannai & Kawai, 2012"
+  },
+  {
+    "id": "vitamin_c", "name": "Vitamin C", "short": "Vitamin C", "sub": "", "color": "#E2A21B",
+    "nutrient": "vitamin_c", "group": null, "forms": ["capsule", "tablet"], "animal_derived": false,
+    "side_effect_risk": 1, "ref_cost_per_dose": 0.10, "general_benefit": "false",
+    "delivery": [{ "form": "capsule", "pills": 1 }],
+    "info": {
+      "does": "Supports immune function and helps absorb plant iron.",
+      "research": "Moderate: regular use slightly shortens colds; it doesn't prevent them in most people.",
+      "how": "With breakfast.",
+      "side": "Stomach upset at high doses.",
+      "interacts": "Raises iron absorption."
+    },
+    "source": "NIH ODS Vitamin C fact sheet; Cochrane review (Hemilä & Chalker, 2013)"
+  },
+  {
+    "id": "zinc", "name": "Zinc", "short": "Zinc", "sub": "picolinate", "color": "#7D8FA3",
+    "nutrient": "zinc", "group": null, "forms": ["capsule"], "animal_derived": false,
+    "side_effect_risk": 2, "ref_cost_per_dose": 0.12, "general_benefit": "false",
+    "delivery": [{ "form": "capsule", "pills": 1 }],
+    "info": {
+      "does": "Supports immune function and skin.",
+      "research": "Emerging to moderate for immune support when intake is low.",
+      "how": "With food to avoid nausea.",
+      "side": "Nausea on an empty stomach. Long-term high doses lower copper.",
+      "interacts": "Space 2 hours from iron and some antibiotics."
+    },
+    "source": "NIH ODS Zinc fact sheet"
+  },
+  {
+    "id": "methylfolate", "name": "Folate", "short": "Folate", "sub": "methylfolate", "color": "#4F9A6A",
+    "nutrient": "folate", "group": null, "forms": ["capsule"], "animal_derived": false,
+    "side_effect_risk": 1, "ref_cost_per_dose": 0.15, "general_benefit": "false",
+    "essential_when": "facts.pregnancy in ['pregnant', 'trying', 'breastfeeding']",
+    "delivery": [{ "form": "capsule", "pills": 1 }],
+    "info": {
+      "does": "Folate is needed for healthy cell growth and is recommended before and during pregnancy.",
+      "research": "Strong: folic acid before conception lowers neural tube defect risk.",
+      "how": "With breakfast, ideally inside a prenatal vitamin your care provider approves.",
+      "side": "Rare.",
+      "interacts": "Some anti-seizure medicines."
+    },
+    "source": "Health Canada: Folic acid and neural tube defects; NIH ODS Folate fact sheet"
+  },
+  {
+    "id": "iodine", "name": "Iodine", "short": "Iodine", "sub": "", "color": "#8C6BB1",
+    "nutrient": "iodine", "group": null, "forms": ["tablet"], "animal_derived": false,
+    "requires_lab": { "analyte": "tsh", "max_age_days": 365, "reason": "Iodine affects the thyroid, so we only add it with your care provider's input." },
+    "side_effect_risk": 2, "ref_cost_per_dose": 0.05, "general_benefit": "false",
+    "delivery": [{ "form": "tablet", "pills": 1 }],
+    "info": {
+      "does": "Needed to make thyroid hormone; needs rise in pregnancy.",
+      "research": "Strong for preventing deficiency; too much can also upset the thyroid.",
+      "how": "With breakfast.",
+      "side": "Thyroid changes at high doses.",
+      "interacts": "Thyroid medicines."
+    },
+    "source": "NIH ODS Iodine fact sheet"
+  }
+]

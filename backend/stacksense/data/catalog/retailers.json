@@ -1,0 +1,42 @@
+[
+  {
+    "id": "amazon_ca", "name": "Amazon.ca", "storefront": "CA", "network": "amazon_associates", "tag_ref": "amazon_ca_tag",
+    "commission_rate": 0.03, "cookie_days": 1, "currency": "CAD",
+    "link_template": "https://www.amazon.ca/dp/{asin}?tag={tag}",
+    "search_template": "https://www.amazon.ca/s?k={query}&tag={tag}",
+    "disclosure": "As an Amazon Associate we earn from qualifying purchases.",
+    "active": true
+  },
+  {
+    "id": "amazon_com", "name": "Amazon.com", "storefront": "US", "network": "amazon_associates", "tag_ref": "amazon_com_tag",
+    "commission_rate": 0.01, "cookie_days": 1, "currency": "USD",
+    "link_template": "https://www.amazon.com/dp/{asin}?tag={tag}",
+    "search_template": "https://www.amazon.com/s?k={query}&tag={tag}",
+    "disclosure": "As an Amazon Associate we earn from qualifying purchases.",
+    "active": true
+  },
+  {
+    "id": "iherb", "name": "iHerb", "storefront": "GLOBAL", "network": "iherb_affiliates", "tag_ref": "iherb_partner_code",
+    "commission_rate": 0.05, "cookie_days": 7, "currency": "USD",
+    "link_template": "https://www.iherb.com/pr/{sku}?rcode={tag}",
+    "search_template": "https://www.iherb.com/search?kw={query}&rcode={tag}",
+    "disclosure": "We may earn a commission from iHerb purchases.",
+    "active": true
+  },
+  {
+    "id": "thorne", "name": "Thorne", "storefront": "GLOBAL", "network": "brand_direct", "tag_ref": null,
+    "commission_rate": 0.15, "cookie_days": 30, "currency": "USD",
+    "link_template": "https://www.thorne.com/products/dp/{sku}",
+    "search_template": "https://www.thorne.com/search?q={query}",
+    "disclosure": "We may earn a commission from Thorne purchases.",
+    "active": true
+  },
+  {
+    "id": "transparent_labs", "name": "Transparent Labs", "storefront": "GLOBAL", "network": "brand_direct", "tag_ref": null,
+    "commission_rate": 0.10, "cookie_days": 30, "currency": "USD",
+    "link_template": "https://www.transparentlabs.com/products/{sku}",
+    "search_template": "https://www.transparentlabs.com/search?q={query}",
+    "disclosure": "We may earn a commission from Transparent Labs purchases.",
+    "active": true
+  }
+]

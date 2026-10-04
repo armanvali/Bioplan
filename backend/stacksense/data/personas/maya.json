@@ -1,0 +1,41 @@
+{
+  "id": "maya",
+  "name": "Maya",
+  "description": "34, Toronto, vegetarian 6 years, runs 3x a week, on the pill. The prototype spec's demo persona.",
+  "context_date": "2026-10-04",
+  "answers": {
+    "A0_about": { "age": 34, "sex": "female", "country": "CA", "region": "ON" },
+    "A1_goals": { "ranked": ["sleep", "energy", "joints"] },
+    "A2_sleep_problem": { "picks": ["falling", "unrefreshed"] },
+    "A3_lying_down": { "picks": ["racing", "legs"], "legs_freq": "sometimes" },
+    "A4_caffeine": { "minutes": 930 },
+    "B1_energy_curve": { "points": [3, 6, 9, 7, 3, 3.5, 5, 4.5, 3] },
+    "B2_iron_cluster": { "picks": ["breathless_stairs", "cold_extremities", "hair_shedding"] },
+    "B3_diet": { "choice": "vegetarian", "years": 6 },
+    "B3b_fish_frequency": { "unsure": true },
+    "B4_menstruation": { "choice": "yes" },
+    "B5_period_heaviness": { "choice": "modheavy" },
+    "B7_bloodwork": { "choice": "notsure" },
+    "B8_body_map": { "side": "front", "spots": ["knee_l", "knee_r"] },
+    "B9_joint_pattern": { "picks": ["after"], "lasts": "day" },
+    "B10_training": { "sessions": 3, "km": 25, "event": { "type": "half", "date": "2026-12-13" } },
+    "B11_pss4": { "items": [3, 2, 2, 2], "source": "Work" },
+    "B12_daylight": { "choice": "u15" },
+    "C0_pregnancy": { "choice": "no" },
+    "C1_medications": { "meds": ["coc"] },
+    "C2_conditions": { "picks": ["none"] },
+    "C3_allergies": { "picks": ["gelatin"] },
+    "D0_anything_else": { "skip": true },
+    "D1_budget": { "amount": 80 },
+    "D2_pills": { "max": 6, "powders": true },
+    "D3_routine": { "wake": 420, "breakfast": 450, "lunch": 750, "dinner": 1140, "bed": 1380, "training_days": ["tue", "thu", "sat"], "tz": "America/Toronto" }
+  },
+  "expect": {
+    "stack": ["vitamin_d3_k2", "omega3_algae", "creatine_monohydrate", "vitamin_b12", "magnesium_bisglycinate", "ashwagandha_ksm66", "curcumin_enhanced"],
+    "locked": ["iron_bisglycinate"],
+    "excluded_include": ["collagen_peptides", "st_johns_wort", "melatonin"],
+    "stop_cards": [],
+    "max_pills_per_day_at_most": 6,
+    "monthly_cost_at_most": 80
+  }
+}

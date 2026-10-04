@@ -1,0 +1,11 @@
+[
+  { "id": "ul_d_adult", "nutrient": "vitamin_d", "population": "adult", "ul_value": 4000, "unit": "IU", "source": "IOM DRI 2011 / Health Canada" },
+  { "id": "ul_fe_adult", "nutrient": "iron", "population": "adult", "ul_value": 45, "unit": "mg", "source": "IOM DRI 2001" },
+  { "id": "ul_zn_adult", "nutrient": "zinc", "population": "adult", "ul_value": 40, "unit": "mg", "source": "IOM DRI 2001" },
+  { "id": "ul_vc_adult", "nutrient": "vitamin_c", "population": "adult", "ul_value": 2000, "unit": "mg", "source": "IOM DRI 2000" },
+  { "id": "ul_mg_adult", "nutrient": "magnesium", "population": "adult", "ul_value": 350, "unit": "mg", "source": "IOM DRI 1997 (supplemental magnesium only)" },
+  { "id": "ul_fol_adult", "nutrient": "folate", "population": "adult", "ul_value": 1000, "unit": "mcg", "source": "IOM DRI 1998 (synthetic folate)" },
+  { "id": "ul_iod_adult", "nutrient": "iodine", "population": "adult", "ul_value": 1100, "unit": "mcg", "source": "IOM DRI 2001" },
+  { "id": "ul_o3_adult", "nutrient": "omega3", "population": "adult", "ul_value": 2000, "unit": "mg", "source": "US FDA: up to 2 g/day EPA+DHA from supplements" },
+  { "id": "ul_cr_adult", "nutrient": "creatine", "population": "adult", "ul_value": 10, "unit": "g", "source": "ISSN position stand 2017 (maintenance doses)" }
+]

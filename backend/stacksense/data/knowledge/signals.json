@@ -1,0 +1,34 @@
+[
+  { "id": "sleep_onset", "label": "Slow to fall asleep", "tag": "Sleep onset", "areas": ["sleep"], "prior": 0.2, "phrase": "slow to fall asleep", "source": "graph" },
+  { "id": "sleep_maintenance", "label": "Waking at night or unrefreshed", "tag": "Broken sleep", "areas": ["sleep"], "prior": 0.2, "phrase": "waking during the night", "source": "graph" },
+  { "id": "circadian_delay", "label": "Body clock runs late", "tag": "Late body clock", "areas": ["sleep"], "prior": 0.15, "phrase": "not tired at bedtime", "source": "graph" },
+  { "id": "caffeine_late", "label": "Late caffeine", "tag": "Late caffeine", "areas": ["sleep"], "prior": 0.2, "phrase": "late caffeine", "tip_only": true, "source": "graph" },
+  { "id": "stress_arousal", "label": "Racing mind at night", "tag": "Racing mind", "areas": ["sleep", "mood_stress"], "prior": 0.2, "phrase": "racing thoughts at night", "source": "graph" },
+  { "id": "stress_load", "label": "Moderate stress", "tag": "Moderate stress", "areas": ["mood_stress"], "prior": 0.3, "phrase": "stressed lately", "source": "PSS-4 (Cohen et al., 1983)" },
+  { "id": "afternoon_crash", "label": "Afternoon energy crash", "tag": "Afternoon crash", "areas": ["energy"], "prior": 0.25, "phrase": "tired in the afternoon", "source": "graph" },
+  { "id": "fatigue", "label": "Tired most of the day", "tag": "Low energy", "areas": ["energy"], "prior": 0.2, "phrase": "tired most of the day", "source": "graph" },
+  {
+    "id": "low_iron_risk", "label": "Possible low iron", "tag": "Possible low iron", "areas": ["energy", "skin_hair"], "prior": 0.08,
+    "prior_rules": [{ "when": "facts.sex == 'female' AND facts.age < 51", "prior": 0.15 }],
+    "phrase": "signs that can point to low iron", "lab": "ferritin", "source": "NIH ODS Iron fact sheet"
+  },
+  {
+    "id": "b12_risk", "label": "Low B12 intake", "tag": "B12 gap", "areas": ["energy"], "prior": 0.06,
+    "prior_rules": [{ "when": "facts.age >= 60", "prior": 0.15 }],
+    "phrase": "low B12 intake", "lab": "b12", "source": "NIH ODS Vitamin B12 fact sheet"
+  },
+  {
+    "id": "vitamin_d_risk", "label": "Little daylight", "tag": "Vitamin D risk", "areas": ["immunity", "energy"], "prior": 0.25,
+    "prior_rules": [{ "when": "season.low_uvb", "prior": 0.45 }],
+    "phrase": "little midday sun", "lab": "vitamin_d_25oh", "source": "NIH ODS Vitamin D fact sheet"
+  },
+  { "id": "omega3_gap", "label": "Low omega-3 intake", "tag": "Omega-3 gap", "areas": ["heart_metabolic", "joints_recovery"], "prior": 0.3, "phrase": "little oily fish", "source": "NIH ODS Omega-3 fact sheet" },
+  { "id": "low_dietary_creatine", "label": "Low dietary creatine", "tag": "Creatine gap", "areas": ["performance"], "prior": 0.1, "phrase": "little meat in your diet", "source": "ISSN position stand on creatine (2017)" },
+  { "id": "exercise_soreness", "label": "Soreness after training", "tag": "Exercise soreness", "areas": ["joints_recovery"], "prior": 0.15, "phrase": "sore after training", "source": "graph" },
+  { "id": "joint_stiffness", "label": "Stiff joints", "tag": "Joint stiffness", "areas": ["joints_recovery"], "prior": 0.1, "phrase": "stiff joints", "source": "graph" },
+  { "id": "endurance_load", "label": "Endurance training load", "tag": "Training load", "areas": ["performance", "joints_recovery"], "prior": 0.15, "phrase": "training most weeks", "source": "graph" },
+  { "id": "hair_shedding", "label": "More hair shedding", "tag": "Hair shedding", "areas": ["skin_hair"], "prior": 0.1, "phrase": "more hair shedding", "source": "graph" },
+  { "id": "frequent_colds", "label": "Frequent colds", "tag": "Frequent colds", "areas": ["immunity"], "prior": 0.15, "phrase": "catching a lot of colds", "source": "graph" },
+  { "id": "lipids_high", "label": "High triglycerides", "tag": "Triglycerides", "areas": ["heart_metabolic"], "prior": 0.1, "phrase": "high triglycerides on a blood test", "source": "graph" },
+  { "id": "pregnancy_planning", "label": "Pregnant or planning", "tag": "Pregnancy-safe library", "areas": [], "prior": 0.02, "phrase": "pregnant or planning a pregnancy", "safety": true, "source": "graph" }
+]

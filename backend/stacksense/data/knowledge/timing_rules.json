@@ -1,0 +1,214 @@
+[
+  {
+    "ingredient_id": "vitamin_d3_k2",
+    "prefer_slots": [
+      "breakfast",
+      "lunch",
+      "dinner"
+    ],
+    "with_food": true,
+    "cue": "Take D3 with food that has some fat.",
+    "source": "NIH ODS Vitamin D (fat-soluble)"
+  },
+  {
+    "ingredient_id": "vitamin_d3",
+    "prefer_slots": [
+      "breakfast",
+      "lunch",
+      "dinner"
+    ],
+    "with_food": true,
+    "cue": "Take D3 with food that has some fat.",
+    "source": "NIH ODS Vitamin D"
+  },
+  {
+    "ingredient_id": "omega3_algae",
+    "prefer_slots": [
+      "lunch",
+      "dinner",
+      "breakfast"
+    ],
+    "with_food": true,
+    "cue": "With a meal to avoid aftertaste.",
+    "source": "editorial"
+  },
+  {
+    "ingredient_id": "omega3_fish",
+    "prefer_slots": [
+      "lunch",
+      "dinner",
+      "breakfast"
+    ],
+    "with_food": true,
+    "cue": "With a meal to avoid aftertaste.",
+    "source": "editorial"
+  },
+  {
+    "ingredient_id": "creatine_monohydrate",
+    "prefer_slots": [
+      "breakfast",
+      "lunch",
+      "dinner",
+      "wake"
+    ],
+    "with_food": false,
+    "cue": "Stir into any drink.",
+    "training_cue": "Run day: after your session is fine too.",
+    "source": "ISSN 2017"
+  },
+  {
+    "ingredient_id": "vitamin_b12",
+    "prefer_slots": [
+      "breakfast",
+      "wake"
+    ],
+    "with_food": false,
+    "cue": "Mon/Wed/Fri only.",
+    "source": "NIH ODS Vitamin B12"
+  },
+  {
+    "ingredient_id": "magnesium_bisglycinate",
+    "prefer_slots": [
+      "winddown"
+    ],
+    "with_food": false,
+    "avoid_with": [
+      "iron_bisglycinate",
+      "zinc"
+    ],
+    "min_gap_hours": 2,
+    "cue": "90 min before bed. Phone away.",
+    "source": "Abbasi et al., 2012"
+  },
+  {
+    "ingredient_id": "ashwagandha_ksm66",
+    "prefer_slots": [
+      "dinner",
+      "breakfast"
+    ],
+    "with_food": true,
+    "cycle_on_weeks": 8,
+    "cycle_off_weeks": 2,
+    "cue": "With food.",
+    "source": "Health Canada monograph: Ashwagandha"
+  },
+  {
+    "ingredient_id": "curcumin_enhanced",
+    "prefer_slots": [
+      "dinner",
+      "lunch",
+      "breakfast"
+    ],
+    "with_food": true,
+    "cue": "With food.",
+    "source": "editorial"
+  },
+  {
+    "ingredient_id": "iron_bisglycinate",
+    "prefer_slots": [
+      "lunch",
+      "breakfast",
+      "dinner"
+    ],
+    "with_food": true,
+    "avoid_with": [
+      "magnesium_bisglycinate",
+      "zinc"
+    ],
+    "min_gap_hours": 2,
+    "cue": "With vitamin C food, 2 h away from coffee and tea.",
+    "source": "NIH ODS Iron"
+  },
+  {
+    "ingredient_id": "melatonin",
+    "prefer_slots": [
+      "winddown",
+      "bed"
+    ],
+    "with_food": false,
+    "cue": "30–60 minutes before bed.",
+    "source": "Health Canada monograph: Melatonin"
+  },
+  {
+    "ingredient_id": "st_johns_wort",
+    "prefer_slots": [
+      "breakfast"
+    ],
+    "with_food": true,
+    "cue": "With breakfast.",
+    "source": "editorial"
+  },
+  {
+    "ingredient_id": "collagen_peptides",
+    "prefer_slots": [
+      "breakfast",
+      "lunch"
+    ],
+    "with_food": false,
+    "cue": "Stir into any drink.",
+    "source": "editorial"
+  },
+  {
+    "ingredient_id": "l_theanine",
+    "prefer_slots": [
+      "winddown",
+      "dinner"
+    ],
+    "with_food": false,
+    "cue": "In the evening.",
+    "source": "editorial"
+  },
+  {
+    "ingredient_id": "glycine",
+    "prefer_slots": [
+      "bed",
+      "winddown"
+    ],
+    "with_food": false,
+    "cue": "In water before bed.",
+    "source": "Bannai & Kawai, 2012"
+  },
+  {
+    "ingredient_id": "vitamin_c",
+    "prefer_slots": [
+      "breakfast",
+      "lunch"
+    ],
+    "with_food": true,
+    "cue": "With breakfast.",
+    "source": "editorial"
+  },
+  {
+    "ingredient_id": "zinc",
+    "prefer_slots": [
+      "lunch",
+      "dinner"
+    ],
+    "with_food": true,
+    "avoid_with": [
+      "iron_bisglycinate",
+      "magnesium_bisglycinate"
+    ],
+    "min_gap_hours": 2,
+    "cue": "With food to avoid nausea.",
+    "source": "NIH ODS Zinc"
+  },
+  {
+    "ingredient_id": "methylfolate",
+    "prefer_slots": [
+      "breakfast"
+    ],
+    "with_food": false,
+    "cue": "With breakfast.",
+    "source": "editorial"
+  },
+  {
+    "ingredient_id": "iodine",
+    "prefer_slots": [
+      "breakfast"
+    ],
+    "with_food": false,
+    "cue": "With breakfast.",
+    "source": "editorial"
+  }
+]

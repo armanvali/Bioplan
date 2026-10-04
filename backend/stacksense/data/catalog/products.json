@@ -1,0 +1,2285 @@
+[
+ {
+  "id": "ps-d3k2",
+  "brand": "Pure Synergy",
+  "name": "D3 + K2 Complex",
+  "form": "capsule",
+  "ingredients": [
+   {
+    "ingredient_id": "vitamin_d3_k2",
+    "amount": 2000,
+    "unit": "IU"
+   }
+  ],
+  "units_per_serving": 1,
+  "servings_per_container": 60,
+  "certs": [
+   "Vegan",
+   "Third-party tested"
+  ],
+  "rating": 4.6,
+  "review_count": 1800,
+  "editorial": 0.7,
+  "attributes": {
+   "vegan": true,
+   "vegetarian_capsule": true,
+   "gelatin": false,
+   "soy": false,
+   "carrageenan": false,
+   "gluten": false,
+   "fish": false,
+   "shellfish": false,
+   "animal_derived": false
+  },
+  "note": "2,000 IU, vegan algae-based D3",
+  "gtin": null,
+  "npn": null,
+  "offers": [
+   {
+    "retailer": "amazon_ca",
+    "price": 16.2,
+    "currency": "CAD",
+    "in_stock": true,
+    "query": "Pure Synergy D3 + K2 Complex"
+   },
+   {
+    "retailer": "amazon_com",
+    "price": 11.82,
+    "currency": "USD",
+    "in_stock": true,
+    "query": "Pure Synergy D3 + K2 Complex"
+   },
+   {
+    "retailer": "iherb",
+    "price": 12.29,
+    "currency": "USD",
+    "in_stock": true,
+    "query": "Pure Synergy D3 + K2 Complex"
+   }
+  ],
+  "updated_at": "2026-10-01T00:00:00Z",
+  "source": "prototype spec section 7; demo prices"
+ },
+ {
+  "id": "th-dk2",
+  "brand": "Thorne",
+  "name": "Vitamin D/K2 Liquid",
+  "form": "drops",
+  "ingredients": [
+   {
+    "ingredient_id": "vitamin_d3_k2",
+    "amount": 1000,
+    "unit": "IU"
+   }
+  ],
+  "units_per_serving": 2,
+  "servings_per_container": 300,
+  "certs": [
+   "NSF Certified for Sport"
+  ],
+  "rating": 4.7,
+  "review_count": 2600,
+  "editorial": 0.8,
+  "attributes": {
+   "vegan": false,
+   "vegetarian_capsule": true,
+   "gelatin": false,
+   "soy": false,
+   "carrageenan": false,
+   "gluten": false,
+   "fish": false,
+   "shellfish": false,
+   "animal_derived": false
+  },
+  "note": "Drops allow exact dosing",
+  "gtin": null,
+  "npn": null,
+  "offers": [
+   {
+    "retailer": "amazon_ca",
+    "price": 33.0,
+    "currency": "CAD",
+    "in_stock": true,
+    "query": "Thorne Vitamin D/K2 Liquid"
+   },
+   {
+    "retailer": "amazon_com",
+    "price": 24.09,
+    "currency": "USD",
+    "in_stock": true,
+    "query": "Thorne Vitamin D/K2 Liquid"
+   },
+   {
+    "retailer": "iherb",
+    "price": 25.05,
+    "currency": "USD",
+    "in_stock": true,
+    "query": "Thorne Vitamin D/K2 Liquid"
+   },
+   {
+    "retailer": "thorne",
+    "price": 25.29,
+    "currency": "USD",
+    "in_stock": true,
+    "sku": "vitamin-d-k2-liquid"
+   }
+  ],
+  "updated_at": "2026-10-01T00:00:00Z",
+  "source": "prototype spec section 7; demo prices"
+ },
+ {
+  "id": "sr-d3k2",
+  "brand": "Sports Research",
+  "name": "Vitamin D3 + K2",
+  "form": "softgel",
+  "ingredients": [
+   {
+    "ingredient_id": "vitamin_d3_k2",
+    "amount": 5000,
+    "unit": "IU"
+   }
+  ],
+  "units_per_serving": 1,
+  "servings_per_container": 60,
+  "certs": [
+   "Third-party tested"
+  ],
+  "rating": 4.7,
+  "review_count": 52000,
+  "editorial": 0.6,
+  "attributes": {
+   "vegan": false,
+   "vegetarian_capsule": false,
+   "gelatin": false,
+   "soy": false,
+   "carrageenan": false,
+   "gluten": false,
+   "fish": false,
+   "shellfish": false,
+   "animal_derived": false
+  },
+  "note": "Widely top-rated",
+  "gtin": null,
+  "npn": null,
+  "offers": [
+   {
+    "retailer": "amazon_ca",
+    "price": 9.0,
+    "currency": "CAD",
+    "in_stock": true,
+    "query": "Sports Research Vitamin D3 + K2"
+   },
+   {
+    "retailer": "amazon_com",
+    "price": 6.57,
+    "currency": "USD",
+    "in_stock": true,
+    "query": "Sports Research Vitamin D3 + K2"
+   },
+   {
+    "retailer": "iherb",
+    "price": 6.83,
+    "currency": "USD",
+    "in_stock": true,
+    "query": "Sports Research Vitamin D3 + K2"
+   }
+  ],
+  "updated_at": "2026-10-01T00:00:00Z",
+  "source": "prototype spec section 7; demo prices"
+ },
+ {
+  "id": "now-d3-2000",
+  "brand": "NOW",
+  "name": "Vitamin D3 2,000 IU",
+  "form": "softgel",
+  "ingredients": [
+   {
+    "ingredient_id": "vitamin_d3",
+    "amount": 2000,
+    "unit": "IU"
+   }
+  ],
+  "units_per_serving": 1,
+  "servings_per_container": 120,
+  "certs": [
+   "GMP certified"
+  ],
+  "rating": 4.7,
+  "review_count": 24000,
+  "editorial": 0.5,
+  "attributes": {
+   "vegan": false,
+   "vegetarian_capsule": false,
+   "gelatin": true,
+   "soy": true,
+   "carrageenan": false,
+   "gluten": false,
+   "fish": false,
+   "shellfish": false,
+   "animal_derived": false
+  },
+  "note": "Low-cost softgel",
+  "gtin": null,
+  "npn": null,
+  "offers": [
+   {
+    "retailer": "amazon_ca",
+    "price": 10.5,
+    "currency": "CAD",
+    "in_stock": true,
+    "query": "NOW Vitamin D3 2,000 IU"
+   },
+   {
+    "retailer": "amazon_com",
+    "price": 7.66,
+    "currency": "USD",
+    "in_stock": true,
+    "query": "NOW Vitamin D3 2,000 IU"
+   },
+   {
+    "retailer": "iherb",
+    "price": 7.97,
+    "currency": "USD",
+    "in_stock": true,
+    "query": "NOW Vitamin D3 2,000 IU"
+   }
+  ],
+  "updated_at": "2026-10-01T00:00:00Z",
+  "source": "prototype spec section 7; demo prices"
+ },
+ {
+  "id": "ddrops-1000",
+  "brand": "Ddrops",
+  "name": "Vitamin D3 1,000 IU drops",
+  "form": "drops",
+  "ingredients": [
+   {
+    "ingredient_id": "vitamin_d3",
+    "amount": 1000,
+    "unit": "IU"
+   }
+  ],
+  "units_per_serving": 2,
+  "servings_per_container": 180,
+  "certs": [
+   "Third-party tested"
+  ],
+  "rating": 4.8,
+  "review_count": 9000,
+  "editorial": 0.7,
+  "attributes": {
+   "vegan": false,
+   "vegetarian_capsule": true,
+   "gelatin": false,
+   "soy": false,
+   "carrageenan": false,
+   "gluten": false,
+   "fish": false,
+   "shellfish": false,
+   "animal_derived": false
+  },
+  "note": "One drop = 1,000 IU",
+  "gtin": null,
+  "npn": null,
+  "offers": [
+   {
+    "retailer": "amazon_ca",
+    "price": 18.0,
+    "currency": "CAD",
+    "in_stock": true,
+    "query": "Ddrops Vitamin D3 1,000 IU drops"
+   },
+   {
+    "retailer": "amazon_com",
+    "price": 13.14,
+    "currency": "USD",
+    "in_stock": true,
+    "query": "Ddrops Vitamin D3 1,000 IU drops"
+   },
+   {
+    "retailer": "iherb",
+    "price": 13.67,
+    "currency": "USD",
+    "in_stock": true,
+    "query": "Ddrops Vitamin D3 1,000 IU drops"
+   }
+  ],
+  "updated_at": "2026-10-01T00:00:00Z",
+  "source": "prototype spec section 7; demo prices"
+ },
+ {
+  "id": "nn-algae",
+  "brand": "Nordic Naturals",
+  "name": "Algae Omega",
+  "form": "softgel",
+  "ingredients": [
+   {
+    "ingredient_id": "omega3_algae",
+    "amount": 585,
+    "unit": "mg"
+   }
+  ],
+  "units_per_serving": 2,
+  "servings_per_container": 30,
+  "certs": [
+   "Vegan",
+   "Third-party tested"
+  ],
+  "rating": 4.5,
+  "review_count": 3100,
+  "editorial": 0.7,
+  "attributes": {
+   "vegan": true,
+   "vegetarian_capsule": false,
+   "gelatin": false,
+   "soy": false,
+   "carrageenan": true,
+   "gluten": false,
+   "fish": false,
+   "shellfish": false,
+   "animal_derived": false
+  },
+  "note": "390 mg DHA + 195 mg EPA per 2 softgels",
+  "gtin": null,
+  "npn": null,
+  "offers": [
+   {
+    "retailer": "amazon_ca",
+    "price": 19.8,
+    "currency": "CAD",
+    "in_stock": true,
+    "query": "Nordic Naturals Algae Omega"
+   },
+   {
+    "retailer": "amazon_com",
+    "price": 14.45,
+    "currency": "USD",
+    "in_stock": true,
+    "query": "Nordic Naturals Algae Omega"
+   },
+   {
+    "retailer": "iherb",
+    "price": 15.03,
+    "currency": "USD",
+    "in_stock": true,
+    "query": "Nordic Naturals Algae Omega"
+   }
+  ],
+  "updated_at": "2026-10-01T00:00:00Z",
+  "source": "prototype spec section 7; demo prices"
+ },
+ {
+  "id": "sr-vegan",
+  "brand": "Sports Research",
+  "name": "Vegan Omega-3",
+  "form": "softgel",
+  "ingredients": [
+   {
+    "ingredient_id": "omega3_algae",
+    "amount": 630,
+    "unit": "mg"
+   }
+  ],
+  "units_per_serving": 2,
+  "servings_per_container": 30,
+  "certs": [
+   "Vegan",
+   "Third-party tested"
+  ],
+  "rating": 4.6,
+  "review_count": 9800,
+  "editorial": 0.65,
+  "attributes": {
+   "vegan": true,
+   "vegetarian_capsule": false,
+   "gelatin": false,
+   "soy": false,
+   "carrageenan": false,
+   "gluten": false,
+   "fish": false,
+   "shellfish": false,
+   "animal_derived": false
+  },
+  "note": "Carrageenan-free",
+  "gtin": null,
+  "npn": null,
+  "offers": [
+   {
+    "retailer": "amazon_ca",
+    "price": 18.6,
+    "currency": "CAD",
+    "in_stock": true,
+    "query": "Sports Research Vegan Omega-3"
+   },
+   {
+    "retailer": "amazon_com",
+    "price": 13.58,
+    "currency": "USD",
+    "in_stock": true,
+    "query": "Sports Research Vegan Omega-3"
+   },
+   {
+    "retailer": "iherb",
+    "price": 14.12,
+    "currency": "USD",
+    "in_stock": true,
+    "query": "Sports Research Vegan Omega-3"
+   }
+  ],
+  "updated_at": "2026-10-01T00:00:00Z",
+  "source": "prototype spec section 7; demo prices"
+ },
+ {
+  "id": "ov-algae",
+  "brand": "Ovega-3",
+  "name": "Plant-Based Omega-3",
+  "form": "softgel",
+  "ingredients": [
+   {
+    "ingredient_id": "omega3_algae",
+    "amount": 500,
+    "unit": "mg"
+   }
+  ],
+  "units_per_serving": 1,
+  "servings_per_container": 60,
+  "certs": [
+   "Vegan"
+  ],
+  "rating": 4.4,
+  "review_count": 2100,
+  "editorial": 0.5,
+  "attributes": {
+   "vegan": true,
+   "vegetarian_capsule": false,
+   "gelatin": false,
+   "soy": false,
+   "carrageenan": true,
+   "gluten": false,
+   "fish": false,
+   "shellfish": false,
+   "animal_derived": false
+  },
+  "note": "One softgel a day",
+  "gtin": null,
+  "npn": null,
+  "offers": [
+   {
+    "retailer": "amazon_ca",
+    "price": 29.0,
+    "currency": "CAD",
+    "in_stock": true,
+    "query": "Ovega-3 Plant-Based Omega-3"
+   },
+   {
+    "retailer": "amazon_com",
+    "price": 21.17,
+    "currency": "USD",
+    "in_stock": true,
+    "query": "Ovega-3 Plant-Based Omega-3"
+   },
+   {
+    "retailer": "iherb",
+    "price": 22.02,
+    "currency": "USD",
+    "in_stock": true,
+    "query": "Ovega-3 Plant-Based Omega-3"
+   }
+  ],
+  "updated_at": "2026-10-01T00:00:00Z",
+  "source": "prototype spec section 7; demo prices"
+ },
+ {
+  "id": "nn-ult",
+  "brand": "Nordic Naturals",
+  "name": "Ultimate Omega (fish oil)",
+  "form": "softgel",
+  "ingredients": [
+   {
+    "ingredient_id": "omega3_fish",
+    "amount": 1280,
+    "unit": "mg"
+   }
+  ],
+  "units_per_serving": 2,
+  "servings_per_container": 60,
+  "certs": [
+   "Third-party tested",
+   "IFOS 5-star"
+  ],
+  "rating": 4.7,
+  "review_count": 21000,
+  "editorial": 0.8,
+  "attributes": {
+   "vegan": false,
+   "vegetarian_capsule": false,
+   "gelatin": true,
+   "soy": false,
+   "carrageenan": false,
+   "gluten": false,
+   "fish": true,
+   "shellfish": false,
+   "animal_derived": true
+  },
+  "note": "The usual pick for meat and fish eaters",
+  "gtin": null,
+  "npn": null,
+  "offers": [
+   {
+    "retailer": "amazon_ca",
+    "price": 49.0,
+    "currency": "CAD",
+    "in_stock": true,
+    "query": "Nordic Naturals Ultimate Omega fish oil"
+   },
+   {
+    "retailer": "amazon_com",
+    "price": 35.77,
+    "currency": "USD",
+    "in_stock": true,
+    "query": "Nordic Naturals Ultimate Omega fish oil"
+   },
+   {
+    "retailer": "iherb",
+    "price": 37.2,
+    "currency": "USD",
+    "in_stock": true,
+    "query": "Nordic Naturals Ultimate Omega fish oil"
+   }
+  ],
+  "updated_at": "2026-10-01T00:00:00Z",
+  "source": "prototype spec section 7; demo prices"
+ },
+ {
+  "id": "ca-fish",
+  "brand": "Carlson",
+  "name": "The Very Finest Fish Oil (liquid)",
+  "form": "liquid",
+  "ingredients": [
+   {
+    "ingredient_id": "omega3_fish",
+    "amount": 1600,
+    "unit": "mg"
+   }
+  ],
+  "units_per_serving": 1,
+  "servings_per_container": 100,
+  "certs": [
+   "Third-party tested",
+   "IFOS 5-star"
+  ],
+  "rating": 4.7,
+  "review_count": 14000,
+  "editorial": 0.75,
+  "attributes": {
+   "vegan": false,
+   "vegetarian_capsule": false,
+   "gelatin": false,
+   "soy": false,
+   "carrageenan": false,
+   "gluten": false,
+   "fish": true,
+   "shellfish": false,
+   "animal_derived": true
+  },
+  "note": "Liquid; no capsules",
+  "gtin": null,
+  "npn": null,
+  "offers": [
+   {
+    "retailer": "amazon_ca",
+    "price": 38.0,
+    "currency": "CAD",
+    "in_stock": true,
+    "query": "Carlson The Very Finest Fish Oil liquid"
+   },
+   {
+    "retailer": "amazon_com",
+    "price": 27.74,
+    "currency": "USD",
+    "in_stock": true,
+    "query": "Carlson The Very Finest Fish Oil liquid"
+   },
+   {
+    "retailer": "iherb",
+    "price": 28.85,
+    "currency": "USD",
+    "in_stock": true,
+    "query": "Carlson The Very Finest Fish Oil liquid"
+   }
+  ],
+  "updated_at": "2026-10-01T00:00:00Z",
+  "source": "prototype spec section 7; demo prices"
+ },
+ {
+  "id": "th-cre",
+  "brand": "Thorne",
+  "name": "Creatine",
+  "form": "powder",
+  "ingredients": [
+   {
+    "ingredient_id": "creatine_monohydrate",
+    "amount": 5,
+    "unit": "g"
+   }
+  ],
+  "units_per_serving": 1,
+  "servings_per_container": 90,
+  "certs": [
+   "NSF Certified for Sport",
+   "Creapure"
+  ],
+  "rating": 4.7,
+  "review_count": 7400,
+  "editorial": 0.9,
+  "attributes": {
+   "vegan": true,
+   "vegetarian_capsule": false,
+   "gelatin": false,
+   "soy": false,
+   "carrageenan": false,
+   "gluten": false,
+   "fish": false,
+   "shellfish": false,
+   "animal_derived": false
+  },
+  "note": "Creapure, NSF Certified for Sport",
+  "gtin": null,
+  "npn": null,
+  "offers": [
+   {
+    "retailer": "amazon_ca",
+    "price": 49.5,
+    "currency": "CAD",
+    "in_stock": true,
+    "query": "Thorne Creatine"
+   },
+   {
+    "retailer": "amazon_com",
+    "price": 36.13,
+    "currency": "USD",
+    "in_stock": true,
+    "query": "Thorne Creatine"
+   },
+   {
+    "retailer": "iherb",
+    "price": 37.58,
+    "currency": "USD",
+    "in_stock": true,
+    "query": "Thorne Creatine"
+   },
+   {
+    "retailer": "thorne",
+    "price": 37.94,
+    "currency": "USD",
+    "in_stock": true,
+    "sku": "creatine"
+   }
+  ],
+  "updated_at": "2026-10-01T00:00:00Z",
+  "source": "prototype spec section 7; demo prices"
+ },
+ {
+  "id": "nc-cre",
+  "brand": "Nutricost",
+  "name": "Creatine Monohydrate",
+  "form": "powder",
+  "ingredients": [
+   {
+    "ingredient_id": "creatine_monohydrate",
+    "amount": 5,
+    "unit": "g"
+   }
+  ],
+  "units_per_serving": 1,
+  "servings_per_container": 100,
+  "certs": [
+   "Third-party tested"
+  ],
+  "rating": 4.6,
+  "review_count": 38000,
+  "editorial": 0.5,
+  "attributes": {
+   "vegan": true,
+   "vegetarian_capsule": false,
+   "gelatin": false,
+   "soy": false,
+   "carrageenan": false,
+   "gluten": false,
+   "fish": false,
+   "shellfish": false,
+   "animal_derived": false
+  },
+  "note": "Lowest cost per serving",
+  "gtin": null,
+  "npn": null,
+  "offers": [
+   {
+    "retailer": "amazon_ca",
+    "price": 18.0,
+    "currency": "CAD",
+    "in_stock": true,
+    "query": "Nutricost Creatine Monohydrate"
+   },
+   {
+    "retailer": "amazon_com",
+    "price": 13.14,
+    "currency": "USD",
+    "in_stock": true,
+    "query": "Nutricost Creatine Monohydrate"
+   },
+   {
+    "retailer": "iherb",
+    "price": 13.67,
+    "currency": "USD",
+    "in_stock": true,
+    "query": "Nutricost Creatine Monohydrate"
+   }
+  ],
+  "updated_at": "2026-10-01T00:00:00Z",
+  "source": "prototype spec section 7; demo prices"
+ },
+ {
+  "id": "gen-crecap",
+  "brand": "Generic",
+  "name": "Creatine capsules",
+  "form": "capsule",
+  "ingredients": [
+   {
+    "ingredient_id": "creatine_monohydrate",
+    "amount": 0.75,
+    "unit": "g"
+   }
+  ],
+  "units_per_serving": 4,
+  "servings_per_container": 60,
+  "certs": [],
+  "rating": 4.3,
+  "review_count": 900,
+  "editorial": 0.2,
+  "attributes": {
+   "vegan": false,
+   "vegetarian_capsule": false,
+   "gelatin": true,
+   "soy": false,
+   "carrageenan": false,
+   "gluten": false,
+   "fish": false,
+   "shellfish": false,
+   "animal_derived": false
+  },
+  "note": "750 mg per capsule",
+  "gtin": null,
+  "npn": null,
+  "offers": [
+   {
+    "retailer": "amazon_ca",
+    "price": 18.0,
+    "currency": "CAD",
+    "in_stock": true,
+    "query": "Generic Creatine capsules"
+   },
+   {
+    "retailer": "amazon_com",
+    "price": 13.14,
+    "currency": "USD",
+    "in_stock": true,
+    "query": "Generic Creatine capsules"
+   },
+   {
+    "retailer": "iherb",
+    "price": 13.67,
+    "currency": "USD",
+    "in_stock": true,
+    "query": "Generic Creatine capsules"
+   }
+  ],
+  "updated_at": "2026-10-01T00:00:00Z",
+  "source": "prototype spec section 7; demo prices"
+ },
+ {
+  "id": "th-b12",
+  "brand": "Thorne",
+  "name": "Vitamin B12 (methylcobalamin)",
+  "form": "capsule",
+  "ingredients": [
+   {
+    "ingredient_id": "vitamin_b12",
+    "amount": 1000,
+    "unit": "mcg"
+   }
+  ],
+  "units_per_serving": 1,
+  "servings_per_container": 60,
+  "certs": [
+   "Vegetarian capsule",
+   "Third-party tested"
+  ],
+  "rating": 4.7,
+  "review_count": 4200,
+  "editorial": 0.8,
+  "attributes": {
+   "vegan": false,
+   "vegetarian_capsule": true,
+   "gelatin": false,
+   "soy": false,
+   "carrageenan": false,
+   "gluten": false,
+   "fish": false,
+   "shellfish": false,
+   "animal_derived": false
+  },
+  "note": "Active form, vegetarian capsule",
+  "gtin": null,
+  "npn": null,
+  "offers": [
+   {
+    "retailer": "amazon_ca",
+    "price": 13.2,
+    "currency": "CAD",
+    "in_stock": true,
+    "query": "Thorne Vitamin B12 methylcobalamin"
+   },
+   {
+    "retailer": "amazon_com",
+    "price": 9.64,
+    "currency": "USD",
+    "in_stock": true,
+    "query": "Thorne Vitamin B12 methylcobalamin"
+   },
+   {
+    "retailer": "iherb",
+    "price": 10.03,
+    "currency": "USD",
+    "in_stock": true,
+    "query": "Thorne Vitamin B12 methylcobalamin"
+   },
+   {
+    "retailer": "thorne",
+    "price": 10.12,
+    "currency": "USD",
+    "in_stock": true,
+    "sku": "vitamin-b12"
+   }
+  ],
+  "updated_at": "2026-10-01T00:00:00Z",
+  "source": "prototype spec section 7; demo prices"
+ },
+ {
+  "id": "now-b12",
+  "brand": "NOW",
+  "name": "Methyl B-12 1,000 mcg lozenges",
+  "form": "lozenge",
+  "ingredients": [
+   {
+    "ingredient_id": "vitamin_b12",
+    "amount": 1000,
+    "unit": "mcg"
+   }
+  ],
+  "units_per_serving": 1,
+  "servings_per_container": 100,
+  "certs": [
+   "GMP certified"
+  ],
+  "rating": 4.7,
+  "review_count": 15000,
+  "editorial": 0.6,
+  "attributes": {
+   "vegan": true,
+   "vegetarian_capsule": false,
+   "gelatin": false,
+   "soy": false,
+   "carrageenan": false,
+   "gluten": false,
+   "fish": false,
+   "shellfish": false,
+   "animal_derived": false
+  },
+  "note": "The low-cost lozenge option",
+  "gtin": null,
+  "npn": null,
+  "offers": [
+   {
+    "retailer": "amazon_ca",
+    "price": 8.0,
+    "currency": "CAD",
+    "in_stock": true,
+    "query": "NOW Methyl B-12 1,000 mcg lozenges"
+   },
+   {
+    "retailer": "amazon_com",
+    "price": 5.84,
+    "currency": "USD",
+    "in_stock": true,
+    "query": "NOW Methyl B-12 1,000 mcg lozenges"
+   },
+   {
+    "retailer": "iherb",
+    "price": 6.07,
+    "currency": "USD",
+    "in_stock": true,
+    "query": "NOW Methyl B-12 1,000 mcg lozenges"
+   }
+  ],
+  "updated_at": "2026-10-01T00:00:00Z",
+  "source": "prototype spec section 7; demo prices"
+ },
+ {
+  "id": "th-mg",
+  "brand": "Thorne",
+  "name": "Magnesium Bisglycinate powder",
+  "form": "powder",
+  "ingredients": [
+   {
+    "ingredient_id": "magnesium_bisglycinate",
+    "amount": 200,
+    "unit": "mg"
+   }
+  ],
+  "units_per_serving": 1,
+  "servings_per_container": 90,
+  "certs": [
+   "NSF Certified for Sport"
+  ],
+  "rating": 4.6,
+  "review_count": 5100,
+  "editorial": 0.9,
+  "attributes": {
+   "vegan": true,
+   "vegetarian_capsule": false,
+   "gelatin": false,
+   "soy": false,
+   "carrageenan": false,
+   "gluten": false,
+   "fish": false,
+   "shellfish": false,
+   "animal_derived": false
+  },
+  "note": "Reviewer's pick for sleep; adds no pills",
+  "gtin": null,
+  "npn": null,
+  "offers": [
+   {
+    "retailer": "amazon_ca",
+    "price": 32.4,
+    "currency": "CAD",
+    "in_stock": true,
+    "query": "Thorne Magnesium Bisglycinate powder"
+   },
+   {
+    "retailer": "amazon_com",
+    "price": 23.65,
+    "currency": "USD",
+    "in_stock": true,
+    "query": "Thorne Magnesium Bisglycinate powder"
+   },
+   {
+    "retailer": "iherb",
+    "price": 24.6,
+    "currency": "USD",
+    "in_stock": true,
+    "query": "Thorne Magnesium Bisglycinate powder"
+   },
+   {
+    "retailer": "thorne",
+    "price": 24.83,
+    "currency": "USD",
+    "in_stock": true,
+    "sku": "magnesium-bisglycinate"
+   }
+  ],
+  "updated_at": "2026-10-01T00:00:00Z",
+  "source": "prototype spec section 7; demo prices"
+ },
+ {
+  "id": "db-mg",
+  "brand": "Doctor's Best",
+  "name": "High Absorption Magnesium",
+  "form": "tablet",
+  "ingredients": [
+   {
+    "ingredient_id": "magnesium_bisglycinate",
+    "amount": 200,
+    "unit": "mg"
+   }
+  ],
+  "units_per_serving": 2,
+  "servings_per_container": 120,
+  "certs": [
+   "Third-party tested"
+  ],
+  "rating": 4.6,
+  "review_count": 61000,
+  "editorial": 0.6,
+  "attributes": {
+   "vegan": true,
+   "vegetarian_capsule": false,
+   "gelatin": false,
+   "soy": false,
+   "carrageenan": false,
+   "gluten": false,
+   "fish": false,
+   "shellfish": false,
+   "animal_derived": false
+  },
+  "note": "200 mg per 2 tablets",
+  "gtin": null,
+  "npn": null,
+  "offers": [
+   {
+    "retailer": "amazon_ca",
+    "price": 21.6,
+    "currency": "CAD",
+    "in_stock": true,
+    "query": "Doctor's Best High Absorption Magnesium"
+   },
+   {
+    "retailer": "amazon_com",
+    "price": 15.77,
+    "currency": "USD",
+    "in_stock": true,
+    "query": "Doctor's Best High Absorption Magnesium"
+   },
+   {
+    "retailer": "iherb",
+    "price": 16.4,
+    "currency": "USD",
+    "in_stock": true,
+    "query": "Doctor's Best High Absorption Magnesium"
+   }
+  ],
+  "updated_at": "2026-10-01T00:00:00Z",
+  "source": "prototype spec section 7; demo prices"
+ },
+ {
+  "id": "gen-mgox",
+  "brand": "Generic",
+  "name": "Magnesium oxide 400 mg",
+  "form": "tablet",
+  "ingredients": [
+   {
+    "ingredient_id": "magnesium_oxide",
+    "amount": 400,
+    "unit": "mg"
+   }
+  ],
+  "units_per_serving": 1,
+  "servings_per_container": 120,
+  "certs": [],
+  "rating": 4.2,
+  "review_count": 3000,
+  "editorial": 0.1,
+  "attributes": {
+   "vegan": false,
+   "vegetarian_capsule": false,
+   "gelatin": false,
+   "soy": false,
+   "carrageenan": false,
+   "gluten": false,
+   "fish": false,
+   "shellfish": false,
+   "animal_derived": false
+  },
+  "note": "Cheapest form; poorly absorbed",
+  "gtin": null,
+  "npn": null,
+  "offers": [
+   {
+    "retailer": "amazon_ca",
+    "price": 7.2,
+    "currency": "CAD",
+    "in_stock": true,
+    "query": "Generic Magnesium oxide 400 mg"
+   },
+   {
+    "retailer": "amazon_com",
+    "price": 5.26,
+    "currency": "USD",
+    "in_stock": true,
+    "query": "Generic Magnesium oxide 400 mg"
+   },
+   {
+    "retailer": "iherb",
+    "price": 5.47,
+    "currency": "USD",
+    "in_stock": true,
+    "query": "Generic Magnesium oxide 400 mg"
+   }
+  ],
+  "updated_at": "2026-10-01T00:00:00Z",
+  "source": "prototype spec section 7; demo prices"
+ },
+ {
+  "id": "tl-ksm",
+  "brand": "Transparent Labs",
+  "name": "KSM-66 Ashwagandha",
+  "form": "capsule",
+  "ingredients": [
+   {
+    "ingredient_id": "ashwagandha_ksm66",
+    "amount": 600,
+    "unit": "mg"
+   }
+  ],
+  "units_per_serving": 1,
+  "servings_per_container": 60,
+  "certs": [
+   "KSM-66",
+   "Vegan",
+   "Third-party tested"
+  ],
+  "rating": 4.8,
+  "review_count": 1500,
+  "editorial": 0.95,
+  "attributes": {
+   "vegan": true,
+   "vegetarian_capsule": true,
+   "gelatin": false,
+   "soy": false,
+   "carrageenan": false,
+   "gluten": false,
+   "fish": false,
+   "shellfish": false,
+   "animal_derived": false
+  },
+  "note": "600 mg in one vegan capsule",
+  "gtin": null,
+  "npn": null,
+  "offers": [
+   {
+    "retailer": "amazon_ca",
+    "price": 18.0,
+    "currency": "CAD",
+    "in_stock": true,
+    "query": "Transparent Labs KSM-66 Ashwagandha"
+   },
+   {
+    "retailer": "amazon_com",
+    "price": 13.14,
+    "currency": "USD",
+    "in_stock": true,
+    "query": "Transparent Labs KSM-66 Ashwagandha"
+   },
+   {
+    "retailer": "iherb",
+    "price": 13.67,
+    "currency": "USD",
+    "in_stock": true,
+    "query": "Transparent Labs KSM-66 Ashwagandha"
+   },
+   {
+    "retailer": "transparent_labs",
+    "price": 13.8,
+    "currency": "USD",
+    "in_stock": true,
+    "sku": "ksm-66-ashwagandha"
+   }
+  ],
+  "updated_at": "2026-10-01T00:00:00Z",
+  "source": "prototype spec section 7; demo prices"
+ },
+ {
+  "id": "nc-ksm",
+  "brand": "Nutricost",
+  "name": "KSM-66 Ashwagandha 600 mg",
+  "form": "capsule",
+  "ingredients": [
+   {
+    "ingredient_id": "ashwagandha_ksm66",
+    "amount": 600,
+    "unit": "mg"
+   }
+  ],
+  "units_per_serving": 1,
+  "servings_per_container": 120,
+  "certs": [
+   "KSM-66",
+   "Third-party tested"
+  ],
+  "rating": 4.6,
+  "review_count": 12000,
+  "editorial": 0.6,
+  "attributes": {
+   "vegan": false,
+   "vegetarian_capsule": true,
+   "gelatin": false,
+   "soy": false,
+   "carrageenan": false,
+   "gluten": false,
+   "fish": false,
+   "shellfish": false,
+   "animal_derived": false
+  },
+  "note": "Amazon alternative",
+  "gtin": null,
+  "npn": null,
+  "offers": [
+   {
+    "retailer": "amazon_ca",
+    "price": 24.0,
+    "currency": "CAD",
+    "in_stock": true,
+    "query": "Nutricost KSM-66 Ashwagandha 600 mg"
+   },
+   {
+    "retailer": "amazon_com",
+    "price": 17.52,
+    "currency": "USD",
+    "in_stock": true,
+    "query": "Nutricost KSM-66 Ashwagandha 600 mg"
+   },
+   {
+    "retailer": "iherb",
+    "price": 18.22,
+    "currency": "USD",
+    "in_stock": true,
+    "query": "Nutricost KSM-66 Ashwagandha 600 mg"
+   }
+  ],
+  "updated_at": "2026-10-01T00:00:00Z",
+  "source": "prototype spec section 7; demo prices"
+ },
+ {
+  "id": "gen-ash-gummy",
+  "brand": "Generic",
+  "name": "Ashwagandha gummies",
+  "form": "gummy",
+  "ingredients": [
+   {
+    "ingredient_id": "ashwagandha_ksm66",
+    "amount": 300,
+    "unit": "mg"
+   }
+  ],
+  "units_per_serving": 2,
+  "servings_per_container": 30,
+  "certs": [],
+  "rating": 4.3,
+  "review_count": 7000,
+  "editorial": 0.2,
+  "attributes": {
+   "vegan": false,
+   "vegetarian_capsule": false,
+   "gelatin": true,
+   "soy": false,
+   "carrageenan": false,
+   "gluten": false,
+   "fish": false,
+   "shellfish": false,
+   "animal_derived": false
+  },
+  "note": "Gummy format",
+  "gtin": null,
+  "npn": null,
+  "offers": [
+   {
+    "retailer": "amazon_ca",
+    "price": 21.0,
+    "currency": "CAD",
+    "in_stock": true,
+    "query": "Generic Ashwagandha gummies"
+   },
+   {
+    "retailer": "amazon_com",
+    "price": 15.33,
+    "currency": "USD",
+    "in_stock": true,
+    "query": "Generic Ashwagandha gummies"
+   },
+   {
+    "retailer": "iherb",
+    "price": 15.94,
+    "currency": "USD",
+    "in_stock": true,
+    "query": "Generic Ashwagandha gummies"
+   }
+  ],
+  "updated_at": "2026-10-01T00:00:00Z",
+  "source": "prototype spec section 7; demo prices"
+ },
+ {
+  "id": "th-cur",
+  "brand": "Thorne",
+  "name": "Curcumin Phytosome (Meriva)",
+  "form": "capsule",
+  "ingredients": [
+   {
+    "ingredient_id": "curcumin_enhanced",
+    "amount": 500,
+    "unit": "mg"
+   }
+  ],
+  "units_per_serving": 1,
+  "servings_per_container": 60,
+  "certs": [
+   "NSF Certified for Sport"
+  ],
+  "rating": 4.6,
+  "review_count": 3300,
+  "editorial": 0.9,
+  "attributes": {
+   "vegan": false,
+   "vegetarian_capsule": true,
+   "gelatin": false,
+   "soy": false,
+   "carrageenan": false,
+   "gluten": false,
+   "fish": false,
+   "shellfish": false,
+   "animal_derived": false
+  },
+  "note": "Strongest absorption case",
+  "gtin": null,
+  "npn": null,
+  "offers": [
+   {
+    "retailer": "amazon_ca",
+    "price": 51.0,
+    "currency": "CAD",
+    "in_stock": false,
+    "query": "Thorne Curcumin Phytosome Meriva"
+   },
+   {
+    "retailer": "amazon_com",
+    "price": 37.23,
+    "currency": "USD",
+    "in_stock": false,
+    "query": "Thorne Curcumin Phytosome Meriva"
+   },
+   {
+    "retailer": "iherb",
+    "price": 38.72,
+    "currency": "USD",
+    "in_stock": false,
+    "query": "Thorne Curcumin Phytosome Meriva"
+   },
+   {
+    "retailer": "thorne",
+    "price": 39.09,
+    "currency": "USD",
+    "in_stock": false,
+    "sku": "curcumin-phytosome"
+   }
+  ],
+  "updated_at": "2026-10-01T00:00:00Z",
+  "source": "prototype spec section 7; demo prices"
+ },
+ {
+  "id": "now-cb",
+  "brand": "NOW",
+  "name": "CurcuBrain (Longvida)",
+  "form": "capsule",
+  "ingredients": [
+   {
+    "ingredient_id": "curcumin_enhanced",
+    "amount": 400,
+    "unit": "mg"
+   }
+  ],
+  "units_per_serving": 1,
+  "servings_per_container": 50,
+  "certs": [
+   "Informed Sport"
+  ],
+  "rating": 4.5,
+  "review_count": 2100,
+  "editorial": 0.7,
+  "attributes": {
+   "vegan": false,
+   "vegetarian_capsule": true,
+   "gelatin": false,
+   "soy": false,
+   "carrageenan": false,
+   "gluten": false,
+   "fish": false,
+   "shellfish": false,
+   "animal_derived": false
+  },
+  "note": "400 mg Longvida per capsule",
+  "gtin": null,
+  "npn": null,
+  "offers": [
+   {
+    "retailer": "amazon_ca",
+    "price": 19.0,
+    "currency": "CAD",
+    "in_stock": true,
+    "query": "NOW CurcuBrain Longvida"
+   },
+   {
+    "retailer": "amazon_com",
+    "price": 13.87,
+    "currency": "USD",
+    "in_stock": true,
+    "query": "NOW CurcuBrain Longvida"
+   },
+   {
+    "retailer": "iherb",
+    "price": 14.42,
+    "currency": "USD",
+    "in_stock": true,
+    "query": "NOW CurcuBrain Longvida"
+   }
+  ],
+  "updated_at": "2026-10-01T00:00:00Z",
+  "source": "prototype spec section 7; demo prices"
+ },
+ {
+  "id": "gen-turm",
+  "brand": "Generic",
+  "name": "Turmeric root capsules",
+  "form": "capsule",
+  "ingredients": [
+   {
+    "ingredient_id": "turmeric_root",
+    "amount": 500,
+    "unit": "mg"
+   }
+  ],
+  "units_per_serving": 2,
+  "servings_per_container": 50,
+  "certs": [],
+  "rating": 4.4,
+  "review_count": 9000,
+  "editorial": 0.1,
+  "attributes": {
+   "vegan": false,
+   "vegetarian_capsule": false,
+   "gelatin": true,
+   "soy": false,
+   "carrageenan": false,
+   "gluten": false,
+   "fish": false,
+   "shellfish": false,
+   "animal_derived": false
+  },
+  "note": "Plain turmeric is poorly absorbed",
+  "gtin": null,
+  "npn": null,
+  "offers": [
+   {
+    "retailer": "amazon_ca",
+    "price": 12.0,
+    "currency": "CAD",
+    "in_stock": true,
+    "query": "Generic Turmeric root capsules"
+   },
+   {
+    "retailer": "amazon_com",
+    "price": 8.76,
+    "currency": "USD",
+    "in_stock": true,
+    "query": "Generic Turmeric root capsules"
+   },
+   {
+    "retailer": "iherb",
+    "price": 9.11,
+    "currency": "USD",
+    "in_stock": true,
+    "query": "Generic Turmeric root capsules"
+   }
+  ],
+  "updated_at": "2026-10-01T00:00:00Z",
+  "source": "prototype spec section 7; demo prices"
+ },
+ {
+  "id": "th-fe",
+  "brand": "Thorne",
+  "name": "Iron Bisglycinate",
+  "form": "capsule",
+  "ingredients": [
+   {
+    "ingredient_id": "iron_bisglycinate",
+    "amount": 25,
+    "unit": "mg"
+   }
+  ],
+  "units_per_serving": 1,
+  "servings_per_container": 60,
+  "certs": [
+   "NSF Certified for Sport"
+  ],
+  "rating": 4.7,
+  "review_count": 6300,
+  "editorial": 0.9,
+  "attributes": {
+   "vegan": false,
+   "vegetarian_capsule": true,
+   "gelatin": false,
+   "soy": false,
+   "carrageenan": false,
+   "gluten": false,
+   "fish": false,
+   "shellfish": false,
+   "animal_derived": false
+  },
+  "note": "25 mg, gentle on the stomach",
+  "gtin": null,
+  "npn": null,
+  "offers": [
+   {
+    "retailer": "amazon_ca",
+    "price": 9.0,
+    "currency": "CAD",
+    "in_stock": true,
+    "query": "Thorne Iron Bisglycinate"
+   },
+   {
+    "retailer": "amazon_com",
+    "price": 6.57,
+    "currency": "USD",
+    "in_stock": true,
+    "query": "Thorne Iron Bisglycinate"
+   },
+   {
+    "retailer": "iherb",
+    "price": 6.83,
+    "currency": "USD",
+    "in_stock": true,
+    "query": "Thorne Iron Bisglycinate"
+   },
+   {
+    "retailer": "thorne",
+    "price": 6.9,
+    "currency": "USD",
+    "in_stock": true,
+    "sku": "iron-bisglycinate"
+   }
+  ],
+  "updated_at": "2026-10-01T00:00:00Z",
+  "source": "prototype spec section 7; demo prices"
+ },
+ {
+  "id": "gen-fes",
+  "brand": "Generic",
+  "name": "Ferrous sulfate 300 mg",
+  "form": "tablet",
+  "ingredients": [
+   {
+    "ingredient_id": "iron_sulfate",
+    "amount": 60,
+    "unit": "mg"
+   }
+  ],
+  "units_per_serving": 1,
+  "servings_per_container": 100,
+  "certs": [],
+  "rating": 4.3,
+  "review_count": 2000,
+  "editorial": 0.1,
+  "attributes": {
+   "vegan": false,
+   "vegetarian_capsule": false,
+   "gelatin": false,
+   "soy": false,
+   "carrageenan": false,
+   "gluten": false,
+   "fish": false,
+   "shellfish": false,
+   "animal_derived": false
+  },
+  "note": "Harder on the stomach at the same dose",
+  "gtin": null,
+  "npn": null,
+  "offers": [
+   {
+    "retailer": "amazon_ca",
+    "price": 4.0,
+    "currency": "CAD",
+    "in_stock": true,
+    "query": "Generic Ferrous sulfate 300 mg"
+   },
+   {
+    "retailer": "amazon_com",
+    "price": 2.92,
+    "currency": "USD",
+    "in_stock": true,
+    "query": "Generic Ferrous sulfate 300 mg"
+   },
+   {
+    "retailer": "iherb",
+    "price": 3.04,
+    "currency": "USD",
+    "in_stock": true,
+    "query": "Generic Ferrous sulfate 300 mg"
+   }
+  ],
+  "updated_at": "2026-10-01T00:00:00Z",
+  "source": "prototype spec section 7; demo prices"
+ },
+ {
+  "id": "now-mel",
+  "brand": "NOW",
+  "name": "Melatonin 1 mg",
+  "form": "tablet",
+  "ingredients": [
+   {
+    "ingredient_id": "melatonin",
+    "amount": 1,
+    "unit": "mg"
+   }
+  ],
+  "units_per_serving": 1,
+  "servings_per_container": 100,
+  "certs": [
+   "GMP certified"
+  ],
+  "rating": 4.6,
+  "review_count": 11000,
+  "editorial": 0.6,
+  "attributes": {
+   "vegan": true,
+   "vegetarian_capsule": false,
+   "gelatin": false,
+   "soy": false,
+   "carrageenan": false,
+   "gluten": false,
+   "fish": false,
+   "shellfish": false,
+   "animal_derived": false
+  },
+  "note": "Low dose",
+  "gtin": null,
+  "npn": null,
+  "offers": [
+   {
+    "retailer": "amazon_ca",
+    "price": 8.0,
+    "currency": "CAD",
+    "in_stock": true,
+    "query": "NOW Melatonin 1 mg"
+   },
+   {
+    "retailer": "amazon_com",
+    "price": 5.84,
+    "currency": "USD",
+    "in_stock": true,
+    "query": "NOW Melatonin 1 mg"
+   },
+   {
+    "retailer": "iherb",
+    "price": 6.07,
+    "currency": "USD",
+    "in_stock": true,
+    "query": "NOW Melatonin 1 mg"
+   }
+  ],
+  "updated_at": "2026-10-01T00:00:00Z",
+  "source": "prototype spec section 7; demo prices"
+ },
+ {
+  "id": "jam-mel",
+  "brand": "Jamieson",
+  "name": "Melatonin 3 mg",
+  "form": "tablet",
+  "ingredients": [
+   {
+    "ingredient_id": "melatonin",
+    "amount": 3,
+    "unit": "mg"
+   }
+  ],
+  "units_per_serving": 1,
+  "servings_per_container": 100,
+  "certs": [
+   "NPN"
+  ],
+  "rating": 4.5,
+  "review_count": 6000,
+  "editorial": 0.5,
+  "attributes": {
+   "vegan": true,
+   "vegetarian_capsule": false,
+   "gelatin": false,
+   "soy": false,
+   "carrageenan": false,
+   "gluten": false,
+   "fish": false,
+   "shellfish": false,
+   "animal_derived": false
+  },
+  "note": "Canadian brand; 3 mg",
+  "gtin": null,
+  "npn": null,
+  "offers": [
+   {
+    "retailer": "amazon_ca",
+    "price": 9.0,
+    "currency": "CAD",
+    "in_stock": true,
+    "query": "Jamieson Melatonin 3 mg"
+   },
+   {
+    "retailer": "amazon_com",
+    "price": 6.57,
+    "currency": "USD",
+    "in_stock": true,
+    "query": "Jamieson Melatonin 3 mg"
+   },
+   {
+    "retailer": "iherb",
+    "price": 6.83,
+    "currency": "USD",
+    "in_stock": true,
+    "query": "Jamieson Melatonin 3 mg"
+   }
+  ],
+  "updated_at": "2026-10-01T00:00:00Z",
+  "source": "prototype spec section 7; demo prices"
+ },
+ {
+  "id": "now-sjw",
+  "brand": "NOW",
+  "name": "St. John's Wort",
+  "form": "capsule",
+  "ingredients": [
+   {
+    "ingredient_id": "st_johns_wort",
+    "amount": 300,
+    "unit": "mg"
+   }
+  ],
+  "units_per_serving": 1,
+  "servings_per_container": 100,
+  "certs": [
+   "GMP certified"
+  ],
+  "rating": 4.4,
+  "review_count": 3000,
+  "editorial": 0.5,
+  "attributes": {
+   "vegan": false,
+   "vegetarian_capsule": true,
+   "gelatin": false,
+   "soy": false,
+   "carrageenan": false,
+   "gluten": false,
+   "fish": false,
+   "shellfish": false,
+   "animal_derived": false
+  },
+  "note": "Standardised extract",
+  "gtin": null,
+  "npn": null,
+  "offers": [
+   {
+    "retailer": "amazon_ca",
+    "price": 15.0,
+    "currency": "CAD",
+    "in_stock": true,
+    "query": "NOW St. John's Wort"
+   },
+   {
+    "retailer": "amazon_com",
+    "price": 10.95,
+    "currency": "USD",
+    "in_stock": true,
+    "query": "NOW St. John's Wort"
+   },
+   {
+    "retailer": "iherb",
+    "price": 11.39,
+    "currency": "USD",
+    "in_stock": true,
+    "query": "NOW St. John's Wort"
+   }
+  ],
+  "updated_at": "2026-10-01T00:00:00Z",
+  "source": "prototype spec section 7; demo prices"
+ },
+ {
+  "id": "vp-col",
+  "brand": "Vital Proteins",
+  "name": "Collagen Peptides",
+  "form": "powder",
+  "ingredients": [
+   {
+    "ingredient_id": "collagen_peptides",
+    "amount": 10,
+    "unit": "g"
+   }
+  ],
+  "units_per_serving": 1,
+  "servings_per_container": 28,
+  "certs": [
+   "Third-party tested"
+  ],
+  "rating": 4.6,
+  "review_count": 90000,
+  "editorial": 0.6,
+  "attributes": {
+   "vegan": false,
+   "vegetarian_capsule": false,
+   "gelatin": false,
+   "soy": false,
+   "carrageenan": false,
+   "gluten": false,
+   "fish": false,
+   "shellfish": false,
+   "animal_derived": true
+  },
+  "note": "Bovine collagen",
+  "gtin": null,
+  "npn": null,
+  "offers": [
+   {
+    "retailer": "amazon_ca",
+    "price": 45.0,
+    "currency": "CAD",
+    "in_stock": true,
+    "query": "Vital Proteins Collagen Peptides"
+   },
+   {
+    "retailer": "amazon_com",
+    "price": 32.85,
+    "currency": "USD",
+    "in_stock": true,
+    "query": "Vital Proteins Collagen Peptides"
+   },
+   {
+    "retailer": "iherb",
+    "price": 34.16,
+    "currency": "USD",
+    "in_stock": true,
+    "query": "Vital Proteins Collagen Peptides"
+   }
+  ],
+  "updated_at": "2026-10-01T00:00:00Z",
+  "source": "prototype spec section 7; demo prices"
+ },
+ {
+  "id": "sr-lth",
+  "brand": "Sports Research",
+  "name": "L-Theanine 200 mg",
+  "form": "capsule",
+  "ingredients": [
+   {
+    "ingredient_id": "l_theanine",
+    "amount": 200,
+    "unit": "mg"
+   }
+  ],
+  "units_per_serving": 1,
+  "servings_per_container": 60,
+  "certs": [
+   "Third-party tested"
+  ],
+  "rating": 4.6,
+  "review_count": 5000,
+  "editorial": 0.6,
+  "attributes": {
+   "vegan": false,
+   "vegetarian_capsule": true,
+   "gelatin": false,
+   "soy": false,
+   "carrageenan": false,
+   "gluten": false,
+   "fish": false,
+   "shellfish": false,
+   "animal_derived": false
+  },
+  "note": "Suntheanine",
+  "gtin": null,
+  "npn": null,
+  "offers": [
+   {
+    "retailer": "amazon_ca",
+    "price": 22.0,
+    "currency": "CAD",
+    "in_stock": true,
+    "query": "Sports Research L-Theanine 200 mg"
+   },
+   {
+    "retailer": "amazon_com",
+    "price": 16.06,
+    "currency": "USD",
+    "in_stock": true,
+    "query": "Sports Research L-Theanine 200 mg"
+   },
+   {
+    "retailer": "iherb",
+    "price": 16.7,
+    "currency": "USD",
+    "in_stock": true,
+    "query": "Sports Research L-Theanine 200 mg"
+   }
+  ],
+  "updated_at": "2026-10-01T00:00:00Z",
+  "source": "prototype spec section 7; demo prices"
+ },
+ {
+  "id": "now-gly",
+  "brand": "NOW",
+  "name": "Glycine powder",
+  "form": "powder",
+  "ingredients": [
+   {
+    "ingredient_id": "glycine",
+    "amount": 3,
+    "unit": "g"
+   }
+  ],
+  "units_per_serving": 1,
+  "servings_per_container": 150,
+  "certs": [
+   "GMP certified"
+  ],
+  "rating": 4.6,
+  "review_count": 4000,
+  "editorial": 0.6,
+  "attributes": {
+   "vegan": true,
+   "vegetarian_capsule": false,
+   "gelatin": false,
+   "soy": false,
+   "carrageenan": false,
+   "gluten": false,
+   "fish": false,
+   "shellfish": false,
+   "animal_derived": false
+  },
+  "note": "Pure powder",
+  "gtin": null,
+  "npn": null,
+  "offers": [
+   {
+    "retailer": "amazon_ca",
+    "price": 20.0,
+    "currency": "CAD",
+    "in_stock": true,
+    "query": "NOW Glycine powder"
+   },
+   {
+    "retailer": "amazon_com",
+    "price": 14.6,
+    "currency": "USD",
+    "in_stock": true,
+    "query": "NOW Glycine powder"
+   },
+   {
+    "retailer": "iherb",
+    "price": 15.18,
+    "currency": "USD",
+    "in_stock": true,
+    "query": "NOW Glycine powder"
+   }
+  ],
+  "updated_at": "2026-10-01T00:00:00Z",
+  "source": "prototype spec section 7; demo prices"
+ },
+ {
+  "id": "now-vc",
+  "brand": "NOW",
+  "name": "Vitamin C-500",
+  "form": "capsule",
+  "ingredients": [
+   {
+    "ingredient_id": "vitamin_c",
+    "amount": 500,
+    "unit": "mg"
+   }
+  ],
+  "units_per_serving": 1,
+  "servings_per_container": 100,
+  "certs": [
+   "GMP certified"
+  ],
+  "rating": 4.7,
+  "review_count": 8000,
+  "editorial": 0.6,
+  "attributes": {
+   "vegan": false,
+   "vegetarian_capsule": true,
+   "gelatin": false,
+   "soy": false,
+   "carrageenan": false,
+   "gluten": false,
+   "fish": false,
+   "shellfish": false,
+   "animal_derived": false
+  },
+  "note": "Buffered",
+  "gtin": null,
+  "npn": null,
+  "offers": [
+   {
+    "retailer": "amazon_ca",
+    "price": 10.0,
+    "currency": "CAD",
+    "in_stock": true,
+    "query": "NOW Vitamin C-500"
+   },
+   {
+    "retailer": "amazon_com",
+    "price": 7.3,
+    "currency": "USD",
+    "in_stock": true,
+    "query": "NOW Vitamin C-500"
+   },
+   {
+    "retailer": "iherb",
+    "price": 7.59,
+    "currency": "USD",
+    "in_stock": true,
+    "query": "NOW Vitamin C-500"
+   }
+  ],
+  "updated_at": "2026-10-01T00:00:00Z",
+  "source": "prototype spec section 7; demo prices"
+ },
+ {
+  "id": "th-zn",
+  "brand": "Thorne",
+  "name": "Zinc Picolinate 15 mg",
+  "form": "capsule",
+  "ingredients": [
+   {
+    "ingredient_id": "zinc",
+    "amount": 15,
+    "unit": "mg"
+   }
+  ],
+  "units_per_serving": 1,
+  "servings_per_container": 60,
+  "certs": [
+   "NSF Certified for Sport"
+  ],
+  "rating": 4.7,
+  "review_count": 6000,
+  "editorial": 0.8,
+  "attributes": {
+   "vegan": false,
+   "vegetarian_capsule": true,
+   "gelatin": false,
+   "soy": false,
+   "carrageenan": false,
+   "gluten": false,
+   "fish": false,
+   "shellfish": false,
+   "animal_derived": false
+  },
+  "note": "Well-absorbed form",
+  "gtin": null,
+  "npn": null,
+  "offers": [
+   {
+    "retailer": "amazon_ca",
+    "price": 13.0,
+    "currency": "CAD",
+    "in_stock": true,
+    "query": "Thorne Zinc Picolinate 15 mg"
+   },
+   {
+    "retailer": "amazon_com",
+    "price": 9.49,
+    "currency": "USD",
+    "in_stock": true,
+    "query": "Thorne Zinc Picolinate 15 mg"
+   },
+   {
+    "retailer": "iherb",
+    "price": 9.87,
+    "currency": "USD",
+    "in_stock": true,
+    "query": "Thorne Zinc Picolinate 15 mg"
+   },
+   {
+    "retailer": "thorne",
+    "price": 9.96,
+    "currency": "USD",
+    "in_stock": true,
+    "sku": "zinc-picolinate"
+   }
+  ],
+  "updated_at": "2026-10-01T00:00:00Z",
+  "source": "prototype spec section 7; demo prices"
+ },
+ {
+  "id": "th-fol",
+  "brand": "Thorne",
+  "name": "5-MTHF 1 mg",
+  "form": "capsule",
+  "ingredients": [
+   {
+    "ingredient_id": "methylfolate",
+    "amount": 1000,
+    "unit": "mcg"
+   }
+  ],
+  "units_per_serving": 1,
+  "servings_per_container": 60,
+  "certs": [
+   "NSF Certified for Sport"
+  ],
+  "rating": 4.7,
+  "review_count": 3000,
+  "editorial": 0.8,
+  "attributes": {
+   "vegan": false,
+   "vegetarian_capsule": true,
+   "gelatin": false,
+   "soy": false,
+   "carrageenan": false,
+   "gluten": false,
+   "fish": false,
+   "shellfish": false,
+   "animal_derived": false
+  },
+  "note": "Active folate",
+  "gtin": null,
+  "npn": null,
+  "offers": [
+   {
+    "retailer": "amazon_ca",
+    "price": 24.0,
+    "currency": "CAD",
+    "in_stock": true,
+    "query": "Thorne 5-MTHF 1 mg"
+   },
+   {
+    "retailer": "amazon_com",
+    "price": 17.52,
+    "currency": "USD",
+    "in_stock": true,
+    "query": "Thorne 5-MTHF 1 mg"
+   },
+   {
+    "retailer": "iherb",
+    "price": 18.22,
+    "currency": "USD",
+    "in_stock": true,
+    "query": "Thorne 5-MTHF 1 mg"
+   },
+   {
+    "retailer": "thorne",
+    "price": 18.4,
+    "currency": "USD",
+    "in_stock": true,
+    "sku": "5-mthf-1-mg"
+   }
+  ],
+  "updated_at": "2026-10-01T00:00:00Z",
+  "source": "prototype spec section 7; demo prices"
+ },
+ {
+  "id": "jam-fol",
+  "brand": "Jamieson",
+  "name": "Folic Acid 400 mcg",
+  "form": "tablet",
+  "ingredients": [
+   {
+    "ingredient_id": "methylfolate",
+    "amount": 400,
+    "unit": "mcg"
+   }
+  ],
+  "units_per_serving": 1,
+  "servings_per_container": 90,
+  "certs": [
+   "NPN"
+  ],
+  "rating": 4.6,
+  "review_count": 2000,
+  "editorial": 0.6,
+  "attributes": {
+   "vegan": true,
+   "vegetarian_capsule": false,
+   "gelatin": false,
+   "soy": false,
+   "carrageenan": false,
+   "gluten": false,
+   "fish": false,
+   "shellfish": false,
+   "animal_derived": false
+  },
+  "note": "Prenatal dose",
+  "gtin": null,
+  "npn": null,
+  "offers": [
+   {
+    "retailer": "amazon_ca",
+    "price": 7.0,
+    "currency": "CAD",
+    "in_stock": true,
+    "query": "Jamieson Folic Acid 400 mcg"
+   },
+   {
+    "retailer": "amazon_com",
+    "price": 5.11,
+    "currency": "USD",
+    "in_stock": true,
+    "query": "Jamieson Folic Acid 400 mcg"
+   },
+   {
+    "retailer": "iherb",
+    "price": 5.31,
+    "currency": "USD",
+    "in_stock": true,
+    "query": "Jamieson Folic Acid 400 mcg"
+   }
+  ],
+  "updated_at": "2026-10-01T00:00:00Z",
+  "source": "prototype spec section 7; demo prices"
+ },
+ {
+  "id": "now-iod",
+  "brand": "NOW",
+  "name": "Potassium Iodide 150 mcg",
+  "form": "tablet",
+  "ingredients": [
+   {
+    "ingredient_id": "iodine",
+    "amount": 150,
+    "unit": "mcg"
+   }
+  ],
+  "units_per_serving": 1,
+  "servings_per_container": 120,
+  "certs": [
+   "GMP certified"
+  ],
+  "rating": 4.5,
+  "review_count": 2500,
+  "editorial": 0.5,
+  "attributes": {
+   "vegan": true,
+   "vegetarian_capsule": false,
+   "gelatin": false,
+   "soy": false,
+   "carrageenan": false,
+   "gluten": false,
+   "fish": false,
+   "shellfish": false,
+   "animal_derived": false
+  },
+  "note": "Prenatal dose",
+  "gtin": null,
+  "npn": null,
+  "offers": [
+   {
+    "retailer": "amazon_ca",
+    "price": 8.0,
+    "currency": "CAD",
+    "in_stock": true,
+    "query": "NOW Potassium Iodide 150 mcg"
+   },
+   {
+    "retailer": "amazon_com",
+    "price": 5.84,
+    "currency": "USD",
+    "in_stock": true,
+    "query": "NOW Potassium Iodide 150 mcg"
+   },
+   {
+    "retailer": "iherb",
+    "price": 6.07,
+    "currency": "USD",
+    "in_stock": true,
+    "query": "NOW Potassium Iodide 150 mcg"
+   }
+  ],
+  "updated_at": "2026-10-01T00:00:00Z",
+  "source": "prototype spec section 7; demo prices"
+ }
+]

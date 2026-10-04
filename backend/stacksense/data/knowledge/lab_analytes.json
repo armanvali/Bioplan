@@ -1,0 +1,44 @@
+[
+  {
+    "id": "ferritin", "name": "Ferritin", "unit": "µg/L", "aliases": ["ug/L", "ng/mL"], "signal": "low_iron_risk", "ingredient_id": "iron_bisglycinate",
+    "ranges": [
+      { "lt": 15, "status": "very_low", "p": 0.97, "action": "dose", "dose_level": "typical", "text": "very low" },
+      { "lt": 30, "status": "low", "p": 0.92, "action": "dose", "dose_level": "typical", "text": "low" },
+      { "lt": 50, "status": "borderline", "p": 0.5, "action": "exclude", "text": "borderline", "reason": "Ferritin {value} µg/L is borderline. Food first, then retest in 3 months." },
+      { "lt": null, "status": "normal", "p": 0.03, "action": "exclude", "text": "normal", "reason": "Your ferritin ({value} µg/L) is normal, so iron would not help." }
+    ],
+    "retest_days": 90,
+    "source": "NIH ODS Iron; Canadian Family Physician 2019 ferritin thresholds"
+  },
+  {
+    "id": "b12", "name": "Vitamin B12", "unit": "pmol/L", "aliases": [], "signal": "b12_risk", "ingredient_id": "vitamin_b12",
+    "ranges": [
+      { "lt": 150, "status": "low", "p": 0.95, "action": "dose", "dose_level": "typical", "text": "low" },
+      { "lt": 220, "status": "borderline", "p": 0.7, "action": "dose", "dose_level": "typical", "text": "borderline" },
+      { "lt": null, "status": "normal", "p": 0.15, "action": "keep", "text": "normal" }
+    ],
+    "retest_days": 180,
+    "source": "NIH ODS Vitamin B12"
+  },
+  {
+    "id": "vitamin_d_25oh", "name": "Vitamin D (25-OH-D)", "unit": "nmol/L", "aliases": [], "signal": "vitamin_d_risk", "ingredient_id": "vitamin_d3_k2",
+    "ranges": [
+      { "lt": 30, "status": "deficient", "p": 0.98, "action": "dose", "dose_level": "lab_max", "text": "deficient" },
+      { "lt": 50, "status": "insufficient", "p": 0.9, "action": "dose", "dose_level": "lab_max", "text": "insufficient" },
+      { "lt": 125, "status": "sufficient", "p": 0.4, "action": "dose", "dose_level": "min", "text": "sufficient" },
+      { "lt": null, "status": "high", "p": 0.02, "action": "exclude", "text": "high", "reason": "Your vitamin D ({value} nmol/L) is already high, so we won't add more." }
+    ],
+    "retest_days": 120,
+    "source": "IOM 2011; Health Canada"
+  },
+  {
+    "id": "tsh", "name": "TSH", "unit": "mIU/L", "aliases": [], "signal": null, "ingredient_id": "iodine",
+    "ranges": [
+      { "lt": 0.4, "status": "low", "p": null, "action": "exclude", "text": "low", "reason": "Your TSH is outside the usual range; ask your doctor before adding iodine." },
+      { "lt": 4.0, "status": "normal", "p": null, "action": "dose", "dose_level": "typical", "text": "normal" },
+      { "lt": null, "status": "high", "p": null, "action": "exclude", "text": "high", "reason": "Your TSH is outside the usual range; ask your doctor before adding iodine." }
+    ],
+    "retest_days": 365,
+    "source": "NIH ODS Iodine"
+  }
+]

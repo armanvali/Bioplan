@@ -1,0 +1,23 @@
+[
+  {
+    "id": "pregnancy", "label": "Pregnancy-safe library",
+    "when": "facts.pregnancy in ['pregnant', 'trying', 'breastfeeding']",
+    "allowed": ["methylfolate", "vitamin_d3_k2", "vitamin_d3", "omega3_algae", "omega3_fish", "vitamin_b12", "iron_bisglycinate", "iodine"],
+    "banner": "You told us you're pregnant, planning or breastfeeding, so we only consider a small pregnancy-safe list. Please review it with your prenatal care provider.",
+    "source": "Health Canada prenatal nutrition guidelines"
+  },
+  {
+    "id": "kidney", "label": "Kidney-safe library",
+    "when": "facts.conditions contains 'kidney'",
+    "allowed": ["vitamin_b12", "omega3_algae", "omega3_fish"],
+    "banner": "Kidney disease changes how your body handles minerals and vitamin D, so we only consider a short list. Please check it with your nephrologist or pharmacist.",
+    "source": "editorial (clinical review pending)"
+  },
+  {
+    "id": "liver", "label": "Liver-safe library",
+    "when": "facts.conditions contains 'liver'",
+    "allowed": ["vitamin_b12", "omega3_algae", "omega3_fish", "vitamin_d3_k2", "vitamin_d3", "magnesium_bisglycinate"],
+    "banner": "Liver disease changes how your body handles herbs and some vitamins, so we only consider a short list. Please check it with your doctor.",
+    "source": "LiverTox; editorial (clinical review pending)"
+  }
+]

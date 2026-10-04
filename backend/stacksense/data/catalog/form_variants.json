@@ -1,0 +1,5 @@
+[
+  { "variant": "magnesium_oxide", "of": "magnesium_bisglycinate", "reason": "Poorly absorbed form that often upsets the stomach", "source": "NIH ODS Magnesium" },
+  { "variant": "turmeric_root", "of": "curcumin_enhanced", "reason": "Plain turmeric is poorly absorbed", "source": "NIH NCCIH Turmeric" },
+  { "variant": "iron_sulfate", "of": "iron_bisglycinate", "reason": "Harder on the stomach at the same dose", "source": "NIH ODS Iron" }
+]

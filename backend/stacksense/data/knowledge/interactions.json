@@ -1,0 +1,23 @@
+[
+  { "id": "ix_fe_mg", "a": "iron_bisglycinate", "b": "magnesium_bisglycinate", "severity": "timing", "mechanism": "Minerals compete for absorption.", "spacing_hours": 2, "source": "NIH ODS Iron" },
+  { "id": "ix_fe_zn", "a": "iron_bisglycinate", "b": "zinc", "severity": "timing", "mechanism": "Iron and zinc compete for absorption.", "spacing_hours": 2, "source": "NIH ODS Zinc" },
+  { "id": "ix_zn_mg", "a": "zinc", "b": "magnesium_bisglycinate", "severity": "timing", "mechanism": "High-dose minerals compete for absorption.", "spacing_hours": 2, "source": "NIH ODS Magnesium" },
+  { "id": "ix_fe_vc", "a": "iron_bisglycinate", "b": "vitamin_c", "severity": "synergy", "mechanism": "Vitamin C raises iron absorption.", "synergy": { "energy": 0.3 }, "source": "NIH ODS Iron" },
+  { "id": "ix_ash_mel", "a": "ashwagandha_ksm66", "b": "melatonin", "severity": "moderate", "mechanism": "Both can cause drowsiness.", "warning": "Both can make you drowsy; take them at bedtime only.", "source": "Health Canada monographs" },
+  { "id": "ix_lth_ash", "a": "l_theanine", "b": "ashwagandha_ksm66", "severity": "moderate", "mechanism": "Additive calming effect.", "warning": "Both are calming; start one at a time.", "source": "editorial" },
+
+  { "id": "ix_fe_thyroid", "a": "iron_bisglycinate", "b": "drug:thyroid_hormone", "severity": "timing", "mechanism": "Iron blocks thyroid hormone absorption.", "spacing_hours": 4, "source": "Levothyroxine product monograph" },
+  { "id": "ix_mg_thyroid", "a": "magnesium_bisglycinate", "b": "drug:thyroid_hormone", "severity": "timing", "mechanism": "Magnesium blocks thyroid hormone absorption.", "spacing_hours": 4, "source": "Levothyroxine product monograph" },
+  { "id": "ix_mg_abx", "a": "magnesium_bisglycinate", "b": "drug:antibiotic_chelating", "severity": "timing", "mechanism": "Magnesium binds some antibiotics.", "spacing_hours": 2, "source": "NIH ODS Magnesium" },
+  { "id": "ix_zn_abx", "a": "zinc", "b": "drug:antibiotic_chelating", "severity": "timing", "mechanism": "Zinc binds some antibiotics.", "spacing_hours": 2, "source": "NIH ODS Zinc" },
+  { "id": "ix_fe_abx", "a": "iron_bisglycinate", "b": "drug:antibiotic_chelating", "severity": "timing", "mechanism": "Iron binds some antibiotics.", "spacing_hours": 2, "source": "NIH ODS Iron" },
+  { "id": "ix_fe_ppi", "a": "iron_bisglycinate", "b": "drug:ppi", "severity": "moderate", "mechanism": "Acid reducers lower iron absorption.", "warning": "Acid reducers lower iron absorption; your doctor may want to recheck ferritin sooner.", "source": "NIH ODS Iron" },
+  { "id": "ix_o3a_anticoag", "a": "omega3_algae", "b": "drug:anticoagulant", "severity": "moderate", "mechanism": "High doses may add to bleeding risk.", "warning": "Omega-3 can add to your blood thinner at high doses; we keep you at a standard dose.", "source": "NIH ODS Omega-3" },
+  { "id": "ix_o3f_anticoag", "a": "omega3_fish", "b": "drug:anticoagulant", "severity": "moderate", "mechanism": "High doses may add to bleeding risk.", "warning": "Omega-3 can add to your blood thinner at high doses; we keep you at a standard dose.", "source": "NIH ODS Omega-3" },
+  { "id": "ix_ash_sed", "a": "ashwagandha_ksm66", "b": "drug:sedative", "severity": "moderate", "mechanism": "Additive drowsiness.", "warning": "Can add to drowsiness from your sedative; check with your pharmacist.", "source": "Health Canada monograph: Ashwagandha" },
+  { "id": "ix_mel_sed", "a": "melatonin", "b": "drug:sedative", "severity": "moderate", "mechanism": "Additive drowsiness.", "warning": "Can add to drowsiness from your sedative.", "source": "Health Canada monograph: Melatonin" },
+  { "id": "ix_mel_anticoag", "a": "melatonin", "b": "drug:anticoagulant", "severity": "moderate", "mechanism": "May affect clotting.", "warning": "Melatonin may affect clotting; check with your pharmacist.", "source": "Health Canada monograph: Melatonin" },
+  { "id": "ix_lth_sed", "a": "l_theanine", "b": "drug:sedative", "severity": "moderate", "mechanism": "Additive calming.", "warning": "May add to your sedative.", "source": "Health Canada monograph: L-Theanine" },
+  { "id": "ix_mel_ssri", "a": "melatonin", "b": "drug:ssri", "severity": "moderate", "mechanism": "Fluvoxamine raises melatonin levels.", "warning": "Some antidepressants raise melatonin levels; use the lowest dose.", "source": "Health Canada monograph: Melatonin" },
+  { "id": "ix_b12_metformin", "a": "vitamin_b12", "b": "drug:b12_depleting", "severity": "info", "mechanism": "Metformin and acid reducers lower B12 absorption.", "warning": "Your medicine lowers B12 absorption, which is part of why B12 is in your stack.", "source": "NIH ODS Vitamin B12" }
+]
