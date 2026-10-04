@@ -1,0 +1,20 @@
+{
+  "name": "StackSense",
+  "image": "mcr.microsoft.com/devcontainers/python:1-3.12-bookworm",
+  "features": {
+    "ghcr.io/devcontainers/features/node:1": { "version": "22" }
+  },
+  "hostRequirements": { "cpus": 2, "memory": "4gb" },
+  "forwardPorts": [3000, 3001],
+  "portsAttributes": {
+    "3000": { "label": "StackSense app", "onAutoForward": "openBrowser" },
+    "3001": { "label": "Admin console", "onAutoForward": "notify" },
+    "8000": { "label": "API", "onAutoForward": "silent" }
+  },
+  "postCreateCommand": "bash .devcontainer/setup.sh",
+  "postStartCommand": "bash .devcontainer/start.sh",
+  "customizations": {
+    "codespaces": { "openFiles": ["README.md"] },
+    "vscode": { "extensions": ["ms-python.python", "charliermarsh.ruff", "bradlc.vscode-tailwindcss"] }
+  }
+}

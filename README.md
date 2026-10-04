@@ -23,6 +23,11 @@ docs/       Spec, architecture notes, roadmap
 
 ## Quick start
 
+**In your browser, nothing to install:** [open in GitHub Codespaces](https://codespaces.new/armanvali/Bioplan/tree/claude/sleepy-dirac-o66y7u?quickstart=1).
+Setup takes a few minutes the first time (`.devcontainer/setup.sh`). After that the app opens on
+the forwarded port 3000; the admin console is on port 3001 (see the **Ports** tab). Forwarded
+ports are private to your GitHub account unless you make them public.
+
 **Docker (everything, on Postgres and Redis):**
 
 ```sh
