@@ -202,6 +202,19 @@ def test_release_workflow_end_to_end(client, session):
     assert export.status_code == 200 and "release.publish" in export.text
 
 
+def test_audit_log_is_append_only_in_the_database(client, session):
+    import sqlalchemy.exc
+
+    admin_login(client, "admin@stacksense.dev")
+    client.post("/admin/v1/engine/releases", json={"kind": "rules"}, headers=admin_login(client, "editor@stacksense.dev"))
+    row = session.scalar(select(AuditLog).limit(1))
+    assert row is not None
+    for stmt in (sqlalchemy.update(AuditLog).values(reason="x"), sqlalchemy.delete(AuditLog)):
+        with pytest.raises(sqlalchemy.exc.DatabaseError, match="append-only"):
+            session.execute(stmt)
+        session.rollback()
+
+
 def test_unsafe_edit_fails_checks_and_cannot_be_submitted(client):
     ed = admin_login(client, "editor@stacksense.dev")
     rid = client.post("/admin/v1/engine/releases", json={"kind": "rules"}, headers=ed).json()["id"]

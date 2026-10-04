@@ -61,7 +61,8 @@ backend/            FastAPI modular monolith (Python 3.11+)
   tests/            pytest + Hypothesis
 web/                Next.js PWA (user app)
 admin/              Next.js staff console
-infra/              Dockerfiles, docker-compose, migrations
+backend/migrations/ Alembic migrations (Postgres schemas, append-only audit trigger)
+infra/docker/       Dockerfiles (API/worker, Next.js apps); docker-compose.yml at the root
 prototype/          the original clickable prototype (reference for UX)
 docs/               specs
 ```
@@ -77,12 +78,20 @@ python3 -m venv .venv && .venv/bin/pip install -e '.[dev]'
 ```
 
 - Knowledge and graph changes: run `pytest tests/test_golden_personas.py tests/test_graph_and_knowledge.py`.
+- Model changes need a migration: `alembic revision --autogenerate -m "..."`, then `alembic check`
+  against Postgres (CI does both). Never edit an applied migration.
 - Add a persona when you add a branch, a red flag or a safety rule: copy one in `data/personas/`, give it
   answers and freeze its `expect` block (stack, excluded, locked, stop cards, cost, pill limits).
 - Engine outputs carry `rules_version`, `graph_version`, `impact_version` and `catalog_snapshot_id`; a plan
   must be reproducible from its stored inputs (`PlanService.reproduce`).
 - Errors are `DomainError` subclasses (`core/errors.py`) and render as `{"error": {code, message, details}}`.
 - Gate features by **feature key**, never by plan name (`modules/billing/entitlements.py`).
+
+## Definition of done (CI runs all of it)
+
+`make lint test`, the Postgres suites (`make test-pg`), `alembic check`, both frontends'
+typecheck, unit tests and build, and `make e2e` (golden personas through the UI, admin release
+workflow, axe). See `.github/workflows/ci.yml`.
 
 ## Tickets
 

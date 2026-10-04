@@ -1,0 +1,77 @@
+# Local full stack: Postgres, Redis, API, worker, web PWA and admin console.
+#   docker compose up --build
+# Web http://localhost:3000 · Admin http://localhost:3001 · API docs http://localhost:8000/docs
+# Stripe runs in fake mode and email goes to the API log until you set keys in .env
+# (see .env.example; unset keys keep their dev defaults).
+
+x-env-file: &env-file
+  - path: .env
+    required: false
+
+x-api-env: &api-env
+  STACKSENSE_ENV: ${STACKSENSE_ENV:-dev}
+  STACKSENSE_DATABASE_URL: postgresql+psycopg://stacksense:stacksense@postgres:5432/stacksense
+  STACKSENSE_REDIS_URL: redis://redis:6379/0
+  STACKSENSE_PUBLIC_WEB_URL: http://localhost:3000
+  STACKSENSE_PUBLIC_API_URL: http://localhost:8000
+  STACKSENSE_CORS_ORIGINS: '["http://localhost:3000","http://localhost:3001"]'
+  STACKSENSE_SEED_DEV_STAFF: "1"
+
+services:
+  postgres:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_USER: stacksense
+      POSTGRES_PASSWORD: stacksense
+      POSTGRES_DB: stacksense
+    volumes: [pgdata:/var/lib/postgresql/data]
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U stacksense"]
+      interval: 5s
+      retries: 10
+
+  redis:
+    image: redis:7-alpine
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      retries: 10
+
+  api:
+    build: { context: ., dockerfile: infra/docker/api.Dockerfile }
+    env_file: *env-file
+    environment: *api-env
+    ports: ["8000:8000"]
+    depends_on:
+      postgres: { condition: service_healthy }
+      redis: { condition: service_healthy }
+
+  worker:
+    build: { context: ., dockerfile: infra/docker/api.Dockerfile }
+    command: ["worker"]
+    env_file: *env-file
+    environment: *api-env
+    healthcheck: { disable: true }  # the image's check probes the API port
+    depends_on:
+      api: { condition: service_healthy }
+
+  web:
+    build:
+      context: .
+      dockerfile: infra/docker/next.Dockerfile
+      args: { APP: web, NEXT_PUBLIC_API_URL: "http://localhost:8000" }
+    environment: { PORT: "3000" }
+    ports: ["3000:3000"]
+    depends_on: [api]
+
+  admin:
+    build:
+      context: .
+      dockerfile: infra/docker/next.Dockerfile
+      args: { APP: admin, NEXT_PUBLIC_API_URL: "http://localhost:8000" }
+    environment: { PORT: "3001" }
+    ports: ["3001:3001"]
+    depends_on: [api]
+
+volumes:
+  pgdata:

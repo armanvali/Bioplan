@@ -2,7 +2,7 @@ from __future__ import annotations
 
 from datetime import datetime
 
-from sqlalchemy import Boolean, Float, Integer, String, Text
+from sqlalchemy import DDL, Boolean, Float, Integer, String, Text, event
 from sqlalchemy.orm import Mapped, mapped_column
 
 from stacksense.db import Base, JsonType, UTCDateTime, utcnow
@@ -24,7 +24,7 @@ class AdminUser(Base):
 
 
 class AuditLog(Base):
-    """Append-only (a Postgres trigger in the migration rejects UPDATE/DELETE)."""
+    """Append-only: database triggers reject UPDATE and DELETE (see below)."""
 
     __tablename__ = "audit_log"
     __table_args__ = {"schema": "admin"}
@@ -39,6 +39,23 @@ class AuditLog(Base):
     after: Mapped[dict | None] = mapped_column(JsonType)
     reason: Mapped[str | None] = mapped_column(Text)
     ts: Mapped[datetime] = mapped_column(UTCDateTime(), default=utcnow, index=True)
+
+
+# The audit log is append-only in the database itself, not just by convention (section 15.3).
+# The same SQL is in the initial Alembic migration; these hooks cover create_all (dev/tests).
+AUDIT_APPEND_ONLY_PG = (
+    "CREATE OR REPLACE FUNCTION admin.reject_audit_mutation() RETURNS trigger LANGUAGE plpgsql AS $$ "
+    "BEGIN RAISE EXCEPTION 'audit_log is append-only'; END $$; "
+    "CREATE TRIGGER audit_log_append_only BEFORE UPDATE OR DELETE ON admin.audit_log "
+    "FOR EACH ROW EXECUTE FUNCTION admin.reject_audit_mutation();"
+)
+event.listen(AuditLog.__table__, "after_create", DDL(AUDIT_APPEND_ONLY_PG).execute_if(dialect="postgresql"))
+for _op in ("UPDATE", "DELETE"):
+    event.listen(
+        AuditLog.__table__, "after_create",
+        DDL(f"CREATE TRIGGER audit_log_no_{_op.lower()} BEFORE {_op} ON audit_log "
+            "BEGIN SELECT RAISE(ABORT, 'audit_log is append-only'); END").execute_if(dialect="sqlite"),
+    )
 
 
 class Release(Base):

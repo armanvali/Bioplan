@@ -45,11 +45,19 @@ def maya() -> dict[str, Any]:
 
 @pytest.fixture
 def database(tmp_path: Path) -> Iterator[None]:
-    """A fresh SQLite database per test, with tables and reference data."""
+    """A fresh database per test, with tables and reference data. SQLite by default;
+    set STACKSENSE_TEST_DATABASE_URL to a Postgres URL to run the same tests on Postgres."""
     from stacksense import deps, registry
     from stacksense.core.ratelimit import RateLimiter
 
-    dbmod.init_engine(f"sqlite:///{tmp_path / 'test.db'}")
+    pg = os.environ.get("STACKSENSE_TEST_DATABASE_URL")
+    if pg:
+        engine = dbmod.init_engine(pg)
+        with engine.begin() as conn:
+            for schema in dbmod.SCHEMAS:
+                conn.exec_driver_sql(f'DROP SCHEMA IF EXISTS "{schema}" CASCADE')
+    else:
+        dbmod.init_engine(f"sqlite:///{tmp_path / 'test.db'}")
     dbmod.create_all()
     registry.clear_caches()
     deps._limiter = RateLimiter(None)

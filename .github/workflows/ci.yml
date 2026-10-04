@@ -1,0 +1,118 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  backend:
+    name: Backend (lint, tests on SQLite and Postgres, migrations)
+    runs-on: ubuntu-latest
+    services:
+      postgres:
+        image: postgres:16
+        env: { POSTGRES_USER: stacksense, POSTGRES_PASSWORD: stacksense, POSTGRES_DB: stacksense }
+        ports: ["5432:5432"]
+        options: >-
+          --health-cmd "pg_isready -U stacksense" --health-interval 5s --health-retries 10
+    defaults:
+      run: { working-directory: backend }
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.11", cache: pip, cache-dependency-path: backend/pyproject.toml }
+      - run: pip install -e ".[dev]"
+      - name: Lint
+        run: ruff check stacksense tests migrations
+      - name: Tests (SQLite, includes golden personas and property tests)
+        run: pytest -q
+      - name: API, billing, privacy and admin tests on Postgres
+        env: { STACKSENSE_TEST_DATABASE_URL: "postgresql+psycopg://stacksense:stacksense@localhost:5432/stacksense" }
+        run: pytest -q tests/test_api_contract.py tests/test_entitlements_billing.py tests/test_privacy_admin.py
+      - name: Migrations apply cleanly and match the models
+        env: { STACKSENSE_DATABASE_URL: "postgresql+psycopg://stacksense:stacksense@localhost:5432/stacksense" }
+        run: |
+          psql "postgresql://stacksense:stacksense@localhost:5432/stacksense" -c "DROP SCHEMA IF EXISTS identity, health, billing, catalog, admin CASCADE"
+          alembic upgrade head
+          alembic check
+          alembic downgrade base
+          alembic upgrade head
+
+  frontend:
+    name: ${{ matrix.app }} (typecheck, unit tests, build)
+    runs-on: ubuntu-latest
+    strategy:
+      matrix: { app: [web, admin] }
+    defaults:
+      run: { working-directory: "${{ matrix.app }}" }
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 22, cache: npm, cache-dependency-path: "${{ matrix.app }}/package-lock.json" }
+      - run: npm ci
+      - run: npm run typecheck
+      - run: npm test
+      - run: npm run build
+        env: { NEXT_TELEMETRY_DISABLED: "1" }
+
+  e2e:
+    name: End to end (golden personas through the UI, admin workflow, axe)
+    runs-on: ubuntu-latest
+    needs: [backend, frontend]
+    services:
+      postgres:
+        image: postgres:16
+        env: { POSTGRES_USER: stacksense, POSTGRES_PASSWORD: stacksense, POSTGRES_DB: stacksense }
+        ports: ["5432:5432"]
+        options: >-
+          --health-cmd "pg_isready -U stacksense" --health-interval 5s --health-retries 10
+    env:
+      STACKSENSE_ENV: dev
+      STACKSENSE_DATABASE_URL: postgresql+psycopg://stacksense:stacksense@localhost:5432/stacksense
+      NEXT_PUBLIC_API_URL: http://localhost:8000
+      NEXT_TELEMETRY_DISABLED: "1"
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.11", cache: pip, cache-dependency-path: backend/pyproject.toml }
+      - uses: actions/setup-node@v4
+        with: { node-version: 22 }
+      - name: API
+        working-directory: backend
+        run: |
+          pip install -e .
+          alembic upgrade head
+          stacksense-seed --dev
+          nohup uvicorn stacksense.main:app --port 8000 > ../api.log 2>&1 &
+      - name: Web and admin
+        run: |
+          for app in web admin; do (cd $app && npm ci && npm run build); done
+          (cd web && nohup npm start > ../web.log 2>&1 &)
+          (cd admin && nohup npm start > ../admin.log 2>&1 &)
+          for i in $(seq 1 60); do curl -sf localhost:8000/readyz && curl -sf localhost:3000 >/dev/null && curl -sf localhost:3001/login >/dev/null && break; sleep 2; done
+      - name: Playwright
+        working-directory: web
+        run: |
+          npx playwright install --with-deps chromium
+          npx playwright test
+      - if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: e2e-report
+          path: |
+            web/playwright-report
+            web/test-results
+            *.log
+
+  docker:
+    name: Docker images build
+    runs-on: ubuntu-latest
+    needs: [backend]
+    steps:
+      - uses: actions/checkout@v4
+      - run: docker compose build
