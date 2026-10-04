@@ -1,0 +1,113 @@
+@import "tailwindcss";
+
+/* Design tokens from the UI spec (section 2), shared with prototype/css/styles.css. */
+@theme {
+  --color-ink: #14213d;
+  --color-ink-2: #4a5470;
+  --color-ink-3: #737b92;
+  --color-canvas: #f7f5f0;
+  --color-surface: #ffffff;
+  --color-sunken: #efece5;
+  --color-line: #e4e0d6;
+  --color-line-2: #d3cec1;
+  --color-sage: #3e7c6b;
+  --color-sage-ink: #2c5e50;
+  --color-sage-tint: #e2eee8;
+  --color-amber: #e9a23b;
+  --color-amber-ink: #85560e;
+  --color-amber-tint: #fcf1de;
+  --color-caution: #c8553d;
+  --color-caution-ink: #9a3824;
+  --color-caution-tint: #fbeae4;
+  --color-lock: #6e7486;
+  --color-lock-tint: #ecedf1;
+
+  --color-area-sleep: #5560c9;
+  --color-area-energy: #b98a12;
+  --color-area-joints: #1f9aa6;
+  --color-area-mood: #9259bf;
+  --color-area-performance: #e07a1f;
+  --color-area-skin: #c24e8c;
+  --color-area-immunity: #6fa23a;
+  --color-area-heart: #a8323a;
+
+  --font-sans: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --font-display: "Fraunces", "Iowan Old Style", Georgia, "Times New Roman", serif;
+
+  --radius-card: 16px;
+  --radius-sm: 10px;
+  --shadow-1: 0 1px 2px rgba(20, 33, 61, 0.06), 0 2px 10px rgba(20, 33, 61, 0.05);
+  --shadow-2: 0 2px 6px rgba(20, 33, 61, 0.08), 0 12px 32px rgba(20, 33, 61, 0.12);
+  --ease-out-soft: cubic-bezier(0.2, 0.7, 0.2, 1);
+
+  --animate-rise: rise 0.32s var(--ease-out-soft) both;
+  --animate-toast: toast 4.2s var(--ease-out-soft) both;
+  @keyframes rise {
+    from { opacity: 0; transform: translateY(8px); }
+    to { opacity: 1; transform: none; }
+  }
+  @keyframes toast {
+    0% { opacity: 0; transform: translateY(-6px); }
+    8%, 85% { opacity: 1; transform: none; }
+    100% { opacity: 0; transform: translateY(-4px); }
+  }
+}
+
+:root {
+  color-scheme: light;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background: var(--color-canvas);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  line-height: 1.45;
+  -webkit-font-smoothing: antialiased;
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-sage);
+  outline-offset: 2px;
+  border-radius: 6px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+@layer components {
+  .card {
+    background: var(--color-surface);
+    border: 1px solid var(--color-line);
+    border-radius: var(--radius-card);
+    box-shadow: var(--shadow-1);
+  }
+  .eyebrow {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--color-ink-3);
+  }
+  .display {
+    font-family: var(--font-display);
+    font-weight: 500;
+    letter-spacing: -0.01em;
+  }
+  .blurred {
+    filter: blur(6px);
+    user-select: none;
+    pointer-events: none;
+  }
+}
+
+input[type="range"] {
+  accent-color: var(--color-sage);
+}

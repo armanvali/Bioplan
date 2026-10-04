@@ -1,0 +1,19 @@
+{
+  "name": "StackSense",
+  "short_name": "StackSense",
+  "description": "A supplement plan built from your answers, checked for safety.",
+  "start_url": "/?source=pwa",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#F7F5F0",
+  "theme_color": "#14213D",
+  "categories": ["health", "lifestyle"],
+  "icons": [
+    { "src": "/icons/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" },
+    { "src": "/icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "/icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
+  ],
+  "shortcuts": [
+    { "name": "Today's doses", "url": "/account", "description": "Your saved plans and today's schedule" }
+  ]
+}
