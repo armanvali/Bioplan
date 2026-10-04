@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>StackSense Prototype</title>
+<meta name="description" content="Clickable StackSense prototype: Maya's adaptive intake, Health Impact Map, buy list and daily dosage calendar.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600;700;800&display=swap">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<div class="viewer">
+  <aside class="panel panel-left" aria-label="Prototype frames">
+    <div class="panel-head">
+      <span class="logo"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.5 13.8 10.2 20.5 12 13.8 13.8 12 20.5 10.2 13.8 3.5 12 10.2 10.2z"/></svg>StackSense</span>
+      <p>Prototype · Maya’s path · 38 phone frames + 3 desktop frames</p>
+    </div>
+    <div id="panelControls"></div>
+    <nav id="panelNav" class="panel-nav" aria-label="Frames"></nav>
+  </aside>
+
+  <main class="stage" id="stage">
+    <div class="device-wrap" id="deviceWrap">
+      <div class="device">
+        <div class="screen" id="screen">
+          <div class="statusbar" aria-hidden="true">
+            <span>9:41</span>
+            <span class="sb-right">
+              <svg width="18" height="12" viewBox="0 0 18 12" fill="currentColor"><rect x="0" y="8" width="3" height="4" rx="1"/><rect x="5" y="5.5" width="3" height="6.5" rx="1"/><rect x="10" y="3" width="3" height="9" rx="1"/><rect x="15" y="0" width="3" height="12" rx="1"/></svg>
+              <svg width="16" height="12" viewBox="0 0 16 12" fill="currentColor"><path d="M8 2.5c2.3 0 4.4.9 6 2.4l1.2-1.3A10.4 10.4 0 0 0 8 .7 10.4 10.4 0 0 0 .8 3.6L2 4.9a8.6 8.6 0 0 1 6-2.4zm0 3.6c1.3 0 2.5.5 3.4 1.3l1.2-1.3A6.6 6.6 0 0 0 8 4.3a6.6 6.6 0 0 0-4.6 1.8l1.2 1.3c.9-.8 2.1-1.3 3.4-1.3zM8 12l2.2-2.4A3 3 0 0 0 8 8.7a3 3 0 0 0-2.2.9z"/></svg>
+              <svg width="27" height="13" viewBox="0 0 27 13" fill="none"><rect x="0.5" y="0.5" width="23" height="12" rx="3.5" stroke="currentColor" opacity="0.4"/><rect x="2" y="2" width="20" height="9" rx="2" fill="currentColor"/><path d="M25 4.5v4c.8-.3 1.3-1.1 1.3-2s-.5-1.7-1.3-2z" fill="currentColor" opacity="0.4"/></svg>
+            </span>
+          </div>
+          <div id="appbarSlot"></div>
+          <div class="viewport" id="viewport"></div>
+          <div id="dockSlot"></div>
+          <div id="tabSlot"></div>
+          <div class="layer" id="layer"></div>
+        </div>
+      </div>
+    </div>
+    <div class="desk-wrap" id="deskWrap" hidden>
+      <div class="desk" id="desk"></div>
+    </div>
+  </main>
+
+  <aside class="panel panel-right" id="panelRight" aria-label="Frame notes"></aside>
+</div>
+
+<button type="button" class="drawer-btn" data-act="drawer" aria-label="Frames and demo controls">
+  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>Frames
+</button>
+<div class="drawer" id="drawer">
+  <div class="drawer-scrim" data-act="drawer"></div>
+  <div class="drawer-panel" role="dialog" aria-label="Frames and demo controls"><div id="drawerBody"></div></div>
+</div>
+<div id="printRoot" class="print-root"></div>
+
+<script src="js/icons.js"></script>
+<script src="js/data.js"></script>
+<script src="js/engine.js"></script>
+<script src="js/ui.js"></script>
+<script src="js/charts.js"></script>
+<script src="js/intake.js"></script>
+<script src="js/results.js"></script>
+<script src="js/calendar.js"></script>
+<script src="js/desktop.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
