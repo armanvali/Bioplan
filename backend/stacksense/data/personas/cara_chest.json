@@ -1,0 +1,57 @@
+{
+  "id": "cara_chest",
+  "name": "Cara",
+  "description": "45, short of breath and faint when active.",
+  "context_date": "2026-10-04",
+  "answers": {
+    "A0_about": {
+      "age": 45,
+      "sex": "female",
+      "country": "US",
+      "region": "NY"
+    },
+    "A1_goals": {
+      "ranked": [
+        "energy"
+      ]
+    },
+    "B1_energy_curve": {
+      "points": [
+        3,
+        3,
+        3,
+        3,
+        2,
+        2,
+        3,
+        3,
+        2
+      ]
+    },
+    "B2_iron_cluster": {
+      "picks": [
+        "breathless_stairs",
+        "chest_fainting"
+      ]
+    },
+    "B3_diet": {
+      "choice": "meat"
+    },
+    "B3b_fish_frequency": {
+      "choice": "weekly"
+    },
+    "B12_daylight": {
+      "choice": "15_30"
+    }
+  },
+  "expect": {
+    "terminal_stop": "chest_symptoms",
+    "stop_cards": [
+      "chest_symptoms"
+    ],
+    "cards_between": [
+      4,
+      10
+    ]
+  }
+}

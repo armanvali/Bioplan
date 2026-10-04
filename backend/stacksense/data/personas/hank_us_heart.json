@@ -1,0 +1,85 @@
+{
+  "id": "hank_us_heart",
+  "name": "Hank",
+  "description": "52, Chicago, eats fish rarely, high triglycerides.",
+  "context_date": "2026-10-04",
+  "answers": {
+    "A0_about": {
+      "age": 52,
+      "sex": "male",
+      "country": "US",
+      "region": "IL"
+    },
+    "A1_goals": {
+      "ranked": [
+        "heart"
+      ]
+    },
+    "B14_heart_markers": {
+      "picks": [
+        "high_triglycerides"
+      ]
+    },
+    "B3_diet": {
+      "choice": "meat"
+    },
+    "B3b_fish_frequency": {
+      "choice": "rarely"
+    },
+    "B12_daylight": {
+      "choice": "30_60"
+    },
+    "C1_medications": {
+      "none": true
+    },
+    "C2_conditions": {
+      "picks": [
+        "none"
+      ]
+    },
+    "C3_allergies": {
+      "picks": [
+        "none"
+      ]
+    },
+    "D0_anything_else": {
+      "skip": true
+    },
+    "D1_budget": {
+      "amount": 100
+    },
+    "D2_pills": {
+      "max": 8,
+      "powders": true
+    },
+    "D3_routine": {
+      "wake": 390,
+      "breakfast": 420,
+      "lunch": 720,
+      "dinner": 1110,
+      "bed": 1350,
+      "training_days": [],
+      "tz": "America/Toronto"
+    },
+    "B7_bloodwork": {
+      "choice": "no"
+    }
+  },
+  "expect": {
+    "stop_cards": [],
+    "stack": [
+      "magnesium_bisglycinate",
+      "omega3_fish"
+    ],
+    "locked": [],
+    "excluded_include": [],
+    "banners": [],
+    "low_confidence": false,
+    "max_pills_per_day_at_most": 8,
+    "monthly_cost_at_most": 100,
+    "cards_between": [
+      10,
+      16
+    ]
+  }
+}

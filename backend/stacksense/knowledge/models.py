@@ -57,6 +57,7 @@ class SignalDef(Row):
     lab: str | None = None
     safety: bool = False
     tip_only: bool = False
+    need_weight: float = 1.0  # how strongly this signal implies need in its areas (N_a uses p * need_weight)
 
 
 class Delivery(BaseModel):

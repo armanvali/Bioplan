@@ -1,0 +1,114 @@
+{
+  "id": "dan_vitd",
+  "name": "Dan",
+  "description": "45, Edmonton, already takes vitamin D and a multivitamin; 25-OH-D is 40 nmol/L.",
+  "context_date": "2026-10-04",
+  "answers": {
+    "A0_about": {
+      "age": 45,
+      "sex": "male",
+      "country": "CA",
+      "region": "AB"
+    },
+    "A1_goals": {
+      "ranked": [
+        "immunity",
+        "energy"
+      ]
+    },
+    "B1_energy_curve": {
+      "points": [
+        5,
+        6,
+        6,
+        5,
+        4,
+        4,
+        5,
+        5,
+        4
+      ]
+    },
+    "B2_iron_cluster": {
+      "picks": [
+        "winter_low_mood"
+      ]
+    },
+    "B3_diet": {
+      "choice": "meat"
+    },
+    "B3b_fish_frequency": {
+      "choice": "weekly"
+    },
+    "B7_bloodwork": {
+      "choice": "yes",
+      "labs": [
+        {
+          "analyte": "vitamin_d_25oh",
+          "value": 40,
+          "unit": "nmol/L",
+          "drawn_at": "2026-09-01"
+        }
+      ]
+    },
+    "B12_daylight": {
+      "choice": "u15"
+    },
+    "B13_colds": {
+      "choice": "4_plus"
+    },
+    "C1_medications": {
+      "meds": [
+        "supp_vitd",
+        "supp_multi"
+      ]
+    },
+    "C2_conditions": {
+      "picks": [
+        "none"
+      ]
+    },
+    "C3_allergies": {
+      "picks": [
+        "none"
+      ]
+    },
+    "D0_anything_else": {
+      "skip": true
+    },
+    "D1_budget": {
+      "amount": 100
+    },
+    "D2_pills": {
+      "max": 8,
+      "powders": true
+    },
+    "D3_routine": {
+      "wake": 390,
+      "breakfast": 420,
+      "lunch": 720,
+      "dinner": 1110,
+      "bed": 1350,
+      "training_days": [],
+      "tz": "America/Toronto"
+    }
+  },
+  "expect": {
+    "stop_cards": [],
+    "stack": [
+      "vitamin_c",
+      "vitamin_d3_k2",
+      "zinc"
+    ],
+    "locked": [],
+    "excluded_include": [],
+    "banners": [],
+    "low_confidence": false,
+    "max_pills_per_day_at_most": 8,
+    "monthly_cost_at_most": 100,
+    "cards_between": [
+      13,
+      19
+    ]
+  }
+}

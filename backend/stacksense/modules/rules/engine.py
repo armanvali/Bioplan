@@ -95,6 +95,10 @@ class RulesEngine:
         result = self.stage_optimise(inp, cands, excluded, need)
 
         items = result["items"]
+        active_ids = {it["ingredient_id"] for it in items}
+        warnings = [w for w in warnings if w["ingredient_id"] in active_ids] + self.final_pair_warnings
+        spacing = [sp for sp in spacing if sp["a"] in active_ids and sp["b"] in active_ids]
+        drug_spacing = [sp for sp in drug_spacing if sp["ingredient_id"] in active_ids]
         im = impact.impact_map(self.kb, need, items, self.active, locked)
         return {
             "rules_version": self.kb.version,
@@ -120,6 +124,16 @@ class RulesEngine:
             "optimiser": result["optimiser"],
             "audit": self.audit,
         }
+
+    def preview_exclusions(self, inp: PlanInput) -> list[dict[str, Any]]:
+        """Stages 1-2 only: what the answers so far rule out. Used to show exclusions live
+        during the intake (e.g. collagen <- vegetarian) without building a plan."""
+        self.audit = []
+        self.inp = inp
+        self.ctx = self._context(inp)
+        self.active = {s for s, p in inp.signals.items() if p >= self.T and not self.kb.signals[s].tip_only}
+        cands = self.stage_candidates(inp)
+        return self.stage_eligibility(inp, cands)
 
     # ------------------------------------------------------------------ helpers
     def _context(self, inp: PlanInput) -> dict[str, Any]:
@@ -271,7 +285,7 @@ class RulesEngine:
                 siblings = [m for m in self.kb.group_members.get(group, []) if m != e["ingredient_id"] and m in cands and cands[m].state == "candidate"]
                 if siblings:
                     e["substituted_by"] = siblings[0]
-                    cands[siblings[0]].notes.append(f"{self.kb.ingredients[siblings[0]].name}, not {self.kb.ingredients[e['ingredient_id']].name.lower()}: {e['reason'][0].lower()}{e['reason'][1:]}")
+                    cands[siblings[0]].notes.append(f"{self.kb.ingredients[siblings[0]].name}, not {_lower_first(self.kb.ingredients[e['ingredient_id']].name)}: {_lower_first(e['reason'])}")
         return excluded
 
     # ------------------------------------------------------------------ 3. lab locks
@@ -301,7 +315,7 @@ class RulesEngine:
                     self._exclude(excluded, cand, "lab", f"lab.{analyte}.{rng.status}", f"lab.{analyte}", reason, f"{lab.name.lower()} is {rng.text}", "lab_locks")
                 elif rng.action == "dose":
                     cand.lab_dose_level = rng.dose_level
-                    cand.notes.append(f"Dose set from your {lab.name.lower()} result ({lv['value']:g} {lab.unit}, {rng.text}).")
+                    cand.notes.append(f"Dose set from your {lab.name} result ({lv['value']:g} {lab.unit}, {rng.text}).")
                     self._log("lab_locks", cid, "lab_dosed", f"lab.{analyte}.{rng.status}", dose_level=rng.dose_level)
                 cand.reasons.append({"type": "lab", "analyte": analyte, "status": rng.status})
             if cand.state != "candidate":
@@ -356,10 +370,10 @@ class RulesEngine:
                 level = "typical"
             elif cand.strength >= 0.9 and not self.kb.ingredients[cid].requires_lab:
                 level = "max"
-            elif cand.strength >= self.T * 0.99:
-                level = "typical"
             else:
-                level = "min"
+                # The band minimum often sits below the studied range (zero dose fit), so it is
+                # only ever reached through upper-limit capping, never chosen directly.
+                level = "typical"
             if cand.cap_level == "typical" and level in ("max", "lab_max"):
                 level = "typical"
             dose = {"min": band.min, "typical": band.typical, "max": band.max, "lab_max": band.lab_max or band.max}[level]
@@ -420,6 +434,7 @@ class RulesEngine:
     # ------------------------------------------------------------------ 5. interactions & timing
     def stage_interactions(self, inp: PlanInput, cands: dict[str, Candidate], excluded: list[dict[str, Any]]) -> tuple[list[dict[str, Any]], list[dict[str, Any]], list[dict[str, Any]], int]:
         drug_classes = set(inp.facts.get("drug_classes") or [])
+        self.pair_warnings: list[dict[str, Any]] = []
         live = {cid for cid, c in cands.items() if c.state == "candidate"}
         warnings: list[dict[str, Any]] = []
         spacing: list[dict[str, Any]] = []
@@ -459,9 +474,8 @@ class RulesEngine:
                 self._exclude(excluded, cands[lose], "interaction", x.id, f"interaction.{x.a}.{x.b}", x.warning or x.mechanism, "interacts with another item", "interactions")
                 live.discard(lose)
             elif x.severity == "moderate":
-                for i in (x.a, x.b):
-                    cands[i].warnings.append(x.warning or x.mechanism)
-                warnings.append({"ingredient_id": x.a, "with": x.b, "severity": "moderate", "text": x.warning or x.mechanism, "rule_id": x.id})
+                # Attached after optimisation, and only if both items make the final stack.
+                self.pair_warnings.append({"ingredient_id": x.a, "with": x.b, "severity": "moderate", "text": x.warning or x.mechanism, "rule_id": x.id})
                 self._log("interactions", x.a, "warned", f"interaction.{x.b}", x.id)
             elif x.severity == "timing":
                 spacing.append({"a": x.a, "b": x.b, "hours": x.spacing_hours, "reason": x.mechanism, "rule_id": x.id})
@@ -544,15 +558,22 @@ class RulesEngine:
                 variants[vid] = (c, d)
                 opt_items.append(OptItem(
                     id=vid, ingredient=c.id, groups=groups, cost=cost, pills=self._pills_pattern(c, d),
-                    contrib=contrib, bonus=essential + (1e-6 * (10 - i)),
+                    # Tiny tie-breakers only: canonical form first, then the cheaper of equal-value options.
+                    contrib=contrib, bonus=essential + (1e-6 * (10 - i)) - cost * 1e-5,
                 ))
         res = solve(opt_items, need, budget, pill_limit, max_items, synergy)
+        self.final_pair_warnings: list[dict[str, Any]] = []
         by_id = {o.id: o for o in opt_items}
         chosen = {by_id[vid].ingredient for vid in res.selected}
 
         items: list[dict[str, Any]] = []
         dropped: list[dict[str, Any]] = []
         trimmed: list[dict[str, Any]] = []
+        for pw in self.pair_warnings:
+            if pw["ingredient_id"] in chosen and pw["with"] in chosen:
+                for i in (pw["ingredient_id"], pw["with"]):
+                    cands[i].warnings.append(pw["text"])
+                self.final_pair_warnings.append(pw)
         for vid in res.selected:
             c, d = variants[vid]
             c.state = "active"
@@ -665,6 +686,16 @@ class RulesEngine:
             if expr.truthy(tip.when, self.ctx):
                 out.append({"id": tip.id, "area": tip.area, "title": render(tip.title, self.ctx, filters), "text": render(tip.text, self.ctx, filters)})
         return out
+
+
+def _lower_first(text: str) -> str:
+    """Lower-case the first letter unless the word is an acronym or code (D3, K2, EPA)."""
+    if not text:
+        return text
+    first = text.split(" ", 1)[0]
+    if len(first) > 1 and (first[1].isupper() or first[1].isdigit()):
+        return text
+    return text[0].lower() + text[1:]
 
 
 def _fmt_num(x: float) -> str:

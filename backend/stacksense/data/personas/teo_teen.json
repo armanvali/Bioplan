@@ -1,0 +1,24 @@
+{
+  "id": "teo_teen",
+  "name": "Teo",
+  "description": "16, wants to train harder.",
+  "context_date": "2026-10-04",
+  "answers": {
+    "A0_about": {
+      "age": 16,
+      "sex": "male",
+      "country": "CA",
+      "region": "ON"
+    }
+  },
+  "expect": {
+    "terminal_stop": "under_18",
+    "stop_cards": [
+      "under_18"
+    ],
+    "cards_between": [
+      1,
+      4
+    ]
+  }
+}

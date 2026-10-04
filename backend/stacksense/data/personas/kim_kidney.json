@@ -1,0 +1,110 @@
+{
+  "id": "kim_kidney",
+  "name": "Kim",
+  "description": "58, Winnipeg, chronic kidney disease, wants energy and heart health.",
+  "context_date": "2026-10-04",
+  "answers": {
+    "A0_about": {
+      "age": 58,
+      "sex": "female",
+      "country": "CA",
+      "region": "MB"
+    },
+    "A1_goals": {
+      "ranked": [
+        "energy",
+        "heart"
+      ]
+    },
+    "B1_energy_curve": {
+      "points": [
+        4,
+        5,
+        5,
+        4,
+        3,
+        3,
+        4,
+        4,
+        3
+      ]
+    },
+    "B2_iron_cluster": {
+      "picks": [
+        "tingling"
+      ]
+    },
+    "B3_diet": {
+      "choice": "vegetarian",
+      "years": 20
+    },
+    "B7_bloodwork": {
+      "choice": "no"
+    },
+    "B14_heart_markers": {
+      "picks": [
+        "none"
+      ]
+    },
+    "B12_daylight": {
+      "choice": "u15"
+    },
+    "C1_medications": {
+      "none": true
+    },
+    "C2_conditions": {
+      "picks": [
+        "kidney"
+      ]
+    },
+    "C3_allergies": {
+      "picks": [
+        "none"
+      ]
+    },
+    "D0_anything_else": {
+      "skip": true
+    },
+    "D1_budget": {
+      "amount": 100
+    },
+    "D2_pills": {
+      "max": 8,
+      "powders": true
+    },
+    "D3_routine": {
+      "wake": 390,
+      "breakfast": 420,
+      "lunch": 720,
+      "dinner": 1110,
+      "bed": 1350,
+      "training_days": [],
+      "tz": "America/Toronto"
+    }
+  },
+  "expect": {
+    "stop_cards": [],
+    "stack": [
+      "omega3_algae",
+      "vitamin_b12"
+    ],
+    "locked": [],
+    "excluded_include": [
+      "creatine_monohydrate",
+      "magnesium_bisglycinate",
+      "omega3_fish",
+      "vitamin_d3",
+      "vitamin_d3_k2"
+    ],
+    "banners": [
+      "restricted_library"
+    ],
+    "low_confidence": false,
+    "max_pills_per_day_at_most": 8,
+    "monthly_cost_at_most": 100,
+    "cards_between": [
+      12,
+      18
+    ]
+  }
+}

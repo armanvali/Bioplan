@@ -1,0 +1,119 @@
+{
+  "id": "priya_trying",
+  "name": "Priya",
+  "description": "31, Vancouver, trying to conceive, wants energy and fewer colds.",
+  "context_date": "2026-10-04",
+  "answers": {
+    "A0_about": {
+      "age": 31,
+      "sex": "female",
+      "country": "CA",
+      "region": "BC"
+    },
+    "A1_goals": {
+      "ranked": [
+        "energy",
+        "immunity"
+      ]
+    },
+    "B1_energy_curve": {
+      "points": [
+        5,
+        6,
+        7,
+        6,
+        4,
+        4,
+        5,
+        5,
+        4
+      ]
+    },
+    "B2_iron_cluster": {
+      "picks": [
+        "cold_extremities"
+      ]
+    },
+    "B3_diet": {
+      "choice": "meat"
+    },
+    "B3b_fish_frequency": {
+      "choice": "monthly"
+    },
+    "B4_menstruation": {
+      "choice": "yes"
+    },
+    "B5_period_heaviness": {
+      "choice": "moderate"
+    },
+    "B7_bloodwork": {
+      "choice": "no"
+    },
+    "B12_daylight": {
+      "choice": "15_30"
+    },
+    "B13_colds": {
+      "choice": "2_3"
+    },
+    "C0_pregnancy": {
+      "choice": "trying"
+    },
+    "C1_medications": {
+      "none": true
+    },
+    "C2_conditions": {
+      "picks": [
+        "none"
+      ]
+    },
+    "C3_allergies": {
+      "picks": [
+        "none"
+      ]
+    },
+    "D0_anything_else": {
+      "skip": true
+    },
+    "D1_budget": {
+      "amount": 100
+    },
+    "D2_pills": {
+      "max": 8,
+      "powders": true
+    },
+    "D3_routine": {
+      "wake": 390,
+      "breakfast": 420,
+      "lunch": 720,
+      "dinner": 1110,
+      "bed": 1350,
+      "training_days": [],
+      "tz": "America/Toronto"
+    }
+  },
+  "expect": {
+    "stop_cards": [],
+    "stack": [
+      "methylfolate",
+      "omega3_fish",
+      "vitamin_b12",
+      "vitamin_d3_k2"
+    ],
+    "locked": [
+      "iodine"
+    ],
+    "excluded_include": [
+      "creatine_monohydrate"
+    ],
+    "banners": [
+      "restricted_library"
+    ],
+    "low_confidence": false,
+    "max_pills_per_day_at_most": 8,
+    "monthly_cost_at_most": 100,
+    "cards_between": [
+      13,
+      19
+    ]
+  }
+}

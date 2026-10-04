@@ -1,7 +1,7 @@
 {
-  "id": "maya",
-  "name": "Maya",
-  "description": "34, Toronto, vegetarian 6 years, runs 3x a week, on the pill. The prototype spec's demo persona.",
+  "id": "bea_budget",
+  "name": "Bea",
+  "description": "Maya's answers with a $35 budget.",
   "context_date": "2026-10-04",
   "answers": {
     "A0_about": {
@@ -124,7 +124,7 @@
       "skip": true
     },
     "D1_budget": {
-      "amount": 80
+      "amount": 35
     },
     "D2_pills": {
       "max": 6,
@@ -148,12 +148,9 @@
     "stop_cards": [],
     "stack": [
       "ashwagandha_ksm66",
-      "creatine_monohydrate",
-      "curcumin_enhanced",
-      "magnesium_bisglycinate",
       "omega3_algae",
       "vitamin_b12",
-      "vitamin_d3_k2"
+      "vitamin_d3"
     ],
     "locked": [
       "iron_bisglycinate"
@@ -167,7 +164,7 @@
     "banners": [],
     "low_confidence": false,
     "max_pills_per_day_at_most": 6,
-    "monthly_cost_at_most": 80,
+    "monthly_cost_at_most": 35,
     "cards_between": [
       21,
       27

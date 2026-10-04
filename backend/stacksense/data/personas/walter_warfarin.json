@@ -1,0 +1,113 @@
+{
+  "id": "walter_warfarin",
+  "name": "Walter",
+  "description": "67, Halifax, on warfarin, stiff knees, wants heart health.",
+  "context_date": "2026-10-04",
+  "answers": {
+    "A0_about": {
+      "age": 67,
+      "sex": "male",
+      "country": "CA",
+      "region": "NS"
+    },
+    "A1_goals": {
+      "ranked": [
+        "heart",
+        "joints"
+      ]
+    },
+    "B14_heart_markers": {
+      "picks": [
+        "high_triglycerides"
+      ]
+    },
+    "B3_diet": {
+      "choice": "meat"
+    },
+    "B3b_fish_frequency": {
+      "choice": "rarely"
+    },
+    "B8_body_map": {
+      "side": "front",
+      "spots": [
+        "knee_l",
+        "knee_r"
+      ]
+    },
+    "B9_joint_pattern": {
+      "picks": [
+        "morning",
+        "always"
+      ],
+      "lasts": "longer"
+    },
+    "B10_training": {
+      "sessions": 2,
+      "km": 10
+    },
+    "B12_daylight": {
+      "choice": "u15"
+    },
+    "C1_medications": {
+      "meds": [
+        "warfarin",
+        "atorvastatin"
+      ]
+    },
+    "C2_conditions": {
+      "picks": [
+        "none"
+      ]
+    },
+    "C3_allergies": {
+      "picks": [
+        "none"
+      ]
+    },
+    "D0_anything_else": {
+      "skip": true
+    },
+    "D1_budget": {
+      "amount": 100
+    },
+    "D2_pills": {
+      "max": 8,
+      "powders": true
+    },
+    "D3_routine": {
+      "wake": 390,
+      "breakfast": 420,
+      "lunch": 720,
+      "dinner": 1110,
+      "bed": 1350,
+      "training_days": [],
+      "tz": "America/Toronto"
+    },
+    "B7_bloodwork": {
+      "choice": "no"
+    }
+  },
+  "expect": {
+    "stop_cards": [],
+    "stack": [
+      "collagen_peptides",
+      "creatine_monohydrate",
+      "magnesium_bisglycinate",
+      "omega3_fish",
+      "vitamin_d3"
+    ],
+    "locked": [],
+    "excluded_include": [
+      "curcumin_enhanced",
+      "vitamin_d3_k2"
+    ],
+    "banners": [],
+    "low_confidence": false,
+    "max_pills_per_day_at_most": 8,
+    "monthly_cost_at_most": 100,
+    "cards_between": [
+      14,
+      20
+    ]
+  }
+}

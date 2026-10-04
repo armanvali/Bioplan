@@ -1,68 +1,1519 @@
 [
-  { "id": "ev_d_immunity", "ingredient_id": "vitamin_d3_k2", "body_area": "immunity", "outcome": "Fewer respiratory infections when levels start low", "population": "adults with low status", "effect_grade": "B", "effect_size": 0.6, "studied_dose": { "min": 400, "max": 4000, "unit": "IU" }, "onset_weeks": [8, 12], "signals": ["vitamin_d_risk", "frequent_colds"], "citations": ["Martineau et al., BMJ 2017"], "summary": "Supports immune cell function when your levels are low", "source": "BMJ 2017;356:i6583" },
-  { "id": "ev_d_energy", "ingredient_id": "vitamin_d3_k2", "body_area": "energy", "outcome": "Less fatigue in people with low vitamin D", "population": "adults with low status", "effect_grade": "C", "effect_size": 0.45, "studied_dose": { "min": 1000, "max": 4000, "unit": "IU" }, "onset_weeks": [6, 12], "signals": ["vitamin_d_risk"], "citations": ["Nowak et al., Medicine 2016"], "summary": "Low vitamin D is linked to tiredness; topping up helps when you're low", "source": "Medicine 2016;95(52):e5353" },
-  { "id": "ev_d_mood", "ingredient_id": "vitamin_d3_k2", "body_area": "mood_stress", "outcome": "Winter mood", "population": "adults with low status", "effect_grade": "D", "effect_size": 0.3, "studied_dose": { "min": 1000, "max": 4000, "unit": "IU" }, "onset_weeks": [8, 12], "signals": ["vitamin_d_risk"], "citations": ["Vellekkatt & Menon, J Postgrad Med 2019"], "summary": "May support winter mood when you're low", "source": "J Postgrad Med 2019" },
-  { "id": "ev_d_joints", "ingredient_id": "vitamin_d3_k2", "body_area": "joints_recovery", "outcome": "Bone and muscle health", "population": "adults", "effect_grade": "C", "effect_size": 0.3, "studied_dose": { "min": 800, "max": 4000, "unit": "IU" }, "onset_weeks": [12, 24], "signals": [], "citations": ["NIH ODS Vitamin D"], "summary": "Supports bone and muscle health", "source": "NIH ODS" },
-  { "id": "ev_d_sleep", "ingredient_id": "vitamin_d3_k2", "body_area": "sleep", "outcome": "Sleep quality", "population": "adults with low status", "effect_grade": "D", "effect_size": 0.25, "studied_dose": { "min": 1000, "max": 4000, "unit": "IU" }, "onset_weeks": [8, 12], "signals": ["vitamin_d_risk"], "citations": ["Gao et al., Nutrients 2018"], "summary": "Low levels are linked to poorer sleep quality", "source": "Nutrients 2018" },
-  { "id": "ev_d_performance", "ingredient_id": "vitamin_d3_k2", "body_area": "performance", "outcome": "Muscle function", "population": "adults with low status", "effect_grade": "D", "effect_size": 0.25, "studied_dose": { "min": 1000, "max": 4000, "unit": "IU" }, "onset_weeks": [8, 12], "signals": ["vitamin_d_risk"], "citations": ["NIH ODS Vitamin D"], "summary": "Supports muscle function", "source": "NIH ODS" },
-  { "id": "ev_d_skin", "ingredient_id": "vitamin_d3_k2", "body_area": "skin_hair", "outcome": "Hair growth cycle", "population": "adults with low status", "effect_grade": "D", "effect_size": 0.25, "studied_dose": { "min": 1000, "max": 4000, "unit": "IU" }, "onset_weeks": [12, 24], "signals": ["vitamin_d_risk"], "citations": ["Saini & Mysore, 2021"], "summary": "Plays a role in the hair growth cycle", "source": "J Cosmet Dermatol 2021" },
-  { "id": "ev_k2_heart", "ingredient_id": "vitamin_d3_k2", "body_area": "heart_metabolic", "outcome": "Calcium handling", "population": "adults", "effect_grade": "D", "effect_size": 0.25, "studied_dose": { "min": 1000, "max": 4000, "unit": "IU" }, "onset_weeks": [12, 24], "signals": [], "citations": ["NIH ODS Vitamin K"], "summary": "K2 helps direct calcium to bone", "source": "NIH ODS" },
-
-  { "id": "ev_d3_immunity", "ingredient_id": "vitamin_d3", "body_area": "immunity", "outcome": "Fewer respiratory infections when levels start low", "population": "adults with low status", "effect_grade": "B", "effect_size": 0.6, "studied_dose": { "min": 400, "max": 4000, "unit": "IU" }, "onset_weeks": [8, 12], "signals": ["vitamin_d_risk", "frequent_colds"], "citations": ["Martineau et al., BMJ 2017"], "summary": "Supports immune cell function when your levels are low", "source": "BMJ 2017" },
-  { "id": "ev_d3_energy", "ingredient_id": "vitamin_d3", "body_area": "energy", "outcome": "Less fatigue in people with low vitamin D", "population": "adults with low status", "effect_grade": "C", "effect_size": 0.45, "studied_dose": { "min": 1000, "max": 4000, "unit": "IU" }, "onset_weeks": [6, 12], "signals": ["vitamin_d_risk"], "citations": ["Nowak et al., 2016"], "summary": "Topping up helps tiredness when you're low", "source": "Medicine 2016" },
-  { "id": "ev_d3_joints", "ingredient_id": "vitamin_d3", "body_area": "joints_recovery", "outcome": "Bone and muscle health", "population": "adults", "effect_grade": "C", "effect_size": 0.3, "studied_dose": { "min": 800, "max": 4000, "unit": "IU" }, "onset_weeks": [12, 24], "signals": [], "citations": ["NIH ODS"], "summary": "Supports bone and muscle health", "source": "NIH ODS" },
-
-  { "id": "ev_o3_heart", "ingredient_id": "omega3_algae", "body_area": "heart_metabolic", "outcome": "Triglycerides", "population": "adults", "effect_grade": "A", "effect_size": 0.6, "studied_dose": { "min": 250, "max": 4000, "unit": "mg" }, "onset_weeks": [6, 12], "signals": ["omega3_gap", "lipids_high"], "citations": ["Skulas-Ray et al., Circulation 2019"], "summary": "EPA and DHA support healthy triglycerides and heart rhythm", "source": "AHA science advisory 2019" },
-  { "id": "ev_o3_joints", "ingredient_id": "omega3_algae", "body_area": "joints_recovery", "outcome": "Exercise soreness and joint stiffness", "population": "active adults", "effect_grade": "B", "effect_size": 0.5, "studied_dose": { "min": 250, "max": 3000, "unit": "mg" }, "onset_weeks": [4, 8], "signals": ["exercise_soreness", "joint_stiffness"], "citations": ["Lv et al., 2020"], "summary": "Calms exercise-related inflammation and stiffness", "source": "systematic review" },
-  { "id": "ev_o3_mood", "ingredient_id": "omega3_algae", "body_area": "mood_stress", "outcome": "Low mood (EPA)", "population": "adults", "effect_grade": "B", "effect_size": 0.3, "studied_dose": { "min": 500, "max": 2000, "unit": "mg" }, "onset_weeks": [6, 12], "signals": [], "citations": ["Liao et al., Transl Psychiatry 2019"], "summary": "EPA has small benefits for low mood", "source": "Transl Psychiatry 2019" },
-  { "id": "ev_o3_skin", "ingredient_id": "omega3_algae", "body_area": "skin_hair", "outcome": "Skin barrier", "population": "adults", "effect_grade": "C", "effect_size": 0.3, "studied_dose": { "min": 250, "max": 2000, "unit": "mg" }, "onset_weeks": [8, 12], "signals": [], "citations": ["Thomsen et al., 2020"], "summary": "Supports the skin barrier and scalp", "source": "review" },
-  { "id": "ev_o3_sleep", "ingredient_id": "omega3_algae", "body_area": "sleep", "outcome": "Sleep regulation", "population": "adults", "effect_grade": "D", "effect_size": 0.25, "studied_dose": { "min": 250, "max": 2000, "unit": "mg" }, "onset_weeks": [8, 12], "signals": [], "citations": ["Dai et al., 2021"], "summary": "DHA plays a role in sleep regulation", "source": "review" },
-  { "id": "ev_o3_perf", "ingredient_id": "omega3_algae", "body_area": "performance", "outcome": "Muscle soreness", "population": "active adults", "effect_grade": "C", "effect_size": 0.25, "studied_dose": { "min": 500, "max": 3000, "unit": "mg" }, "onset_weeks": [4, 8], "signals": ["endurance_load"], "citations": ["Philpott et al., 2019"], "summary": "May reduce muscle soreness after hard sessions", "source": "review" },
-  { "id": "ev_o3_imm", "ingredient_id": "omega3_algae", "body_area": "immunity", "outcome": "Resolving inflammation", "population": "adults", "effect_grade": "D", "effect_size": 0.25, "studied_dose": { "min": 500, "max": 3000, "unit": "mg" }, "onset_weeks": [8, 12], "signals": [], "citations": ["Calder, 2017"], "summary": "Helps resolve inflammation", "source": "review" },
-
-  { "id": "ev_fo_heart", "ingredient_id": "omega3_fish", "body_area": "heart_metabolic", "outcome": "Triglycerides", "population": "adults", "effect_grade": "A", "effect_size": 0.6, "studied_dose": { "min": 250, "max": 4000, "unit": "mg" }, "onset_weeks": [6, 12], "signals": ["omega3_gap", "lipids_high"], "citations": ["Skulas-Ray et al., Circulation 2019"], "summary": "EPA and DHA support healthy triglycerides and heart rhythm", "source": "AHA science advisory 2019" },
-  { "id": "ev_fo_joints", "ingredient_id": "omega3_fish", "body_area": "joints_recovery", "outcome": "Exercise soreness and joint stiffness", "population": "active adults", "effect_grade": "B", "effect_size": 0.5, "studied_dose": { "min": 250, "max": 3000, "unit": "mg" }, "onset_weeks": [4, 8], "signals": ["exercise_soreness", "joint_stiffness"], "citations": ["Lv et al., 2020"], "summary": "Calms exercise-related inflammation and stiffness", "source": "systematic review" },
-  { "id": "ev_fo_mood", "ingredient_id": "omega3_fish", "body_area": "mood_stress", "outcome": "Low mood (EPA)", "population": "adults", "effect_grade": "B", "effect_size": 0.3, "studied_dose": { "min": 500, "max": 2000, "unit": "mg" }, "onset_weeks": [6, 12], "signals": [], "citations": ["Liao et al., 2019"], "summary": "EPA has small benefits for low mood", "source": "Transl Psychiatry 2019" },
-  { "id": "ev_fo_skin", "ingredient_id": "omega3_fish", "body_area": "skin_hair", "outcome": "Skin barrier", "population": "adults", "effect_grade": "C", "effect_size": 0.3, "studied_dose": { "min": 250, "max": 2000, "unit": "mg" }, "onset_weeks": [8, 12], "signals": [], "citations": ["Thomsen et al., 2020"], "summary": "Supports the skin barrier and scalp", "source": "review" },
-
-  { "id": "ev_cr_perf", "ingredient_id": "creatine_monohydrate", "body_area": "performance", "outcome": "Strength and repeated-effort performance", "population": "active adults", "effect_grade": "A", "effect_size": 0.8, "studied_dose": { "min": 3, "max": 5, "unit": "g" }, "onset_weeks": [3, 4], "signals": ["low_dietary_creatine", "endurance_load"], "citations": ["Kreider et al., JISSN 2017"], "summary": "Tops up muscle creatine for stronger repeated efforts", "source": "JISSN 2017" },
-  { "id": "ev_cr_energy", "ingredient_id": "creatine_monohydrate", "body_area": "energy", "outcome": "Cognition after short sleep", "population": "adults", "effect_grade": "C", "effect_size": 0.3, "studied_dose": { "min": 3, "max": 5, "unit": "g" }, "onset_weeks": [3, 6], "signals": ["low_dietary_creatine", "afternoon_crash"], "citations": ["Avgerinos et al., 2018"], "summary": "Supports brain energy, especially on short sleep", "source": "Exp Gerontol 2018" },
-  { "id": "ev_cr_joints", "ingredient_id": "creatine_monohydrate", "body_area": "joints_recovery", "outcome": "Muscle recovery", "population": "active adults", "effect_grade": "C", "effect_size": 0.25, "studied_dose": { "min": 3, "max": 5, "unit": "g" }, "onset_weeks": [3, 6], "signals": ["endurance_load"], "citations": ["Kreider et al., 2017"], "summary": "Helps muscle recovery between sessions", "source": "JISSN 2017" },
-  { "id": "ev_cr_mood", "ingredient_id": "creatine_monohydrate", "body_area": "mood_stress", "outcome": "Mood", "population": "adults", "effect_grade": "D", "effect_size": 0.2, "studied_dose": { "min": 3, "max": 5, "unit": "g" }, "onset_weeks": [4, 8], "signals": [], "citations": ["Kious et al., 2019"], "summary": "Early evidence for mood support", "source": "review" },
-
-  { "id": "ev_b12_energy", "ingredient_id": "vitamin_b12", "body_area": "energy", "outcome": "Red blood cell production", "population": "adults with low intake", "effect_grade": "B", "effect_size": 0.6, "studied_dose": { "min": 250, "max": 2000, "unit": "mcg" }, "onset_weeks": [4, 8], "signals": ["b12_risk"], "citations": ["NIH ODS Vitamin B12"], "summary": "Needed to make red blood cells that carry oxygen", "source": "NIH ODS" },
-  { "id": "ev_b12_skin", "ingredient_id": "vitamin_b12", "body_area": "skin_hair", "outcome": "Hair and skin changes in deficiency", "population": "adults with low intake", "effect_grade": "D", "effect_size": 0.2, "studied_dose": { "min": 250, "max": 2000, "unit": "mcg" }, "onset_weeks": [8, 12], "signals": ["b12_risk"], "citations": ["NIH ODS"], "summary": "Low B12 can show up as hair and skin changes", "source": "NIH ODS" },
-
-  { "id": "ev_mg_sleep", "ingredient_id": "magnesium_bisglycinate", "body_area": "sleep", "outcome": "Sleep onset", "population": "adults", "effect_grade": "B", "effect_size": 0.6, "studied_dose": { "min": 200, "max": 500, "unit": "mg" }, "onset_weeks": [1, 3], "signals": ["sleep_onset", "sleep_maintenance"], "citations": ["Abbasi et al., J Res Med Sci 2012"], "summary": "Supports muscle relaxation and calmer sleep onset", "source": "J Res Med Sci 2012" },
-  { "id": "ev_mg_mood", "ingredient_id": "magnesium_bisglycinate", "body_area": "mood_stress", "outcome": "Stress response", "population": "adults", "effect_grade": "C", "effect_size": 0.35, "studied_dose": { "min": 200, "max": 400, "unit": "mg" }, "onset_weeks": [2, 6], "signals": ["stress_arousal", "stress_load"], "citations": ["Boyle et al., Nutrients 2017"], "summary": "Helps regulate the stress response", "source": "Nutrients 2017" },
-  { "id": "ev_mg_joints", "ingredient_id": "magnesium_bisglycinate", "body_area": "joints_recovery", "outcome": "Muscle recovery", "population": "active adults", "effect_grade": "D", "effect_size": 0.25, "studied_dose": { "min": 200, "max": 400, "unit": "mg" }, "onset_weeks": [2, 4], "signals": ["endurance_load"], "citations": ["Zhang et al., 2017"], "summary": "Supports muscle recovery after training", "source": "review" },
-  { "id": "ev_mg_energy", "ingredient_id": "magnesium_bisglycinate", "body_area": "energy", "outcome": "Energy metabolism", "population": "adults", "effect_grade": "D", "effect_size": 0.2, "studied_dose": { "min": 200, "max": 400, "unit": "mg" }, "onset_weeks": [2, 6], "signals": [], "citations": ["NIH ODS Magnesium"], "summary": "Needed for energy metabolism", "source": "NIH ODS" },
-  { "id": "ev_mg_heart", "ingredient_id": "magnesium_bisglycinate", "body_area": "heart_metabolic", "outcome": "Blood pressure", "population": "adults", "effect_grade": "C", "effect_size": 0.25, "studied_dose": { "min": 200, "max": 400, "unit": "mg" }, "onset_weeks": [4, 12], "signals": [], "citations": ["Zhang et al., Hypertension 2016"], "summary": "Supports normal heart rhythm and blood pressure", "source": "Hypertension 2016" },
-
-  { "id": "ev_ash_mood", "ingredient_id": "ashwagandha_ksm66", "body_area": "mood_stress", "outcome": "Perceived stress (PSS)", "population": "stressed adults", "effect_grade": "B", "effect_size": 0.7, "studied_dose": { "min": 300, "max": 600, "unit": "mg" }, "onset_weeks": [4, 8], "signals": ["stress_load", "stress_arousal"], "citations": ["Chandrasekhar et al., 2012", "Salve et al., 2019"], "summary": "Lowers perceived stress scores over 8 weeks", "source": "Indian J Psychol Med 2012" },
-  { "id": "ev_ash_sleep", "ingredient_id": "ashwagandha_ksm66", "body_area": "sleep", "outcome": "Sleep onset latency", "population": "adults", "effect_grade": "B", "effect_size": 0.65, "studied_dose": { "min": 300, "max": 600, "unit": "mg" }, "onset_weeks": [2, 6], "signals": ["stress_arousal", "sleep_onset"], "citations": ["Langade et al., 2019"], "summary": "Lowers the stress arousal that keeps you awake", "source": "Cureus 2019" },
-  { "id": "ev_ash_perf", "ingredient_id": "ashwagandha_ksm66", "body_area": "performance", "outcome": "Endurance (VO2max)", "population": "trained adults", "effect_grade": "C", "effect_size": 0.35, "studied_dose": { "min": 300, "max": 600, "unit": "mg" }, "onset_weeks": [6, 8], "signals": ["endurance_load"], "citations": ["Pérez-Gómez et al., 2020"], "summary": "Small gains in endurance in trained people", "source": "Nutrients 2020" },
-  { "id": "ev_ash_energy", "ingredient_id": "ashwagandha_ksm66", "body_area": "energy", "outcome": "Stress-related fatigue", "population": "adults", "effect_grade": "D", "effect_size": 0.25, "studied_dose": { "min": 300, "max": 600, "unit": "mg" }, "onset_weeks": [4, 8], "signals": ["stress_load"], "citations": ["Lopresti et al., 2019"], "summary": "May ease stress-related fatigue", "source": "Medicine 2019" },
-
-  { "id": "ev_cur_joints", "ingredient_id": "curcumin_enhanced", "body_area": "joints_recovery", "outcome": "Exercise-related soreness and knee discomfort", "population": "active adults", "effect_grade": "B", "effect_size": 0.65, "studied_dose": { "min": 400, "max": 1500, "unit": "mg" }, "onset_weeks": [2, 8], "signals": ["exercise_soreness", "joint_stiffness"], "citations": ["Daily et al., J Med Food 2016"], "summary": "Eases exercise-related knee soreness", "source": "J Med Food 2016" },
-  { "id": "ev_cur_imm", "ingredient_id": "curcumin_enhanced", "body_area": "immunity", "outcome": "General inflammation", "population": "adults", "effect_grade": "D", "effect_size": 0.25, "studied_dose": { "min": 400, "max": 1500, "unit": "mg" }, "onset_weeks": [4, 8], "signals": [], "citations": ["Hewlings & Kalman, 2017"], "summary": "Calms general inflammation", "source": "Foods 2017" },
-  { "id": "ev_cur_heart", "ingredient_id": "curcumin_enhanced", "body_area": "heart_metabolic", "outcome": "Vascular function", "population": "adults", "effect_grade": "D", "effect_size": 0.25, "studied_dose": { "min": 400, "max": 1500, "unit": "mg" }, "onset_weeks": [8, 12], "signals": [], "citations": ["Santos-Parker et al., 2017"], "summary": "May support healthy blood vessels", "source": "Aging 2017" },
-
-  { "id": "ev_fe_energy", "ingredient_id": "iron_bisglycinate", "body_area": "energy", "outcome": "Fatigue in iron deficiency", "population": "adults with low ferritin", "effect_grade": "A", "effect_size": 0.7, "studied_dose": { "min": 18, "max": 65, "unit": "mg" }, "onset_weeks": [6, 12], "signals": ["low_iron_risk"], "citations": ["Houston et al., BMJ Open 2018"], "summary": "Rebuilds iron stores for oxygen transport", "source": "BMJ Open 2018" },
-  { "id": "ev_fe_skin", "ingredient_id": "iron_bisglycinate", "body_area": "skin_hair", "outcome": "Hair shedding with low ferritin", "population": "adults with low ferritin", "effect_grade": "B", "effect_size": 0.6, "studied_dose": { "min": 18, "max": 65, "unit": "mg" }, "onset_weeks": [8, 16], "signals": ["low_iron_risk", "hair_shedding"], "citations": ["Almohanna et al., 2019"], "summary": "Low ferritin is a common cause of hair shedding", "source": "Dermatol Ther 2019" },
-  { "id": "ev_fe_sleep", "ingredient_id": "iron_bisglycinate", "body_area": "sleep", "outcome": "Restless legs with low ferritin", "population": "adults with low ferritin", "effect_grade": "C", "effect_size": 0.4, "studied_dose": { "min": 18, "max": 65, "unit": "mg" }, "onset_weeks": [6, 12], "signals": ["low_iron_risk"], "citations": ["Allen et al., Sleep Med 2018"], "summary": "Low iron is linked to restless legs", "source": "Sleep Med 2018" },
-  { "id": "ev_fe_perf", "ingredient_id": "iron_bisglycinate", "body_area": "performance", "outcome": "Endurance with low ferritin", "population": "active adults with low ferritin", "effect_grade": "B", "effect_size": 0.4, "studied_dose": { "min": 18, "max": 65, "unit": "mg" }, "onset_weeks": [6, 12], "signals": ["low_iron_risk"], "citations": ["Burden et al., 2015"], "summary": "Supports endurance when stores are low", "source": "Br J Sports Med 2015" },
-
-  { "id": "ev_mel_sleep", "ingredient_id": "melatonin", "body_area": "sleep", "outcome": "Shifting a late body clock", "population": "adults with delayed sleep phase", "effect_grade": "B", "effect_size": 0.55, "studied_dose": { "min": 0.5, "max": 3, "unit": "mg" }, "onset_weeks": [1, 2], "signals": ["circadian_delay"], "citations": ["Auld et al., Sleep Med Rev 2017"], "summary": "Signals night-time to a body clock that runs late", "source": "Sleep Med Rev 2017" },
-  { "id": "ev_sjw_mood", "ingredient_id": "st_johns_wort", "body_area": "mood_stress", "outcome": "Mild low mood", "population": "adults", "effect_grade": "B", "effect_size": 0.45, "studied_dose": { "min": 300, "max": 900, "unit": "mg" }, "onset_weeks": [4, 8], "signals": ["stress_load"], "citations": ["Linde et al., Cochrane 2008"], "summary": "Helps mild low mood but interacts with many medicines", "source": "Cochrane 2008" },
-  { "id": "ev_col_joints", "ingredient_id": "collagen_peptides", "body_area": "joints_recovery", "outcome": "Activity-related joint comfort", "population": "athletes", "effect_grade": "C", "effect_size": 0.45, "studied_dose": { "min": 5, "max": 15, "unit": "g" }, "onset_weeks": [8, 12], "signals": ["exercise_soreness", "joint_stiffness"], "citations": ["Clark et al., 2008"], "summary": "Small trials on joint comfort in athletes", "source": "Curr Med Res Opin 2008" },
-  { "id": "ev_col_skin", "ingredient_id": "collagen_peptides", "body_area": "skin_hair", "outcome": "Skin elasticity", "population": "adults", "effect_grade": "C", "effect_size": 0.35, "studied_dose": { "min": 2.5, "max": 15, "unit": "g" }, "onset_weeks": [8, 12], "signals": ["hair_shedding"], "citations": ["de Miranda et al., 2021"], "summary": "Small trials on skin elasticity", "source": "Int J Dermatol 2021" },
-  { "id": "ev_lth_mood", "ingredient_id": "l_theanine", "body_area": "mood_stress", "outcome": "Relaxation", "population": "adults", "effect_grade": "C", "effect_size": 0.3, "studied_dose": { "min": 200, "max": 400, "unit": "mg" }, "onset_weeks": [1, 4], "signals": ["stress_arousal", "stress_load"], "citations": ["Hidese et al., 2019"], "summary": "May take the edge off a busy mind", "source": "Nutrients 2019" },
-  { "id": "ev_lth_sleep", "ingredient_id": "l_theanine", "body_area": "sleep", "outcome": "Sleep quality", "population": "adults", "effect_grade": "C", "effect_size": 0.25, "studied_dose": { "min": 200, "max": 400, "unit": "mg" }, "onset_weeks": [1, 4], "signals": ["stress_arousal"], "citations": ["Hidese et al., 2019"], "summary": "May improve sleep quality when stress keeps you up", "source": "Nutrients 2019" },
-  { "id": "ev_gly_sleep", "ingredient_id": "glycine", "body_area": "sleep", "outcome": "Subjective sleep quality", "population": "adults", "effect_grade": "C", "effect_size": 0.35, "studied_dose": { "min": 3, "max": 3, "unit": "g" }, "onset_weeks": [1, 2], "signals": ["sleep_maintenance"], "citations": ["Bannai & Kawai, 2012"], "summary": "May help you wake feeling more rested", "source": "J Pharmacol Sci 2012" },
-  { "id": "ev_vc_imm", "ingredient_id": "vitamin_c", "body_area": "immunity", "outcome": "Duration of colds", "population": "adults", "effect_grade": "B", "effect_size": 0.35, "studied_dose": { "min": 200, "max": 1000, "unit": "mg" }, "onset_weeks": [4, 12], "signals": ["frequent_colds"], "citations": ["Hemilä & Chalker, Cochrane 2013"], "summary": "Regular use slightly shortens colds", "source": "Cochrane 2013" },
-  { "id": "ev_zn_imm", "ingredient_id": "zinc", "body_area": "immunity", "outcome": "Immune function when intake is low", "population": "adults", "effect_grade": "C", "effect_size": 0.35, "studied_dose": { "min": 8, "max": 25, "unit": "mg" }, "onset_weeks": [4, 12], "signals": ["frequent_colds"], "citations": ["NIH ODS Zinc"], "summary": "Supports immune function when intake is low", "source": "NIH ODS" },
-  { "id": "ev_zn_skin", "ingredient_id": "zinc", "body_area": "skin_hair", "outcome": "Skin", "population": "adults", "effect_grade": "D", "effect_size": 0.2, "studied_dose": { "min": 8, "max": 25, "unit": "mg" }, "onset_weeks": [8, 12], "signals": [], "citations": ["NIH ODS Zinc"], "summary": "Supports skin health", "source": "NIH ODS" },
-  { "id": "ev_fol_preg", "ingredient_id": "methylfolate", "body_area": "heart_metabolic", "outcome": "Healthy cell growth", "population": "people planning pregnancy", "effect_grade": "A", "effect_size": 0.3, "studied_dose": { "min": 400, "max": 1000, "unit": "mcg" }, "onset_weeks": [4, 12], "signals": ["pregnancy_planning"], "citations": ["Health Canada folic acid guidance"], "summary": "Recommended before and during pregnancy", "source": "Health Canada" },
-  { "id": "ev_iod_preg", "ingredient_id": "iodine", "body_area": "energy", "outcome": "Thyroid hormone production", "population": "pregnancy", "effect_grade": "B", "effect_size": 0.3, "studied_dose": { "min": 150, "max": 250, "unit": "mcg" }, "onset_weeks": [8, 12], "signals": ["pregnancy_planning"], "citations": ["NIH ODS Iodine"], "summary": "Needed for thyroid hormone; needs rise in pregnancy", "source": "NIH ODS" }
+  {
+    "id": "ev_d_immunity",
+    "ingredient_id": "vitamin_d3_k2",
+    "body_area": "immunity",
+    "outcome": "Fewer respiratory infections when levels start low",
+    "population": "adults with low status",
+    "effect_grade": "B",
+    "effect_size": 0.6,
+    "studied_dose": {
+      "min": 400,
+      "max": 4000,
+      "unit": "IU"
+    },
+    "onset_weeks": [
+      8,
+      12
+    ],
+    "signals": [
+      "vitamin_d_risk",
+      "frequent_colds"
+    ],
+    "citations": [
+      "Martineau et al., BMJ 2017"
+    ],
+    "summary": "Supports immune cell function when your levels are low",
+    "source": "BMJ 2017;356:i6583"
+  },
+  {
+    "id": "ev_d_energy",
+    "ingredient_id": "vitamin_d3_k2",
+    "body_area": "energy",
+    "outcome": "Less fatigue in people with low vitamin D",
+    "population": "adults with low status",
+    "effect_grade": "C",
+    "effect_size": 0.45,
+    "studied_dose": {
+      "min": 1000,
+      "max": 4000,
+      "unit": "IU"
+    },
+    "onset_weeks": [
+      6,
+      12
+    ],
+    "signals": [
+      "vitamin_d_risk"
+    ],
+    "citations": [
+      "Nowak et al., Medicine 2016"
+    ],
+    "summary": "Low vitamin D is linked to tiredness; topping up helps when you're low",
+    "source": "Medicine 2016;95(52):e5353"
+  },
+  {
+    "id": "ev_d_mood",
+    "ingredient_id": "vitamin_d3_k2",
+    "body_area": "mood_stress",
+    "outcome": "Winter mood",
+    "population": "adults with low status",
+    "effect_grade": "D",
+    "effect_size": 0.3,
+    "studied_dose": {
+      "min": 1000,
+      "max": 4000,
+      "unit": "IU"
+    },
+    "onset_weeks": [
+      8,
+      12
+    ],
+    "signals": [
+      "vitamin_d_risk"
+    ],
+    "citations": [
+      "Vellekkatt & Menon, J Postgrad Med 2019"
+    ],
+    "summary": "May support winter mood when you're low",
+    "source": "J Postgrad Med 2019"
+  },
+  {
+    "id": "ev_d_joints",
+    "ingredient_id": "vitamin_d3_k2",
+    "body_area": "joints_recovery",
+    "outcome": "Bone and muscle health",
+    "population": "adults",
+    "effect_grade": "C",
+    "effect_size": 0.3,
+    "studied_dose": {
+      "min": 800,
+      "max": 4000,
+      "unit": "IU"
+    },
+    "onset_weeks": [
+      12,
+      24
+    ],
+    "signals": [],
+    "citations": [
+      "NIH ODS Vitamin D"
+    ],
+    "summary": "Supports bone and muscle health",
+    "source": "NIH ODS"
+  },
+  {
+    "id": "ev_d_sleep",
+    "ingredient_id": "vitamin_d3_k2",
+    "body_area": "sleep",
+    "outcome": "Sleep quality",
+    "population": "adults with low status",
+    "effect_grade": "D",
+    "effect_size": 0.25,
+    "studied_dose": {
+      "min": 1000,
+      "max": 4000,
+      "unit": "IU"
+    },
+    "onset_weeks": [
+      8,
+      12
+    ],
+    "signals": [
+      "vitamin_d_risk"
+    ],
+    "citations": [
+      "Gao et al., Nutrients 2018"
+    ],
+    "summary": "Low levels are linked to poorer sleep quality",
+    "source": "Nutrients 2018"
+  },
+  {
+    "id": "ev_d_performance",
+    "ingredient_id": "vitamin_d3_k2",
+    "body_area": "performance",
+    "outcome": "Muscle function",
+    "population": "adults with low status",
+    "effect_grade": "D",
+    "effect_size": 0.25,
+    "studied_dose": {
+      "min": 1000,
+      "max": 4000,
+      "unit": "IU"
+    },
+    "onset_weeks": [
+      8,
+      12
+    ],
+    "signals": [
+      "vitamin_d_risk"
+    ],
+    "citations": [
+      "NIH ODS Vitamin D"
+    ],
+    "summary": "Supports muscle function",
+    "source": "NIH ODS"
+  },
+  {
+    "id": "ev_d_skin",
+    "ingredient_id": "vitamin_d3_k2",
+    "body_area": "skin_hair",
+    "outcome": "Hair growth cycle",
+    "population": "adults with low status",
+    "effect_grade": "D",
+    "effect_size": 0.25,
+    "studied_dose": {
+      "min": 1000,
+      "max": 4000,
+      "unit": "IU"
+    },
+    "onset_weeks": [
+      12,
+      24
+    ],
+    "signals": [
+      "vitamin_d_risk"
+    ],
+    "citations": [
+      "Saini & Mysore, 2021"
+    ],
+    "summary": "Plays a role in the hair growth cycle",
+    "source": "J Cosmet Dermatol 2021"
+  },
+  {
+    "id": "ev_k2_heart",
+    "ingredient_id": "vitamin_d3_k2",
+    "body_area": "heart_metabolic",
+    "outcome": "Calcium handling",
+    "population": "adults",
+    "effect_grade": "D",
+    "effect_size": 0.25,
+    "studied_dose": {
+      "min": 1000,
+      "max": 4000,
+      "unit": "IU"
+    },
+    "onset_weeks": [
+      12,
+      24
+    ],
+    "signals": [],
+    "citations": [
+      "NIH ODS Vitamin K"
+    ],
+    "summary": "K2 helps direct calcium to bone",
+    "source": "NIH ODS"
+  },
+  {
+    "id": "ev_d3_immunity",
+    "ingredient_id": "vitamin_d3",
+    "body_area": "immunity",
+    "outcome": "Fewer respiratory infections when levels start low",
+    "population": "adults with low status",
+    "effect_grade": "B",
+    "effect_size": 0.6,
+    "studied_dose": {
+      "min": 400,
+      "max": 4000,
+      "unit": "IU"
+    },
+    "onset_weeks": [
+      8,
+      12
+    ],
+    "signals": [
+      "vitamin_d_risk",
+      "frequent_colds"
+    ],
+    "citations": [
+      "Martineau et al., BMJ 2017"
+    ],
+    "summary": "Supports immune cell function when your levels are low",
+    "source": "BMJ 2017"
+  },
+  {
+    "id": "ev_d3_energy",
+    "ingredient_id": "vitamin_d3",
+    "body_area": "energy",
+    "outcome": "Less fatigue in people with low vitamin D",
+    "population": "adults with low status",
+    "effect_grade": "C",
+    "effect_size": 0.45,
+    "studied_dose": {
+      "min": 1000,
+      "max": 4000,
+      "unit": "IU"
+    },
+    "onset_weeks": [
+      6,
+      12
+    ],
+    "signals": [
+      "vitamin_d_risk"
+    ],
+    "citations": [
+      "Nowak et al., 2016"
+    ],
+    "summary": "Topping up helps tiredness when you're low",
+    "source": "Medicine 2016"
+  },
+  {
+    "id": "ev_d3_joints",
+    "ingredient_id": "vitamin_d3",
+    "body_area": "joints_recovery",
+    "outcome": "Bone and muscle health",
+    "population": "adults",
+    "effect_grade": "C",
+    "effect_size": 0.3,
+    "studied_dose": {
+      "min": 800,
+      "max": 4000,
+      "unit": "IU"
+    },
+    "onset_weeks": [
+      12,
+      24
+    ],
+    "signals": [],
+    "citations": [
+      "NIH ODS"
+    ],
+    "summary": "Supports bone and muscle health",
+    "source": "NIH ODS"
+  },
+  {
+    "id": "ev_o3_heart",
+    "ingredient_id": "omega3_algae",
+    "body_area": "heart_metabolic",
+    "outcome": "Triglycerides",
+    "population": "adults",
+    "effect_grade": "A",
+    "effect_size": 0.6,
+    "studied_dose": {
+      "min": 250,
+      "max": 4000,
+      "unit": "mg"
+    },
+    "onset_weeks": [
+      6,
+      12
+    ],
+    "signals": [
+      "omega3_gap",
+      "lipids_high"
+    ],
+    "citations": [
+      "Skulas-Ray et al., Circulation 2019"
+    ],
+    "summary": "EPA and DHA support healthy triglycerides and heart rhythm",
+    "source": "AHA science advisory 2019"
+  },
+  {
+    "id": "ev_o3_joints",
+    "ingredient_id": "omega3_algae",
+    "body_area": "joints_recovery",
+    "outcome": "Exercise soreness and joint stiffness",
+    "population": "active adults",
+    "effect_grade": "B",
+    "effect_size": 0.5,
+    "studied_dose": {
+      "min": 250,
+      "max": 3000,
+      "unit": "mg"
+    },
+    "onset_weeks": [
+      4,
+      8
+    ],
+    "signals": [
+      "exercise_soreness",
+      "joint_stiffness"
+    ],
+    "citations": [
+      "Lv et al., 2020"
+    ],
+    "summary": "Calms exercise-related inflammation and stiffness",
+    "source": "systematic review"
+  },
+  {
+    "id": "ev_o3_mood",
+    "ingredient_id": "omega3_algae",
+    "body_area": "mood_stress",
+    "outcome": "Low mood (EPA)",
+    "population": "adults",
+    "effect_grade": "B",
+    "effect_size": 0.3,
+    "studied_dose": {
+      "min": 500,
+      "max": 2000,
+      "unit": "mg"
+    },
+    "onset_weeks": [
+      6,
+      12
+    ],
+    "signals": [],
+    "citations": [
+      "Liao et al., Transl Psychiatry 2019"
+    ],
+    "summary": "EPA has small benefits for low mood",
+    "source": "Transl Psychiatry 2019"
+  },
+  {
+    "id": "ev_o3_skin",
+    "ingredient_id": "omega3_algae",
+    "body_area": "skin_hair",
+    "outcome": "Skin barrier",
+    "population": "adults",
+    "effect_grade": "C",
+    "effect_size": 0.3,
+    "studied_dose": {
+      "min": 250,
+      "max": 2000,
+      "unit": "mg"
+    },
+    "onset_weeks": [
+      8,
+      12
+    ],
+    "signals": [],
+    "citations": [
+      "Thomsen et al., 2020"
+    ],
+    "summary": "Supports the skin barrier and scalp",
+    "source": "review"
+  },
+  {
+    "id": "ev_o3_sleep",
+    "ingredient_id": "omega3_algae",
+    "body_area": "sleep",
+    "outcome": "Sleep regulation",
+    "population": "adults",
+    "effect_grade": "D",
+    "effect_size": 0.25,
+    "studied_dose": {
+      "min": 250,
+      "max": 2000,
+      "unit": "mg"
+    },
+    "onset_weeks": [
+      8,
+      12
+    ],
+    "signals": [],
+    "citations": [
+      "Dai et al., 2021"
+    ],
+    "summary": "DHA plays a role in sleep regulation",
+    "source": "review"
+  },
+  {
+    "id": "ev_o3_perf",
+    "ingredient_id": "omega3_algae",
+    "body_area": "performance",
+    "outcome": "Muscle soreness",
+    "population": "active adults",
+    "effect_grade": "C",
+    "effect_size": 0.25,
+    "studied_dose": {
+      "min": 500,
+      "max": 3000,
+      "unit": "mg"
+    },
+    "onset_weeks": [
+      4,
+      8
+    ],
+    "signals": [
+      "endurance_load"
+    ],
+    "citations": [
+      "Philpott et al., 2019"
+    ],
+    "summary": "May reduce muscle soreness after hard sessions",
+    "source": "review"
+  },
+  {
+    "id": "ev_o3_imm",
+    "ingredient_id": "omega3_algae",
+    "body_area": "immunity",
+    "outcome": "Resolving inflammation",
+    "population": "adults",
+    "effect_grade": "D",
+    "effect_size": 0.25,
+    "studied_dose": {
+      "min": 500,
+      "max": 3000,
+      "unit": "mg"
+    },
+    "onset_weeks": [
+      8,
+      12
+    ],
+    "signals": [],
+    "citations": [
+      "Calder, 2017"
+    ],
+    "summary": "Helps resolve inflammation",
+    "source": "review"
+  },
+  {
+    "id": "ev_fo_heart",
+    "ingredient_id": "omega3_fish",
+    "body_area": "heart_metabolic",
+    "outcome": "Triglycerides",
+    "population": "adults",
+    "effect_grade": "A",
+    "effect_size": 0.6,
+    "studied_dose": {
+      "min": 250,
+      "max": 4000,
+      "unit": "mg"
+    },
+    "onset_weeks": [
+      6,
+      12
+    ],
+    "signals": [
+      "omega3_gap",
+      "lipids_high"
+    ],
+    "citations": [
+      "Skulas-Ray et al., Circulation 2019"
+    ],
+    "summary": "EPA and DHA support healthy triglycerides and heart rhythm",
+    "source": "AHA science advisory 2019"
+  },
+  {
+    "id": "ev_fo_joints",
+    "ingredient_id": "omega3_fish",
+    "body_area": "joints_recovery",
+    "outcome": "Exercise soreness and joint stiffness",
+    "population": "active adults",
+    "effect_grade": "B",
+    "effect_size": 0.5,
+    "studied_dose": {
+      "min": 250,
+      "max": 3000,
+      "unit": "mg"
+    },
+    "onset_weeks": [
+      4,
+      8
+    ],
+    "signals": [
+      "exercise_soreness",
+      "joint_stiffness"
+    ],
+    "citations": [
+      "Lv et al., 2020"
+    ],
+    "summary": "Calms exercise-related inflammation and stiffness",
+    "source": "systematic review"
+  },
+  {
+    "id": "ev_fo_mood",
+    "ingredient_id": "omega3_fish",
+    "body_area": "mood_stress",
+    "outcome": "Low mood (EPA)",
+    "population": "adults",
+    "effect_grade": "B",
+    "effect_size": 0.3,
+    "studied_dose": {
+      "min": 500,
+      "max": 2000,
+      "unit": "mg"
+    },
+    "onset_weeks": [
+      6,
+      12
+    ],
+    "signals": [],
+    "citations": [
+      "Liao et al., 2019"
+    ],
+    "summary": "EPA has small benefits for low mood",
+    "source": "Transl Psychiatry 2019"
+  },
+  {
+    "id": "ev_fo_skin",
+    "ingredient_id": "omega3_fish",
+    "body_area": "skin_hair",
+    "outcome": "Skin barrier",
+    "population": "adults",
+    "effect_grade": "C",
+    "effect_size": 0.3,
+    "studied_dose": {
+      "min": 250,
+      "max": 2000,
+      "unit": "mg"
+    },
+    "onset_weeks": [
+      8,
+      12
+    ],
+    "signals": [],
+    "citations": [
+      "Thomsen et al., 2020"
+    ],
+    "summary": "Supports the skin barrier and scalp",
+    "source": "review"
+  },
+  {
+    "id": "ev_fo_sleep",
+    "ingredient_id": "omega3_fish",
+    "body_area": "sleep",
+    "outcome": "Sleep regulation",
+    "population": "adults",
+    "effect_grade": "D",
+    "effect_size": 0.25,
+    "studied_dose": {
+      "min": 250,
+      "max": 2000,
+      "unit": "mg"
+    },
+    "onset_weeks": [
+      8,
+      12
+    ],
+    "signals": [],
+    "citations": [
+      "Dai et al., 2021"
+    ],
+    "summary": "DHA plays a role in sleep regulation",
+    "source": "review"
+  },
+  {
+    "id": "ev_fo_perf",
+    "ingredient_id": "omega3_fish",
+    "body_area": "performance",
+    "outcome": "Muscle soreness",
+    "population": "active adults",
+    "effect_grade": "C",
+    "effect_size": 0.25,
+    "studied_dose": {
+      "min": 500,
+      "max": 3000,
+      "unit": "mg"
+    },
+    "onset_weeks": [
+      4,
+      8
+    ],
+    "signals": [
+      "endurance_load"
+    ],
+    "citations": [
+      "Philpott et al., 2019"
+    ],
+    "summary": "May reduce muscle soreness after hard sessions",
+    "source": "review"
+  },
+  {
+    "id": "ev_fo_imm",
+    "ingredient_id": "omega3_fish",
+    "body_area": "immunity",
+    "outcome": "Resolving inflammation",
+    "population": "adults",
+    "effect_grade": "D",
+    "effect_size": 0.25,
+    "studied_dose": {
+      "min": 500,
+      "max": 3000,
+      "unit": "mg"
+    },
+    "onset_weeks": [
+      8,
+      12
+    ],
+    "signals": [],
+    "citations": [
+      "Calder, 2017"
+    ],
+    "summary": "Helps resolve inflammation",
+    "source": "review"
+  },
+  {
+    "id": "ev_cr_perf",
+    "ingredient_id": "creatine_monohydrate",
+    "body_area": "performance",
+    "outcome": "Strength and repeated-effort performance",
+    "population": "active adults",
+    "effect_grade": "A",
+    "effect_size": 0.8,
+    "studied_dose": {
+      "min": 3,
+      "max": 5,
+      "unit": "g"
+    },
+    "onset_weeks": [
+      3,
+      4
+    ],
+    "signals": [
+      "low_dietary_creatine",
+      "endurance_load"
+    ],
+    "citations": [
+      "Kreider et al., JISSN 2017"
+    ],
+    "summary": "Tops up muscle creatine for stronger repeated efforts",
+    "source": "JISSN 2017"
+  },
+  {
+    "id": "ev_cr_energy",
+    "ingredient_id": "creatine_monohydrate",
+    "body_area": "energy",
+    "outcome": "Cognition after short sleep",
+    "population": "adults",
+    "effect_grade": "C",
+    "effect_size": 0.3,
+    "studied_dose": {
+      "min": 3,
+      "max": 5,
+      "unit": "g"
+    },
+    "onset_weeks": [
+      3,
+      6
+    ],
+    "signals": [
+      "low_dietary_creatine",
+      "afternoon_crash"
+    ],
+    "citations": [
+      "Avgerinos et al., 2018"
+    ],
+    "summary": "Supports brain energy, especially on short sleep",
+    "source": "Exp Gerontol 2018"
+  },
+  {
+    "id": "ev_cr_joints",
+    "ingredient_id": "creatine_monohydrate",
+    "body_area": "joints_recovery",
+    "outcome": "Muscle recovery",
+    "population": "active adults",
+    "effect_grade": "C",
+    "effect_size": 0.25,
+    "studied_dose": {
+      "min": 3,
+      "max": 5,
+      "unit": "g"
+    },
+    "onset_weeks": [
+      3,
+      6
+    ],
+    "signals": [
+      "endurance_load"
+    ],
+    "citations": [
+      "Kreider et al., 2017"
+    ],
+    "summary": "Helps muscle recovery between sessions",
+    "source": "JISSN 2017"
+  },
+  {
+    "id": "ev_cr_mood",
+    "ingredient_id": "creatine_monohydrate",
+    "body_area": "mood_stress",
+    "outcome": "Mood",
+    "population": "adults",
+    "effect_grade": "D",
+    "effect_size": 0.2,
+    "studied_dose": {
+      "min": 3,
+      "max": 5,
+      "unit": "g"
+    },
+    "onset_weeks": [
+      4,
+      8
+    ],
+    "signals": [],
+    "citations": [
+      "Kious et al., 2019"
+    ],
+    "summary": "Early evidence for mood support",
+    "source": "review"
+  },
+  {
+    "id": "ev_b12_energy",
+    "ingredient_id": "vitamin_b12",
+    "body_area": "energy",
+    "outcome": "Red blood cell production",
+    "population": "adults with low intake",
+    "effect_grade": "B",
+    "effect_size": 0.6,
+    "studied_dose": {
+      "min": 250,
+      "max": 2000,
+      "unit": "mcg"
+    },
+    "onset_weeks": [
+      4,
+      8
+    ],
+    "signals": [
+      "b12_risk"
+    ],
+    "citations": [
+      "NIH ODS Vitamin B12"
+    ],
+    "summary": "Needed to make red blood cells that carry oxygen",
+    "source": "NIH ODS"
+  },
+  {
+    "id": "ev_b12_skin",
+    "ingredient_id": "vitamin_b12",
+    "body_area": "skin_hair",
+    "outcome": "Hair and skin changes in deficiency",
+    "population": "adults with low intake",
+    "effect_grade": "D",
+    "effect_size": 0.2,
+    "studied_dose": {
+      "min": 250,
+      "max": 2000,
+      "unit": "mcg"
+    },
+    "onset_weeks": [
+      8,
+      12
+    ],
+    "signals": [
+      "b12_risk"
+    ],
+    "citations": [
+      "NIH ODS"
+    ],
+    "summary": "Low B12 can show up as hair and skin changes",
+    "source": "NIH ODS"
+  },
+  {
+    "id": "ev_mg_sleep",
+    "ingredient_id": "magnesium_bisglycinate",
+    "body_area": "sleep",
+    "outcome": "Sleep onset",
+    "population": "adults",
+    "effect_grade": "B",
+    "effect_size": 0.6,
+    "studied_dose": {
+      "min": 200,
+      "max": 500,
+      "unit": "mg"
+    },
+    "onset_weeks": [
+      1,
+      3
+    ],
+    "signals": [
+      "sleep_onset",
+      "sleep_maintenance"
+    ],
+    "citations": [
+      "Abbasi et al., J Res Med Sci 2012"
+    ],
+    "summary": "Supports muscle relaxation and calmer sleep onset",
+    "source": "J Res Med Sci 2012"
+  },
+  {
+    "id": "ev_mg_mood",
+    "ingredient_id": "magnesium_bisglycinate",
+    "body_area": "mood_stress",
+    "outcome": "Stress response",
+    "population": "adults",
+    "effect_grade": "C",
+    "effect_size": 0.35,
+    "studied_dose": {
+      "min": 200,
+      "max": 400,
+      "unit": "mg"
+    },
+    "onset_weeks": [
+      2,
+      6
+    ],
+    "signals": [
+      "stress_arousal",
+      "stress_load"
+    ],
+    "citations": [
+      "Boyle et al., Nutrients 2017"
+    ],
+    "summary": "Helps regulate the stress response",
+    "source": "Nutrients 2017"
+  },
+  {
+    "id": "ev_mg_joints",
+    "ingredient_id": "magnesium_bisglycinate",
+    "body_area": "joints_recovery",
+    "outcome": "Muscle recovery",
+    "population": "active adults",
+    "effect_grade": "D",
+    "effect_size": 0.25,
+    "studied_dose": {
+      "min": 200,
+      "max": 400,
+      "unit": "mg"
+    },
+    "onset_weeks": [
+      2,
+      4
+    ],
+    "signals": [
+      "endurance_load"
+    ],
+    "citations": [
+      "Zhang et al., 2017"
+    ],
+    "summary": "Supports muscle recovery after training",
+    "source": "review"
+  },
+  {
+    "id": "ev_mg_energy",
+    "ingredient_id": "magnesium_bisglycinate",
+    "body_area": "energy",
+    "outcome": "Energy metabolism",
+    "population": "adults",
+    "effect_grade": "D",
+    "effect_size": 0.2,
+    "studied_dose": {
+      "min": 200,
+      "max": 400,
+      "unit": "mg"
+    },
+    "onset_weeks": [
+      2,
+      6
+    ],
+    "signals": [],
+    "citations": [
+      "NIH ODS Magnesium"
+    ],
+    "summary": "Needed for energy metabolism",
+    "source": "NIH ODS"
+  },
+  {
+    "id": "ev_mg_heart",
+    "ingredient_id": "magnesium_bisglycinate",
+    "body_area": "heart_metabolic",
+    "outcome": "Blood pressure",
+    "population": "adults",
+    "effect_grade": "C",
+    "effect_size": 0.25,
+    "studied_dose": {
+      "min": 200,
+      "max": 400,
+      "unit": "mg"
+    },
+    "onset_weeks": [
+      4,
+      12
+    ],
+    "signals": [],
+    "citations": [
+      "Zhang et al., Hypertension 2016"
+    ],
+    "summary": "Supports normal heart rhythm and blood pressure",
+    "source": "Hypertension 2016"
+  },
+  {
+    "id": "ev_ash_mood",
+    "ingredient_id": "ashwagandha_ksm66",
+    "body_area": "mood_stress",
+    "outcome": "Perceived stress (PSS)",
+    "population": "stressed adults",
+    "effect_grade": "B",
+    "effect_size": 0.7,
+    "studied_dose": {
+      "min": 300,
+      "max": 600,
+      "unit": "mg"
+    },
+    "onset_weeks": [
+      4,
+      8
+    ],
+    "signals": [
+      "stress_load",
+      "stress_arousal"
+    ],
+    "citations": [
+      "Chandrasekhar et al., 2012",
+      "Salve et al., 2019"
+    ],
+    "summary": "Lowers perceived stress scores over 8 weeks",
+    "source": "Indian J Psychol Med 2012"
+  },
+  {
+    "id": "ev_ash_sleep",
+    "ingredient_id": "ashwagandha_ksm66",
+    "body_area": "sleep",
+    "outcome": "Sleep onset latency",
+    "population": "adults",
+    "effect_grade": "B",
+    "effect_size": 0.65,
+    "studied_dose": {
+      "min": 300,
+      "max": 600,
+      "unit": "mg"
+    },
+    "onset_weeks": [
+      2,
+      6
+    ],
+    "signals": [
+      "stress_arousal",
+      "sleep_onset"
+    ],
+    "citations": [
+      "Langade et al., 2019"
+    ],
+    "summary": "Lowers the stress arousal that keeps you awake",
+    "source": "Cureus 2019"
+  },
+  {
+    "id": "ev_ash_perf",
+    "ingredient_id": "ashwagandha_ksm66",
+    "body_area": "performance",
+    "outcome": "Endurance (VO2max)",
+    "population": "trained adults",
+    "effect_grade": "C",
+    "effect_size": 0.35,
+    "studied_dose": {
+      "min": 300,
+      "max": 600,
+      "unit": "mg"
+    },
+    "onset_weeks": [
+      6,
+      8
+    ],
+    "signals": [
+      "endurance_load"
+    ],
+    "citations": [
+      "Pérez-Gómez et al., 2020"
+    ],
+    "summary": "Small gains in endurance in trained people",
+    "source": "Nutrients 2020"
+  },
+  {
+    "id": "ev_ash_energy",
+    "ingredient_id": "ashwagandha_ksm66",
+    "body_area": "energy",
+    "outcome": "Stress-related fatigue",
+    "population": "adults",
+    "effect_grade": "D",
+    "effect_size": 0.25,
+    "studied_dose": {
+      "min": 300,
+      "max": 600,
+      "unit": "mg"
+    },
+    "onset_weeks": [
+      4,
+      8
+    ],
+    "signals": [
+      "stress_load"
+    ],
+    "citations": [
+      "Lopresti et al., 2019"
+    ],
+    "summary": "May ease stress-related fatigue",
+    "source": "Medicine 2019"
+  },
+  {
+    "id": "ev_cur_joints",
+    "ingredient_id": "curcumin_enhanced",
+    "body_area": "joints_recovery",
+    "outcome": "Exercise-related soreness and knee discomfort",
+    "population": "active adults",
+    "effect_grade": "B",
+    "effect_size": 0.65,
+    "studied_dose": {
+      "min": 400,
+      "max": 1500,
+      "unit": "mg"
+    },
+    "onset_weeks": [
+      2,
+      8
+    ],
+    "signals": [
+      "exercise_soreness",
+      "joint_stiffness"
+    ],
+    "citations": [
+      "Daily et al., J Med Food 2016"
+    ],
+    "summary": "Eases exercise-related knee soreness",
+    "source": "J Med Food 2016"
+  },
+  {
+    "id": "ev_cur_imm",
+    "ingredient_id": "curcumin_enhanced",
+    "body_area": "immunity",
+    "outcome": "General inflammation",
+    "population": "adults",
+    "effect_grade": "D",
+    "effect_size": 0.25,
+    "studied_dose": {
+      "min": 400,
+      "max": 1500,
+      "unit": "mg"
+    },
+    "onset_weeks": [
+      4,
+      8
+    ],
+    "signals": [],
+    "citations": [
+      "Hewlings & Kalman, 2017"
+    ],
+    "summary": "Calms general inflammation",
+    "source": "Foods 2017"
+  },
+  {
+    "id": "ev_cur_heart",
+    "ingredient_id": "curcumin_enhanced",
+    "body_area": "heart_metabolic",
+    "outcome": "Vascular function",
+    "population": "adults",
+    "effect_grade": "D",
+    "effect_size": 0.25,
+    "studied_dose": {
+      "min": 400,
+      "max": 1500,
+      "unit": "mg"
+    },
+    "onset_weeks": [
+      8,
+      12
+    ],
+    "signals": [],
+    "citations": [
+      "Santos-Parker et al., 2017"
+    ],
+    "summary": "May support healthy blood vessels",
+    "source": "Aging 2017"
+  },
+  {
+    "id": "ev_fe_energy",
+    "ingredient_id": "iron_bisglycinate",
+    "body_area": "energy",
+    "outcome": "Fatigue in iron deficiency",
+    "population": "adults with low ferritin",
+    "effect_grade": "A",
+    "effect_size": 0.7,
+    "studied_dose": {
+      "min": 18,
+      "max": 65,
+      "unit": "mg"
+    },
+    "onset_weeks": [
+      6,
+      12
+    ],
+    "signals": [
+      "low_iron_risk"
+    ],
+    "citations": [
+      "Houston et al., BMJ Open 2018"
+    ],
+    "summary": "Rebuilds iron stores for oxygen transport",
+    "source": "BMJ Open 2018"
+  },
+  {
+    "id": "ev_fe_skin",
+    "ingredient_id": "iron_bisglycinate",
+    "body_area": "skin_hair",
+    "outcome": "Hair shedding with low ferritin",
+    "population": "adults with low ferritin",
+    "effect_grade": "B",
+    "effect_size": 0.6,
+    "studied_dose": {
+      "min": 18,
+      "max": 65,
+      "unit": "mg"
+    },
+    "onset_weeks": [
+      8,
+      16
+    ],
+    "signals": [
+      "low_iron_risk",
+      "hair_shedding"
+    ],
+    "citations": [
+      "Almohanna et al., 2019"
+    ],
+    "summary": "Low ferritin is a common cause of hair shedding",
+    "source": "Dermatol Ther 2019"
+  },
+  {
+    "id": "ev_fe_sleep",
+    "ingredient_id": "iron_bisglycinate",
+    "body_area": "sleep",
+    "outcome": "Restless legs with low ferritin",
+    "population": "adults with low ferritin",
+    "effect_grade": "C",
+    "effect_size": 0.4,
+    "studied_dose": {
+      "min": 18,
+      "max": 65,
+      "unit": "mg"
+    },
+    "onset_weeks": [
+      6,
+      12
+    ],
+    "signals": [
+      "low_iron_risk"
+    ],
+    "citations": [
+      "Allen et al., Sleep Med 2018"
+    ],
+    "summary": "Low iron is linked to restless legs",
+    "source": "Sleep Med 2018"
+  },
+  {
+    "id": "ev_fe_perf",
+    "ingredient_id": "iron_bisglycinate",
+    "body_area": "performance",
+    "outcome": "Endurance with low ferritin",
+    "population": "active adults with low ferritin",
+    "effect_grade": "B",
+    "effect_size": 0.4,
+    "studied_dose": {
+      "min": 18,
+      "max": 65,
+      "unit": "mg"
+    },
+    "onset_weeks": [
+      6,
+      12
+    ],
+    "signals": [
+      "low_iron_risk"
+    ],
+    "citations": [
+      "Burden et al., 2015"
+    ],
+    "summary": "Supports endurance when stores are low",
+    "source": "Br J Sports Med 2015"
+  },
+  {
+    "id": "ev_mel_sleep",
+    "ingredient_id": "melatonin",
+    "body_area": "sleep",
+    "outcome": "Shifting a late body clock",
+    "population": "adults with delayed sleep phase",
+    "effect_grade": "B",
+    "effect_size": 0.55,
+    "studied_dose": {
+      "min": 0.5,
+      "max": 3,
+      "unit": "mg"
+    },
+    "onset_weeks": [
+      1,
+      2
+    ],
+    "signals": [
+      "circadian_delay"
+    ],
+    "citations": [
+      "Auld et al., Sleep Med Rev 2017"
+    ],
+    "summary": "Signals night-time to a body clock that runs late",
+    "source": "Sleep Med Rev 2017"
+  },
+  {
+    "id": "ev_sjw_mood",
+    "ingredient_id": "st_johns_wort",
+    "body_area": "mood_stress",
+    "outcome": "Mild low mood",
+    "population": "adults",
+    "effect_grade": "B",
+    "effect_size": 0.45,
+    "studied_dose": {
+      "min": 300,
+      "max": 900,
+      "unit": "mg"
+    },
+    "onset_weeks": [
+      4,
+      8
+    ],
+    "signals": [
+      "stress_load"
+    ],
+    "citations": [
+      "Linde et al., Cochrane 2008"
+    ],
+    "summary": "Helps mild low mood but interacts with many medicines",
+    "source": "Cochrane 2008"
+  },
+  {
+    "id": "ev_col_joints",
+    "ingredient_id": "collagen_peptides",
+    "body_area": "joints_recovery",
+    "outcome": "Activity-related joint comfort",
+    "population": "athletes",
+    "effect_grade": "C",
+    "effect_size": 0.45,
+    "studied_dose": {
+      "min": 5,
+      "max": 15,
+      "unit": "g"
+    },
+    "onset_weeks": [
+      8,
+      12
+    ],
+    "signals": [
+      "exercise_soreness",
+      "joint_stiffness"
+    ],
+    "citations": [
+      "Clark et al., 2008"
+    ],
+    "summary": "Small trials on joint comfort in athletes",
+    "source": "Curr Med Res Opin 2008"
+  },
+  {
+    "id": "ev_col_skin",
+    "ingredient_id": "collagen_peptides",
+    "body_area": "skin_hair",
+    "outcome": "Skin elasticity",
+    "population": "adults",
+    "effect_grade": "C",
+    "effect_size": 0.35,
+    "studied_dose": {
+      "min": 2.5,
+      "max": 15,
+      "unit": "g"
+    },
+    "onset_weeks": [
+      8,
+      12
+    ],
+    "signals": [
+      "hair_shedding"
+    ],
+    "citations": [
+      "de Miranda et al., 2021"
+    ],
+    "summary": "Small trials on skin elasticity",
+    "source": "Int J Dermatol 2021"
+  },
+  {
+    "id": "ev_lth_mood",
+    "ingredient_id": "l_theanine",
+    "body_area": "mood_stress",
+    "outcome": "Relaxation",
+    "population": "adults",
+    "effect_grade": "C",
+    "effect_size": 0.3,
+    "studied_dose": {
+      "min": 200,
+      "max": 400,
+      "unit": "mg"
+    },
+    "onset_weeks": [
+      1,
+      4
+    ],
+    "signals": [
+      "stress_arousal",
+      "stress_load"
+    ],
+    "citations": [
+      "Hidese et al., 2019"
+    ],
+    "summary": "May take the edge off a busy mind",
+    "source": "Nutrients 2019"
+  },
+  {
+    "id": "ev_lth_sleep",
+    "ingredient_id": "l_theanine",
+    "body_area": "sleep",
+    "outcome": "Sleep quality",
+    "population": "adults",
+    "effect_grade": "C",
+    "effect_size": 0.25,
+    "studied_dose": {
+      "min": 200,
+      "max": 400,
+      "unit": "mg"
+    },
+    "onset_weeks": [
+      1,
+      4
+    ],
+    "signals": [
+      "stress_arousal"
+    ],
+    "citations": [
+      "Hidese et al., 2019"
+    ],
+    "summary": "May improve sleep quality when stress keeps you up",
+    "source": "Nutrients 2019"
+  },
+  {
+    "id": "ev_gly_sleep",
+    "ingredient_id": "glycine",
+    "body_area": "sleep",
+    "outcome": "Subjective sleep quality",
+    "population": "adults",
+    "effect_grade": "C",
+    "effect_size": 0.35,
+    "studied_dose": {
+      "min": 3,
+      "max": 3,
+      "unit": "g"
+    },
+    "onset_weeks": [
+      1,
+      2
+    ],
+    "signals": [
+      "sleep_maintenance"
+    ],
+    "citations": [
+      "Bannai & Kawai, 2012"
+    ],
+    "summary": "May help you wake feeling more rested",
+    "source": "J Pharmacol Sci 2012"
+  },
+  {
+    "id": "ev_vc_imm",
+    "ingredient_id": "vitamin_c",
+    "body_area": "immunity",
+    "outcome": "Duration of colds",
+    "population": "adults",
+    "effect_grade": "B",
+    "effect_size": 0.35,
+    "studied_dose": {
+      "min": 200,
+      "max": 1000,
+      "unit": "mg"
+    },
+    "onset_weeks": [
+      4,
+      12
+    ],
+    "signals": [
+      "frequent_colds"
+    ],
+    "citations": [
+      "Hemilä & Chalker, Cochrane 2013"
+    ],
+    "summary": "Regular use slightly shortens colds",
+    "source": "Cochrane 2013"
+  },
+  {
+    "id": "ev_zn_imm",
+    "ingredient_id": "zinc",
+    "body_area": "immunity",
+    "outcome": "Immune function when intake is low",
+    "population": "adults",
+    "effect_grade": "C",
+    "effect_size": 0.35,
+    "studied_dose": {
+      "min": 8,
+      "max": 25,
+      "unit": "mg"
+    },
+    "onset_weeks": [
+      4,
+      12
+    ],
+    "signals": [
+      "frequent_colds"
+    ],
+    "citations": [
+      "NIH ODS Zinc"
+    ],
+    "summary": "Supports immune function when intake is low",
+    "source": "NIH ODS"
+  },
+  {
+    "id": "ev_zn_skin",
+    "ingredient_id": "zinc",
+    "body_area": "skin_hair",
+    "outcome": "Skin",
+    "population": "adults",
+    "effect_grade": "D",
+    "effect_size": 0.2,
+    "studied_dose": {
+      "min": 8,
+      "max": 25,
+      "unit": "mg"
+    },
+    "onset_weeks": [
+      8,
+      12
+    ],
+    "signals": [],
+    "citations": [
+      "NIH ODS Zinc"
+    ],
+    "summary": "Supports skin health",
+    "source": "NIH ODS"
+  },
+  {
+    "id": "ev_fol_preg",
+    "ingredient_id": "methylfolate",
+    "body_area": "heart_metabolic",
+    "outcome": "Healthy cell growth",
+    "population": "people planning pregnancy",
+    "effect_grade": "A",
+    "effect_size": 0.3,
+    "studied_dose": {
+      "min": 400,
+      "max": 1000,
+      "unit": "mcg"
+    },
+    "onset_weeks": [
+      4,
+      12
+    ],
+    "signals": [
+      "pregnancy_planning"
+    ],
+    "citations": [
+      "Health Canada folic acid guidance"
+    ],
+    "summary": "Recommended before and during pregnancy",
+    "source": "Health Canada"
+  },
+  {
+    "id": "ev_iod_preg",
+    "ingredient_id": "iodine",
+    "body_area": "energy",
+    "outcome": "Thyroid hormone production",
+    "population": "pregnancy",
+    "effect_grade": "B",
+    "effect_size": 0.3,
+    "studied_dose": {
+      "min": 150,
+      "max": 250,
+      "unit": "mcg"
+    },
+    "onset_weeks": [
+      8,
+      12
+    ],
+    "signals": [
+      "pregnancy_planning"
+    ],
+    "citations": [
+      "NIH ODS Iodine"
+    ],
+    "summary": "Needed for thyroid hormone; needs rise in pregnancy",
+    "source": "NIH ODS"
+  }
 ]

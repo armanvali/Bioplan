@@ -1,7 +1,7 @@
 {
-  "id": "maya",
-  "name": "Maya",
-  "description": "34, Toronto, vegetarian 6 years, runs 3x a week, on the pill. The prototype spec's demo persona.",
+  "id": "maya_normal_ferritin",
+  "name": "Maya (ferritin 80)",
+  "description": "Maya after her blood test: ferritin 80 µg/L.",
   "context_date": "2026-10-04",
   "answers": {
     "A0_about": {
@@ -155,11 +155,10 @@
       "vitamin_b12",
       "vitamin_d3_k2"
     ],
-    "locked": [
-      "iron_bisglycinate"
-    ],
+    "locked": [],
     "excluded_include": [
       "collagen_peptides",
+      "iron_bisglycinate",
       "melatonin",
       "omega3_fish",
       "st_johns_wort"
@@ -172,5 +171,13 @@
       21,
       27
     ]
-  }
+  },
+  "labs": [
+    {
+      "analyte": "ferritin",
+      "value": 80,
+      "unit": "µg/L",
+      "drawn_at": "2026-10-20"
+    }
+  ]
 }

@@ -1,0 +1,112 @@
+{
+  "id": "sam_ssri",
+  "name": "Sam",
+  "description": "42, Montreal, on sertraline, wants calmer mood and better sleep.",
+  "context_date": "2026-10-04",
+  "answers": {
+    "A0_about": {
+      "age": 42,
+      "sex": "male",
+      "country": "CA",
+      "region": "QC"
+    },
+    "A1_goals": {
+      "ranked": [
+        "mood",
+        "sleep"
+      ]
+    },
+    "A2_sleep_problem": {
+      "picks": [
+        "falling",
+        "night"
+      ]
+    },
+    "A3_lying_down": {
+      "picks": [
+        "racing"
+      ]
+    },
+    "A4_caffeine": {
+      "minutes": 600
+    },
+    "B3_diet": {
+      "choice": "meat"
+    },
+    "B3b_fish_frequency": {
+      "choice": "rarely"
+    },
+    "B11_pss4": {
+      "items": [
+        3,
+        1,
+        1,
+        3
+      ],
+      "source": "Work"
+    },
+    "B12_daylight": {
+      "choice": "u15"
+    },
+    "C1_medications": {
+      "meds": [
+        "sertraline"
+      ]
+    },
+    "C2_conditions": {
+      "picks": [
+        "none"
+      ]
+    },
+    "C3_allergies": {
+      "picks": [
+        "none"
+      ]
+    },
+    "D0_anything_else": {
+      "skip": true
+    },
+    "D1_budget": {
+      "amount": 100
+    },
+    "D2_pills": {
+      "max": 8,
+      "powders": true
+    },
+    "D3_routine": {
+      "wake": 390,
+      "breakfast": 420,
+      "lunch": 720,
+      "dinner": 1110,
+      "bed": 1350,
+      "training_days": [],
+      "tz": "America/Toronto"
+    },
+    "B7_bloodwork": {
+      "choice": "no"
+    }
+  },
+  "expect": {
+    "stop_cards": [],
+    "stack": [
+      "ashwagandha_ksm66",
+      "l_theanine",
+      "magnesium_bisglycinate",
+      "omega3_fish",
+      "vitamin_d3_k2"
+    ],
+    "locked": [],
+    "excluded_include": [
+      "melatonin",
+      "st_johns_wort"
+    ],
+    "banners": [],
+    "low_confidence": false,
+    "max_pills_per_day_at_most": 8,
+    "monthly_cost_at_most": 100,
+    "cards_between": [
+      14,
+      20
+    ]
+  }
+}

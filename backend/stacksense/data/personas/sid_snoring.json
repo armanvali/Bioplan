@@ -1,0 +1,106 @@
+{
+  "id": "sid_snoring",
+  "name": "Sid",
+  "description": "51, Calgary, snores loudly, wants sleep and energy.",
+  "context_date": "2026-10-04",
+  "answers": {
+    "A0_about": {
+      "age": 51,
+      "sex": "male",
+      "country": "CA",
+      "region": "AB"
+    },
+    "A1_goals": {
+      "ranked": [
+        "sleep",
+        "energy"
+      ]
+    },
+    "A2_sleep_problem": {
+      "picks": [
+        "unrefreshed",
+        "snoring"
+      ]
+    },
+    "B1_energy_curve": {
+      "points": [
+        3,
+        4,
+        4,
+        4,
+        3,
+        3,
+        3,
+        3,
+        3
+      ]
+    },
+    "B2_iron_cluster": {
+      "picks": [
+        "none"
+      ]
+    },
+    "B3_diet": {
+      "choice": "meat"
+    },
+    "B3b_fish_frequency": {
+      "choice": "weekly"
+    },
+    "B12_daylight": {
+      "choice": "u15"
+    },
+    "C1_medications": {
+      "none": true
+    },
+    "C2_conditions": {
+      "picks": [
+        "none"
+      ]
+    },
+    "C3_allergies": {
+      "picks": [
+        "none"
+      ]
+    },
+    "D0_anything_else": {
+      "skip": true
+    },
+    "D1_budget": {
+      "amount": 100
+    },
+    "D2_pills": {
+      "max": 8,
+      "powders": true
+    },
+    "D3_routine": {
+      "wake": 390,
+      "breakfast": 420,
+      "lunch": 720,
+      "dinner": 1110,
+      "bed": 1350,
+      "training_days": [],
+      "tz": "America/Toronto"
+    },
+    "B7_bloodwork": {
+      "choice": "no"
+    }
+  },
+  "expect": {
+    "stop_cards": [
+      "sleep_apnea"
+    ],
+    "stack": [
+      "vitamin_d3_k2"
+    ],
+    "locked": [],
+    "excluded_include": [],
+    "banners": [],
+    "low_confidence": false,
+    "max_pills_per_day_at_most": 8,
+    "monthly_cost_at_most": 100,
+    "cards_between": [
+      13,
+      19
+    ]
+  }
+}

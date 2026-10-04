@@ -4,7 +4,7 @@ Two numbers per body area on a 0-10 scale -- the user's **need** and the stack's
 **projected benefit** -- plus each supplement's share. Everything comes from stored
 data (signals, evidence claims, doses), so the chart is reproducible and explainable.
 
-    N_a    = 10 * max(w_goal(a), max_{s in a} p_s)
+    N_a    = 10 * max(w_goal(a), max_{s in a} p_s * need_weight_s)   (need_weight defaults to 1)
     c_i,a  = 10 * b_i,a * g_i * f_i * r_i,a
     S_a    = 10 * (1 - prod_i (1 - c_i,a / 10)) + sum_(i,j) sigma_ij,a     (sigma bounded to +-0.5)
     coverage = min(S_a / N_a, 1)
@@ -63,7 +63,7 @@ def needs(kb: Any, goals: list[str], signals: dict[str, float], evidenced: set[s
     out: dict[str, float] = {}
     for area in kb.area_ids:
         ps = [
-            signals.get(s.id, 0.0)
+            signals.get(s.id, 0.0) * s.need_weight
             for s in kb.data.signals
             if area in s.areas and s.id in evidenced and not s.tip_only
         ]

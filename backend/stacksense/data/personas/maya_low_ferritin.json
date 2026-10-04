@@ -1,7 +1,7 @@
 {
-  "id": "maya",
-  "name": "Maya",
-  "description": "34, Toronto, vegetarian 6 years, runs 3x a week, on the pill. The prototype spec's demo persona.",
+  "id": "maya_low_ferritin",
+  "name": "Maya (ferritin 18)",
+  "description": "Maya after her blood test: ferritin 18 µg/L.",
   "context_date": "2026-10-04",
   "answers": {
     "A0_about": {
@@ -150,14 +150,13 @@
       "ashwagandha_ksm66",
       "creatine_monohydrate",
       "curcumin_enhanced",
+      "iron_bisglycinate",
       "magnesium_bisglycinate",
       "omega3_algae",
       "vitamin_b12",
       "vitamin_d3_k2"
     ],
-    "locked": [
-      "iron_bisglycinate"
-    ],
+    "locked": [],
     "excluded_include": [
       "collagen_peptides",
       "melatonin",
@@ -172,5 +171,13 @@
       21,
       27
     ]
-  }
+  },
+  "labs": [
+    {
+      "analyte": "ferritin",
+      "value": 18,
+      "unit": "µg/L",
+      "drawn_at": "2026-10-20"
+    }
+  ]
 }
