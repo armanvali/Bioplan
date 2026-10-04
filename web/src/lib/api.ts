@@ -4,6 +4,7 @@ import type {
   Offers, Plan, PrivacyHistory, ProductsResponse, Review, SavedPlan, Schedule, SessionCreated, SessionState, Step, User,
 } from "./types";
 
+// Empty string = same origin: Next forwards /v1 to the API (API_PROXY_TARGET in next.config.ts).
 export const API_URL = (process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:8000").replace(/\/$/, "");
 
 export class ApiError extends Error {
@@ -36,7 +37,7 @@ function headersFor(o: Opts): Record<string, string> {
 }
 
 function url(path: string, query?: Opts["query"]): string {
-  const u = new URL(API_URL + path);
+  const u = new URL(API_URL + path, typeof window === "undefined" ? "http://localhost" : window.location.origin);
   for (const [k, v] of Object.entries(query ?? {})) if (v !== undefined && v !== null && v !== "") u.searchParams.set(k, String(v));
   return u.toString();
 }

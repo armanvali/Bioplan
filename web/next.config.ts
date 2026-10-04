@@ -1,11 +1,17 @@
 import type { NextConfig } from "next";
 
 const api = process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:8000";
+// Optional single-origin deploy: set NEXT_PUBLIC_API_URL="" and API_PROXY_TARGET=http://api:8000
+// so the browser only ever talks to this app, which forwards /v1 to the API.
+const proxyTarget = process.env.API_PROXY_TARGET?.replace(/\/$/, "");
 
 const nextConfig: NextConfig = {
   output: "standalone",
   poweredByHeader: false,
   reactStrictMode: true,
+  async rewrites() {
+    return proxyTarget ? [{ source: "/v1/:path*", destination: `${proxyTarget}/v1/:path*` }] : [];
+  },
   async headers() {
     return [
       {

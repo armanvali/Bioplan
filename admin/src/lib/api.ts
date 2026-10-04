@@ -3,6 +3,7 @@
 import { create } from "zustand";
 import { createJSONStorage, persist } from "zustand/middleware";
 
+// Empty string = same origin: Next forwards /admin/v1 to the API (API_PROXY_TARGET in next.config.ts).
 export const API_URL = (process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:8000").replace(/\/$/, "");
 
 export interface Admin {
@@ -59,7 +60,7 @@ type Query = Record<string, string | number | undefined | null>;
 export async function adminApi<T>(path: string, opts: { method?: string; body?: unknown; query?: Query; text?: boolean } = {}): Promise<T> {
   const { token, expiresAt, signOut } = useAuth.getState();
   if (token && expiresAt && Date.now() > expiresAt) signOut();
-  const u = new URL(`${API_URL}/admin/v1${path}`);
+  const u = new URL(`${API_URL}/admin/v1${path}`, window.location.origin);
   for (const [k, v] of Object.entries(opts.query ?? {})) if (v !== undefined && v !== null && v !== "") u.searchParams.set(k, String(v));
   let res: Response;
   try {

@@ -14,6 +14,11 @@ cp .env.example .env.local        # NEXT_PUBLIC_API_URL=http://localhost:8000
 npm run dev                       # http://localhost:3000 (API must be running)
 ```
 
+**Single-origin mode** (one public address per app, e.g. behind a tunnel or proxy): build and
+start with `NEXT_PUBLIC_API_URL=` (empty) and `API_PROXY_TARGET=http://<api-host>:8000`. The
+browser then only talks to the web app, which forwards `/v1/*` to the API. The admin console
+does the same for `/admin/v1/*`.
+
 In dev the API runs Stripe in **fake mode**: checkout goes to `/checkout/fake`, and sign-in
 links come back in the API response ("Dev mode: sign in now"), so the whole purchase flow works
 offline.
